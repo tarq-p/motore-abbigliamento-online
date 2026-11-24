@@ -132,14 +132,14 @@ const LINGUE = {it:'Italiano', en:'English', de:'Deutsch', fr:'Français'};
 // ---- testi di partenza dei messaggi (da far controllare al maglificio: prodotto, campioni, catalogo)
 const TPL0 = {
   it:'Buongiorno, {chi}. Produciamo polo in filo di Scozia e maglieria uomo nel nostro maglificio in Puglia, tutto fatto in Italia. {frase}{spunto} Posso mandarvi il catalogo e il listino all\'ingrosso{catalogo}? Se vi interessa, vi spediamo anche dei campioni.',
-  en:'Good morning, {chi}. We make cotton lisle (filo di Scozia) polo shirts and men\'s knitwear in our own mill in Puglia, entirely made in Italy. {frase}{spunto} May I send you our catalogue and wholesale price list{catalogo}? We would also be glad to send you some samples.',
-  de:'Guten Tag, {chi}. Wir fertigen Poloshirts aus Filo di Scozia (merzerisierte Baumwolle) und Herrenstrick in unserer eigenen Strickerei in Apulien, komplett in Italien. {frase}{spunto} Darf ich Ihnen unseren Katalog und die Händlerpreisliste schicken{catalogo}? Gerne senden wir Ihnen auch Muster.',
-  fr:'Bonjour, {chi}. Nous fabriquons des polos en fil d\'Écosse et de la maille homme dans notre propre atelier dans les Pouilles, entièrement en Italie. {frase}{spunto} Puis-je vous envoyer notre catalogue et nos tarifs revendeurs{catalogo} ? Nous pouvons aussi vous envoyer des échantillons.'
+  en:'Hello, {chi}. We make cotton lisle (filo di Scozia) polo shirts and men\'s knitwear in our own mill in Puglia, entirely made in Italy. {frase}{spunto} May I send you our catalogue and wholesale price list{catalogo}? We would also be glad to send you some samples.',
+  de:'Guten Tag, {chi}. Wir fertigen Poloshirts aus Fil d\'Écosse (merzerisierte Baumwolle) und Herrenstrick in unserer eigenen Strickerei in Apulien, komplett in Italien. {frase}{spunto} Darf ich Ihnen unseren Katalog und die Händlerpreisliste schicken{catalogo}? Gerne senden wir Ihnen auch Muster.',
+  fr:'Bonjour, {chi}. Nous fabriquons des polos en fil d\'Écosse et de la maille pour homme dans notre atelier des Pouilles, entièrement en Italie. {frase}{spunto} Puis-je vous envoyer notre catalogue et nos tarifs revendeurs{catalogo} ? Nous pouvons aussi vous envoyer des échantillons.'
 };
 const TPLM0 = {
   it:'Buongiorno, {chi}. Siamo un maglificio in Puglia e produciamo anche per altri marchi: polo in filo di Scozia e maglieria, dal campione alla produzione, tutto in Italia. {spunto} Se state cercando chi produca la vostra maglieria, posso mandarvi qualche lavoro fatto{catalogo}?',
-  en:'Good morning, {chi}. We are a knitwear mill in Puglia, Italy, and we also produce for other brands: cotton lisle polo shirts and knitwear, from sampling to production, all made in Italy. {spunto} If you are looking for a manufacturer for your knitwear, may I send you some of our work{catalogo}?',
-  de:'Guten Tag, {chi}. Wir sind eine Strickerei in Apulien und produzieren auch für andere Marken: Poloshirts aus Filo di Scozia und Strickwaren, vom Muster bis zur Serie, komplett in Italien. {spunto} Falls Sie einen Hersteller für Ihre Strickkollektion suchen: Darf ich Ihnen einige unserer Arbeiten zeigen{catalogo}?',
+  en:'Hello, {chi}. We are a knitwear mill in Puglia, Italy, and we also produce for other brands: cotton lisle polo shirts and knitwear, from sampling to production, all made in Italy. {spunto} If you are looking for a manufacturer for your knitwear, may I send you some of our work{catalogo}?',
+  de:'Guten Tag, {chi}. Wir sind eine Strickerei in Apulien und produzieren auch für andere Marken: Poloshirts aus Fil d\'Écosse und Strickwaren, vom Muster bis zur Serie, komplett in Italien. {spunto} Falls Sie einen Hersteller für Ihre Strickkollektion suchen: Darf ich Ihnen einige unserer Arbeiten zeigen{catalogo}?',
   fr:'Bonjour, {chi}. Nous sommes un atelier de maille dans les Pouilles et nous produisons aussi pour d\'autres marques : polos en fil d\'Écosse et maille, du prototype à la production, entièrement en Italie. {spunto} Si vous cherchez un fabricant pour votre maille, puis-je vous montrer quelques-unes de nos réalisations{catalogo} ?'
 };
 const OGG0 = {it:'Polo e maglieria made in Italy per {nome}', en:'Made in Italy polo shirts and knitwear for {nome}',
@@ -160,12 +160,12 @@ const FRASI0 = {
   de:{uomo:'Sie passen gut zu den Herrenkollektionen, die eine Boutique wie Ihre bereits führt.',
       boutique:'Für ein Multibrand-Geschäft sind sie ein klassisches Herrenteil, das sich leicht neben Ihre Marken stellen lässt.',
       abiti:'Wenn Sie Herrenmode führen, ist ein gut gemachtes italienisches Polo ein einfaches Teil zum Ergänzen.',
-      sartoria:'Sie passen zur Maßkonfektion: Ein feines Polo oder ein feiner Strick ist das, was Ihre Kunden unter einem Maßsakko tragen.',
+      sartoria:'Sie passen zur Maßschneiderei: Ein feines Polo oder ein feiner Strick ist das, was Ihre Kunden unter einem Maßsakko tragen.',
       magazzino:'Für Ihre Herrenabteilung können wir eine Linie direkt aus der Strickerei anbieten.',
       marchio:''},
   fr:{uomo:'Ils trouvent naturellement leur place à côté des collections homme qu\'une boutique comme la vôtre propose déjà.',
       boutique:'Pour un multimarque, c\'est une pièce homme classique, facile à placer à côté de vos marques.',
-      abiti:'Si vous vendez de l\'homme, un polo italien bien fait est une pièce facile à ajouter.',
+      abiti:'Si vous proposez de la mode homme, un polo italien bien fait est une pièce facile à ajouter.',
       sartoria:'Ils vont bien avec le sur-mesure : un polo ou une maille fine, c\'est ce que vos clients portent sous une veste sur mesure.',
       magazzino:'Pour votre rayon homme, nous pouvons proposer une ligne fabriquée directement par l\'atelier.',
       marchio:''}
@@ -371,8 +371,8 @@ function linguaDi(l){
 }
 function chiSono(lang){
   const c=(cfg.chi||'').trim(), a=(cfg.azienda||'').trim()||'Maglificio Vela Blu';
-  if(c) return {it:'sono '+c+' di '+a, en:'my name is '+c+' from '+a, de:'mein Name ist '+c+' von '+a, fr:'je suis '+c+', de '+a}[lang];
-  return {it:'vi scrive '+a, en:'this is '+a, de:'hier schreibt '+a, fr:'ici '+a}[lang];
+  if(c) return {it:'sono '+c+' del '+a, en:'my name is '+c+' from '+a, de:'mein Name ist '+c+' von '+a, fr:'je suis '+c+', de '+a}[lang];
+  return {it:'vi scrive il '+a, en:'this is '+a, de:'hier schreibt '+a, fr:'ici '+a}[lang];
 }
 function elenco(a,lang){ const e={it:' e ',en:' and ',de:' und ',fr:' et '}[lang]; return a.length<2?a.join(''):a.slice(0,-1).join(', ')+e+a[a.length-1]; }
 function spuntoDi(l,lang){

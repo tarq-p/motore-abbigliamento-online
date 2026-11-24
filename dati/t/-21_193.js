@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-21_193"]=[["79fdd4027d64","La Voilerie","a","clothing store","+33 6 60 47 05 86","","","https://www.facebook.com/101932818109313","bourg de",48.45712,-5.09753,"Ouessant","FR","n",61,"m"]];

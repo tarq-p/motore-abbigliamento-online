@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["21_194"]=[["46bbc4dda5c4","Id'Elo","a","clothing store","+33 6 79 80 80 45","http://www.ideloboutique.com/","ideloboutique@gmail.com","https://www.facebook.com/112121401854694","5 Rue de Strasbourg",48.68843,5.32415,"Ligny-en-Barrois","FR","a",91,"m"]];

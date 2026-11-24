@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-39_205"]=[["fec98f1c682d","Two Dogs Waiting","a","clothing store","+353 86 390 7413","http://www.twodogswaiting.ie/","info@twodogswaiting.ie","https://www.facebook.com/260182067394810","",51.4958,-9.72935,"Goleen","IE","n",36,"m"]];

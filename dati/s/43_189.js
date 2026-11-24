@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["43_189"]={"o75c47d723dd4":{"vivo":true,"lingua":"de","social":{"instagram":"https://www.instagram.com/monbree_/"},"negozio":4,"marchio":1,"data":"2026-11-23","url":"http://www.monbree.com/"}};

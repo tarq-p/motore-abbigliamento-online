@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["42_251"]={"o20ae0d4f793f":{"vivo":true,"lingua":"en","prezzo":199,"nPrezzi":71,"maglia":2,"italia":2,"negozio":10,"lusso":3,"outlet":5,"marchio":3,"data":"2026-11-23","url":"http://www.thecurlygirlsworld.no/"}};

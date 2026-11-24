@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["33_225"]={"o91d4951c03c9":{"vivo":true,"lingua":"nl","marchiBassi":2,"prezzo":800,"nPrezzi":78,"social":{"facebook":"https://www.facebook.com/Nordsmark-i-Vemb-105210118686540"},"maglia":7,"data":"2026-11-23","url":"https://www.nordsmark.com"}};

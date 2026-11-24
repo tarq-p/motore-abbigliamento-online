@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["42_240"]=[["17d755980b3e","Støttestrømpen.no","a","clothing store","+45 60 47 39 01","https://stottestrompen.no/","","","KVERNHUSVEGEN 21",60.21197,10.70701,"HARESTUA","NO","a",50,""],["268bf4e6688c","Line Biagio Solvang","a","clothing store","+47 951 01 391","","","","FURUVEIEN 23B",60.19917,10.71524,"HARESTUA","NO","a",50,"m"]];

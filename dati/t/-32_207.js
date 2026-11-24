@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-32_207"]=[["c8f991b1e51f","Touch of Class","a","clothing store","+353 24 91255","http://www.touchofclass.ie","","","66 North Main St",51.95396,-7.84804,"Youghal","IE","n",77,""]];

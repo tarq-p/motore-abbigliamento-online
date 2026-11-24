@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-25_223"]=[["ddc4b387e92c","Islay Woollen Mill","b","fashion boutique","+44 1496 810563","http://www.islaywoollenmill.co.uk","mill@islaywoollenmill.co.uk","","Islay Woollen Mill",55.78477,-6.2362,"Isle Of Islay","GB","n",77,""]];

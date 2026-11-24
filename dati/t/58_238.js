@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["58_238"]=[["01e6378d042a","Butiken Republiken","a","clothing store","+46 8 38 12 25","http://www.butikenrepubliken.se/","republiken@butikenrepubliken.se","https://www.facebook.com/995048127221035","Järnvägsgatan 2",59.70732,14.52896,"Grythyttan","SE","a",99,""]];

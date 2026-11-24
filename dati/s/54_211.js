@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["54_211"]={"o81263d218072":{"vivo":true,"lingua":"de","marchiBassi":8,"prezzo":39,"nPrezzi":242,"social":{"facebook":"https://www.facebook.com/AWG.Mode","instagram":"https://www.instagram.com/awgmode"},"uomo":119,"donna":175,"maglia":33,"negozio":12,"lusso":8,"outlet":4,"marchio":16,"lavoro":8,"data":"2026-11-23","url":"https://www.awg-mode.de/"}};

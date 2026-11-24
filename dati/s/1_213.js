@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["1_213"]={"of089ce9cb0f5":{"vivo":true,"lingua":"en","prezzo":155,"nPrezzi":11,"social":{"facebook":"https://www.facebook.com/becingoldmellsltd/","instagram":"https://www.instagram.com/becingoldmells/"},"negozio":4,"outlet":4,"data":"2026-11-23","url":"http://www.becingoldmells.co.uk"}};

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["62_247"]=[["a90426bece5d","Sykungen","a","fashion and apparel store","+46 8 766 63 65","https://www.sykungen.se/","","","Blixtgatan 19",61.8392,15.71731,"Korskrogen","SE","a",86,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["65_225"]=[["593beb803a27","Stickochbrinn Ljusstöperi","a","fashion and apparel store","+46 70 680 47 07","http://www.stickobrinn.nu/","","","STATIONSHUSGATAN 3",56.45925,16.43186,"MÖRBYLÅNGA","SE","a",100,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_239"]=[["0bd6d1762821","Frändesta Kläder","a","clothing store","+46 70 277 07 08","http://www.frandestaklader.se/","","","LANCASHIREVÄGEN 4",59.77989,16.18335,"RAMNÄS","SE","a",50,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["12_181"]=[["125deb165112","J.m. Pulls - Ets Meyniel","a","clothing store","+33 4 71 20 88 20","","","","77 avenue du Général de Gaulle",45.25511,3.19835,"Massiac","FR","a",50,""]];

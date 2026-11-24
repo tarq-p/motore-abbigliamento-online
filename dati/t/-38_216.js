@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-38_216"]=[["46b8fd5cce10","Buckles and Bling","a","clothing store","+353 87 678 6881","http://www.bucklesandbling.ie/","info@bucklesandbling.ie","https://www.facebook.com/258099274377653","",54.10009,-9.31984,"Ballina","IE","n",27,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-37_214"]={"oe2d030c92d06":{"vivo":true,"lingua":"en","social":{"facebook":"https://www.facebook.com/TescoIreland","instagram":"https://www.instagram.com/tescoirl/","tiktok":"https://www.tiktok.com/@tesco_irl"},"lavoro":3,"data":"2026-11-23","url":"http://www.tesco.ie/"}};

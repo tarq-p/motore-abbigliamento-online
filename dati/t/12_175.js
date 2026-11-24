@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["12_175"]=[["a8b201dc7000","Les Chaps","a","clothing store","+33 6 80 89 34 07","http://www.leschaps.fr/","contact@leschaps.fr","https://www.facebook.com/789547061102395","Ham. de Joncelets",43.75741,3.19099,"Joncels","FR","n",82,"m"]];

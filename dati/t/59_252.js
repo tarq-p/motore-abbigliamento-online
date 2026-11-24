@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["59_252"]=[["820e4d895265","Altico","a","clothing store","+46 73 041 39 00","http://www.altico.se/","info@altico.se","https://www.facebook.com/109704745737947","125",63.05658,14.81443,"Brunflo","SE","n",30,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["83_256"]=[["013ebd91e406","Lkläder Robertsfors","a","clothing store","+46 76 770 37 77","http://www.lklader.blogg.se/","","https://www.facebook.com/440520252717006","Storgatan 30",64.1941,20.84723,"Robertsfors","SE","a",77,"m"]];

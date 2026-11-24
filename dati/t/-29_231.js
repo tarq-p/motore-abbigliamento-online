@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-29_231"]=[["33c5ce964751","Taobh Tuath Tweeds (Harris Tweed)","m","clothing company","+44 7843 394298","http://www.taobhtuathtweeds.com/","rebecca@taobhtuathtweeds.com","https://www.facebook.com/100670425112008","",57.79256,-7.05919,"Na h-Eileanan Siar","GB","n",63,"m"]];

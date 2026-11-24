@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-16_212"]={"oa15f26e769df":{"data":"2026-11-23","motivo":"HTTP Error 500: Internal Server Error","url":"https://www.fatface.com/storelocator/glasgowbuchananstreet-fatface/5471"}};

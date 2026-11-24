@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["4_188"]=[["e87f656995b8","Rizome","a","clothing store","+33 2 54 39 31 75","http://www.rizome.fr","","","3 route de Tours",47.02075,1.10691,"Fléré-La-Rivière","FR","a",95,""]];

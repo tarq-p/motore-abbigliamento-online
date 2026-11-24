@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["24_191"]=[["4c0294f6ba38","Magasin de vente La Rochère","b","fashion boutique","+33 3 84 78 61 00","https://visiterlarochere.com/","","https://www.facebook.com/100414336139529","4 Rue de la Verrerie",47.99085,6.06253,"Passavant-la-Rochère","FR","a",95,""]];

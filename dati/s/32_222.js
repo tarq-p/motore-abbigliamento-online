@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["32_222"]={"o58c3d2235625":{"vivo":true,"lingua":"en","prezzo":280,"nPrezzi":112,"email":["info@bobendixen.dk"],"social":{"instagram":"https://www.instagram.com/bobendixendk/?hl=da","facebook":"https://www.facebook.com/GalleriBoBendixen/"},"maglia":8,"data":"2026-11-23","url":"http://www.bobendixen.dk"}};

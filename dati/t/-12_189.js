@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-12_189"]=[["734a88a6c68e","Au Fil Des Iles","a","fashion and apparel store","+33 2 97 30 68 16","","","","197 route du Béniguet",47.39066,-2.96077,"Île-D'Houat","FR","a",94,""]];

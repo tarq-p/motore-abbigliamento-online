@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-40_208"]=[["18522fd71ed2","Place Of Clothing Mks","a","clothing store","+353 66 976 1986","","","https://www.facebook.com/359891470819215","Main St",52.10621,-9.78628,"Killarney","IE","n",89,""]];

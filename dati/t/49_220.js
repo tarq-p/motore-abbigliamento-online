@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["49_220"]=[["dee29bc27812","Dressmakers Atelier","a","fashion and apparel store","+45 29 46 41 70","https://www.charlottewiegand.com/","","https://www.facebook.com/149557315115759","Nordfeldvej 15",55.00785,12.38453,"Stege","DK","a",93,""]];

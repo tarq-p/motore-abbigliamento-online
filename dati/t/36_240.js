@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["36_240"]=[["0bd0c66e9071","Felleskjopet Numedal","g","department store","+47 992 76 430","http://www.felleskjopet.no/","halvor.kongsjorden@felleskjopet.no","https://www.facebook.com/213068328710343","Bakkevegen 11",60.03867,9.16775,"Veggli","NO","n",100,"m"]];

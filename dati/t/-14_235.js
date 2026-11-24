@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-14_235"]=[["08adc1023abd","The Quernstone Knitwear Shop","a","clothing store","+44 1856 852900","http://www.quernstone.co.uk/","quernstoneknits@tiscali.co.uk","https://www.facebook.com/258790984243363","41 Victoria St",58.96286,-3.29875,"Stromness","GB","a",99,""]];

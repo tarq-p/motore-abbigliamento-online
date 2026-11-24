@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["42_187"]=[["55a2a2a759c8","Boutique Ploner","a","clothing store","+43 4354 7387221","https://www.hotel-central.at","","","Nauders 35",46.8914,10.50198,"Nauders","AT","n",77,""]];

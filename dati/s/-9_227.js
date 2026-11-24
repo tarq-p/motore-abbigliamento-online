@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-9_227"]={"o78066a5728ba":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://www.mandco.com/?utm_source=GMB&utm_medium=organic&utm_campaign=Yext"}};

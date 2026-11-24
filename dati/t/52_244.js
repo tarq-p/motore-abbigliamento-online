@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["52_244"]=[["8d4713d98b87","Leonarden","a","clothing store","+46 280 260 65","http://www.leonarden.se/","","","HEMFJÄLLSVÄGEN 1",61.16471,13.19987,"SÄLEN","SE","a",100,""]];

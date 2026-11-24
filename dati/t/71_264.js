@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["71_264"]=[["39d29a8c1999","Nanna’s","a","clothing store","+46 70 550 00 81","https://www.facebook.com/profile.php?id=100084799086293","nannas.arjeplog@outlook.com","https://www.facebook.com/110654968419417","Storgatan 1A",66.05219,17.88877,"Arjeplog","SE","a",92,"m"]];

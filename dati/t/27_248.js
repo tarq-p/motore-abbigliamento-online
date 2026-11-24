@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["27_248"]=[["4c83271cf49d","Schermann.Ringdal","a","clothing store","+47 952 08 626","http://studioschermann.com/","hello@schermannringdal.com","https://www.facebook.com/128249653907730","C/O Synnøve",62.08789,6.86546,"Hellesylt","NO","n",31,"m"]];

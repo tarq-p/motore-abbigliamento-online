@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["61_192"]={"o56546dc307ad":{"vivo":true,"italia":1,"data":"2026-11-23","url":"http://www.takko.com"},"oe2bb76b701f7":{"vivo":true,"lingua":"de","nPrezzi":2,"uomo":4,"donna":4,"lavoro":6,"data":"2026-11-23","url":"https://www.newyorker.de/?utm_source=google_maps&utm_medium=referral&utm_campaign=maps_click"}};

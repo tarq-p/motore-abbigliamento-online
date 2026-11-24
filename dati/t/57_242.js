@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["57_242"]=[["262a646cd2b7","Modebacka AB","a","clothing store","+46 281 200 07","","bossfalls@telia.se","https://www.facebook.com/289692231168167","85",60.54755,14.3656,"Dala-Järna","SE","n",99,""]];

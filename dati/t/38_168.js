@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["38_168"]=[["dcd843a3b815","La Plage","g","department store","+33 4 95 38 92 33","","","https://www.facebook.com/250621932008277","Corsicana Village",42.23795,9.55244,"Linguizzetta","FR","n",94,""]];

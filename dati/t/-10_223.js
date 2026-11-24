@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-10_223"]=[["b8dfd694a5d8","Scotlandshop","a","clothing store","+44 1890 860770","https://www.scotlandshop.com/","","","Station Road",55.77097,-2.33965,"Duns","GB","n",99,""]];

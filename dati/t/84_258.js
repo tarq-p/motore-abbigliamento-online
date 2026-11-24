@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["84_258"]=[["237715ad0b18","Kotteshoppen.se Butik","a","clothing store","+46 910 20 03 68","http://www.kotteshoppen.se","info@kotteshoppen.se","https://www.facebook.com/154010288107978","Torget 10",64.61776,21.20068,"Bureå","SE","n",51,""]];

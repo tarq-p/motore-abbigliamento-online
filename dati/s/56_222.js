@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["56_222"]={"o2b1c3a77f6d1":{"vivo":true,"email":["anette@anetteodelberg.se"],"social":{"instagram":"https://Instagram.com/orientalandvintage","facebook":"https://Facebook.com/orientalandvintage"},"marchio":2,"data":"2026-11-23","url":"http://orientalandvintage.com/"}};

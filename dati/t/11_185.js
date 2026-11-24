@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["11_185"]=[["e33e2cb211eb","Maison du Tourisme - Boutique des produits de l'Allier","b","fashion boutique","+33 4 70 07 39 21","","","https://www.facebook.com/1686055375022002","2 rue du bocage",46.3251,2.96796,"Montmarault","FR","a",87,""]];

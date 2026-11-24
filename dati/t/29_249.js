@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["29_249"]=[["327d78c828ec","Smuget","a","clothing store","+47 414 52 236","","janneskothe@gmail.com","https://www.facebook.com/198857843533854","Gnr 27 Bnr 12, Syltegata 10",62.29869,7.26349,"Valldal","NO","n",39,"m"]];

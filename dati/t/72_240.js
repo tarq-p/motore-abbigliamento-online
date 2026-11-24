@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["72_240"]=[["bbe6d61e476c","Degama","a","clothing store","+46 73 870 31 69","http://www.edoelite.com/","paulmulamba21@gmail.com","https://www.facebook.com/109199721622788","Peterson-Bergers väg 47",60.17325,18.18184,"Uppsala","SE","n",73,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["60_231"]=[["1491516dbb12","Ateljé Ko-La Kläder","a","clothing store","+46 140 430 66","http://www.ostkaka.com","ydrestrand@swipnet.se","","Brostorps Gård Flygelbyggnad",57.96143,15.09867,"Tranås","SE","n",77,""]];

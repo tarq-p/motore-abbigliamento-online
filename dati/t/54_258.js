@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["54_258"]=[["7990fc92856b","Luss og busserulleriet","a","clothing store","+47 958 64 011","http://www.lussogbusserulleriet.no/","kve-bua@online.no","https://www.facebook.com/2007976635988709","Kveliveien 1143",64.52638,13.69481,"Kvelia","NO","a",96,"m"]];

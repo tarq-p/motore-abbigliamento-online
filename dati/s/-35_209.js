@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-35_209"]={"oae487e45ece4":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"http://www.dv8fashion.com/"},"od98c560ba9af":{"vivo":true,"lingua":"en","prezzo":50,"nPrezzi":8,"uomo":6,"donna":9,"lusso":3,"marchio":1,"multimarca":7,"data":"2026-11-23","url":"https://www.dunnesstores.com/"}};

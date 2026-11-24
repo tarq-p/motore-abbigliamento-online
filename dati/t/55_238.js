@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["55_238"]=[["6e8ae7ea5149","SeniorShop Distrikt 9","a","clothing store","+46 70 552 04 23","https://seniorshop.se/distrikt-9","annalena@seniorshop.se","https://www.facebook.com/409840072193111","Gundes väg 4",59.60496,13.83052,"Molkom","SE","n",48,"m"]];

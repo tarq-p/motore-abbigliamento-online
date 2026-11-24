@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-15_209"]={"o821b13a2428a":{"vivo":true,"lingua":"en","social":{"instagram":"https://www.instagram.com/lauraashleyuk/","facebook":"https://www.facebook.com/lauraashleyuk/"},"negozio":4,"data":"2026-11-23","url":"http://www.lauraashley.com"}};

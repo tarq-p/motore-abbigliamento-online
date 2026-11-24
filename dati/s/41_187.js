@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["41_187"]={"o19965e77766d":{"vivo":true,"lingua":"de","prezzo":49,"nPrezzi":15,"donna":22,"negozio":17,"lusso":4,"outlet":1,"lavoro":8,"data":"2026-11-23","url":"http://www.dorf-center.ch/"}};

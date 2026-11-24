@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["64_233"]={"o6cb2b910849d":{"vivo":true,"social":{"facebook":"https://www.facebook.com/profile.php?id=100057121883853"},"data":"2026-11-23","url":"http://www.traffpunktenbjorsater.com/"}};

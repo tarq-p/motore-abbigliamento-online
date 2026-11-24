@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["55_222"]={"oc22000541363":{"vivo":true,"lingua":"nl","prezzo":59,"nPrezzi":9,"email":["info@bo-ohlsson.se"],"social":{"instagram":"https://www.instagram.com/bo_ohlsson/","facebook":"https://sv-se.facebook.com/boohlssonab","tiktok":"https://www.tiktok.com/@boohlssonab"},"data":"2026-11-23","url":"http://www.bo-ohlsson.se/"}};

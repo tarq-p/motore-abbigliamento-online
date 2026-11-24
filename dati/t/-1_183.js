@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-1_183"]=[["3634ae53e2c4","Galena Shop","a","clothing store","+33 9 82 62 07 02","http://www.galenashop.fr/","","","57 place Gambetta",45.77639,-0.06337,"Rouillac","FR","a",66,""]];

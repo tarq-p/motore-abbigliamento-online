@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["54_202"]=[["5a3528bbc9da","Kärcher Store Lachmann","g","department store","+49 37327 7212","https://www.kaercher-store-lachmann.de/","","","Am Mühlgraben 7",50.73515,13.55736,"Rechenberg-Bienenmühle","DE","a",100,""]];

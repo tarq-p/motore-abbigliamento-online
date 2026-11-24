@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["7_192"]=[["ceb81aa4f75f","Virginie Couture","a","clothing store","+33 2 37 90 58 82","http://www.virginie-couture-toury.fr","","","3 impasse Paul Decauville",48.19762,1.94157,"Toury","FR","a",95,""]];

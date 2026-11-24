@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["111_284"]=[["31e6f8b0a374","ArcticPeople/ArcticPeople-Design","a","clothing store","+47 906 37 422","http://artarctic.no/","post@arcticpeople.no","https://www.facebook.com/100598892266890","Værveien 45",71.03957,27.85137,"Mehamn","NO","a",78,"m"]];

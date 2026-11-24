@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["73_253"]=[["ca68e26e3290","Syverkstan Marin & Fritid","a","clothing store","+46 660 26 00 88","","syverkstan.info@gmail.com","https://www.facebook.com/455007061180560","Varpvägen 5",63.29513,18.29832,"Sidensjö","SE","a",62,""]];

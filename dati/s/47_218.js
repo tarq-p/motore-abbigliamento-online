@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["47_218"]={"o5c91b20f0414":{"vivo":true,"data":"2026-11-23","url":"http://casa-italy.dk/"},"o7d9f3ca4dfa8":{"vivo":true,"data":"2026-11-23","url":"http://casa-italy.dk/"},"o0dfe87ba346f":{"vivo":true,"data":"2026-11-23","url":"http://casa-italy.dk/"}};

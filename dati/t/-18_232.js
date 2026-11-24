@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-18_232"]=[["b588b4f91fb0","Sutherland Sporting Tweed","a","clothing store","+44 1549 402229","http://www.scottishtweeds.co.uk/","sstc@live.co.uk","https://www.facebook.com/210277705986949","Main St",58.02343,-4.39855,"Lairg","GB","n",98,""]];

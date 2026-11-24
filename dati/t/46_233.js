@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["46_233"]=[["203077768f2d","Rotan Mycke För Alla","g","department store","+46 522 64 10 03","http://rotan.se/","info@rotan.se","https://www.facebook.com/700505903299609","161",58.34225,11.69186,"Uddevalla","SE","a",100,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["40_184"]=[["a2fa99dc4514","Graffiti Moda Priuli","b","fashion boutique","+41 81 846 51 29","","","","Via Cantonale 50",46.23324,10.14286,"Campocologno","CH","a",50,""],["fea6a7c081c0","Kartex Sport Sa","a","clothing store","+41 81 834 79 46","","","","Li Geri 115",46.23672,10.13809,"Brusio","CH","a",50,""]];

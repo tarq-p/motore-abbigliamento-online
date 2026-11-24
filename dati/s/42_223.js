@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["42_223"]={"o52445c331584":{"vivo":true,"prezzo":49,"nPrezzi":26,"social":{"instagram":"https://www.instagram.com/friggyarn.dk/","facebook":"https://www.facebook.com/friggyarn/"},"data":"2026-11-23","url":"http://friggyarn.dk/"}};

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["53_243"]=[["20953fd5079e","Manatí Store","u","mens clothing store","+51 984 328 273","https://www.tiktok.com/@manati.store.pe?lang=es-419","manatiws@gmail.com","https://www.facebook.com/113450053722671","",60.97504,13.34047,"Lima","SE","n",5,"m"]];

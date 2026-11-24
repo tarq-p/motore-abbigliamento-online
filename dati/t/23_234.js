@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["23_234"]=[["5cb132b65605","Iis Of Norway","a","clothing store","+47 51 48 48 70","http://www.iisofnorway.com","","","SÆLANDSVEGEN 497",58.72042,5.81273,"UNDHEIM","NO","a",95,""]];

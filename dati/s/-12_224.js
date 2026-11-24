@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-12_224"]={"o22d5038c0092":{"vivo":true,"data":"2026-11-23","url":"https://www.newlook.com/uk/store/Durham-Durham-GB-2036?y_source=1_ODM0NjM5NC00ODMtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"}};

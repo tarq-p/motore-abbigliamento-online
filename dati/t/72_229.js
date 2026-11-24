@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["72_229"]=[["a38cc431ea51","Branting Wear Group AB","m","clothing company","+46 498 26 57 77","http://www.branting.se/","info@branting.se","https://www.facebook.com/153523004849865","Släktäktsvägen 16",57.4982,18.12713,"Gotlands Tofta","SE","a",83,""]];

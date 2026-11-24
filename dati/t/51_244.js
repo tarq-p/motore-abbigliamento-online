@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["51_244"]=[["4a33d049095f","Mindful Living","a","clothing store","+46 73 157 09 78","http://www.mindfullivinginreder.se/","","","ORRLIDSVÄGEN 3",61.17949,12.99001,"SÄLEN","SE","a",99,"m"]];

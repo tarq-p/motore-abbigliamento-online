@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["68_234"]=[["7d5f3270240d","Porthouse Nyköping","a","clothing store","+46 76 245 96 50","","info@porthouse.nu","https://www.facebook.com/367172736724437","Hamnvägen 2A",58.74771,17.01663,"Nyköping","SE","n",52,"m"]];

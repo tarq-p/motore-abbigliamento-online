@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["52_225"]=[["cdbee1aa636e","Sjömansboden","a","clothing store","+46 70 752 17 61","","malin@sjomansboden.se","https://www.facebook.com/864091870291233","Hov 604",56.48928,13.08875,"Laholm","SE","a",93,"m"]];

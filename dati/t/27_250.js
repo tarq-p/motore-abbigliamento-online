@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["27_250"]=[["5b3208d53177","KAAPE","a","fashion and apparel store","+47 900 87 742","http://www.kaape.no/","lilla@kaape.no","https://www.facebook.com/100431664681284","",62.59116,6.93334,"Tomra","NO","n",20,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["63_228"]=[["908efdbf724d","Fågelfors Hattateljé","u","mens clothing store","+46 70 593 72 87","http://www.fagelforshatt.se/","","","BRUKSGATAN 17B",57.20285,15.8424,"FÅGELFORS","SE","a",99,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["46_259"]=[["ad525eebad5a","Fashion Box","a","clothing store","+47 74 39 58 60","","post@fashionbox.no","https://www.facebook.com/710377112305993","Sentrumsgata 6",64.86561,11.60431,"Kolvereid","NO","a",92,""],["e21cb07394cb","Soria Moria","a","clothing store","+47 934 85 800","","","","SENTRUMSGATA 2",64.86486,11.60478,"KOLVEREID","NO","a",99,"m"]];

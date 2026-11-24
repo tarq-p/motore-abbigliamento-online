@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["39_235"]={"o8c1261450ec7":{"data":"2026-11-23","motivo":"<urlopen error [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failur","url":"http://www.meny.no/"}};

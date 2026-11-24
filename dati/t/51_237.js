@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["51_237"]=[["5d14043e32e0","Blomsterhandel Kreadoda","b","fashion boutique","","","","https://www.facebook.com/2301999083420324","Gillbergavägen 21",59.28466,12.77425,"Nysäter","SE","n",70,""]];

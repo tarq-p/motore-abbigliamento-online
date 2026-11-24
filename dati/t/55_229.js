@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["55_229"]=[["96b5ff9b6ad5","Eivinds AB","a","clothing store","+46 73 544 93 93","","info@eivinds.se","https://www.facebook.com/112568513551101","Storgatan 35",57.31161,13.879,"Hillerstorp","SE","a",36,"m"]];

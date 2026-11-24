@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_183"]=[["0cd4e2bd06bf","Trophees 23 La Passion du Sport","b","fashion boutique","+33 5 55 67 44 62","https://www.facebook.com/Trophees-23-La-Passion-du-Sport-274303785959231/","trophees23@laposte.net","https://www.facebook.com/274303785959231","lieu-dit Chaumettes",45.86978,2.42094,"Basville","FR","n",69,""]];

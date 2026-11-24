@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["56_272"]=[["b6c1869e18be","Secondhand And Div ","a","fashion and apparel store","+47 994 09 087","","","","DREYERS GATE 6",68.1549,14.20356,"HENNINGSVÆR","NO","a",27,"m"],["049dcf8d0a48","Min","a","clothing store","+47 472 01 125","","","","DREYERS GATE 9",68.15455,14.2031,"HENNINGSVÆR","NO","a",100,"m"]];

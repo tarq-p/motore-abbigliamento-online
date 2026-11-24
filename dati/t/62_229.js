@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["62_229"]=[["5a8ba5afe677","Hässlid Form Design Shop","a","fashion and apparel store","+46 70 942 81 43","","hasslidform@gmail.com","https://www.facebook.com/110151088474209","Kyrkogatan 34",57.31732,15.59116,"Virserum","SE","n",81,"m"]];

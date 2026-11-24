@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_176"]=[["352436d7eeba","Ma Petite Boutique","a","clothing store","+33 6 86 08 16 06","https://ma-petite-boutique09.webnode.fr/","mapetiteboutique12@gmail.com","https://www.facebook.com/101397345992313","6 Bd Justin Bessou",44.19856,2.34093,"Naucelle","FR","a",86,"m"]];

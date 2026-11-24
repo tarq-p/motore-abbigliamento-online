@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["58_235"]=[["1a3a89b13fbb","Mathildas Mode AB","a","clothing store","+46 584 124 65","","","https://www.facebook.com/101976032033534","Tavernagatan 4A",58.9856,14.61846,"Laxå","SE","n",51,""]];

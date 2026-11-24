@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["30_193"]={"o2f4998771618":{"vivo":true,"lingua":"en","prezzo":59,"nPrezzi":22,"email":["kundenservice@schiesser.com"],"social":{"facebook":"https://www.facebook.com/SCHIESSERGmbH1875","instagram":"https://www.instagram.com/schiesser/"},"uomo":87,"donna":30,"maglia":5,"negozio":16,"lusso":8,"data":"2026-11-23","url":"https://www.schiesser.com/"}};

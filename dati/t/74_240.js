@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["74_240"]=[["138997d6d614","Gröna Garderoben","a","clothing store","+46 76 858 88 85","","","https://www.facebook.com/1752018585020570","Gustafsvägen 6",60.05106,18.59502,"Hallstavik","SE","a",93,"m"]];

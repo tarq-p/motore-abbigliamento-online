@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["62_232"]=[["c861ae82f81f","HG Store - Đồ Bầu","a","fashion and apparel store","+84 393 331 248","https://www.facebook.com/profile.php?id=100009212354988&mibextid=LQQJ4d","","https://www.facebook.com/117304144602201","",58.13418,15.58593,"","SE","n",6,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["24_242"]=[["69f9e6a176f8","Jibbegutt Studio","a","clothing store","+47 941 99 306","https://jibbeguttstudio.com/","","","BJØRGÅSVEGEN 69",60.64861,6.12306,"EVANGER","NO","a",50,"m"]];

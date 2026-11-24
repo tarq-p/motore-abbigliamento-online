@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-29_214"]=[["421774cf0f61","Farm Wardrobe","a","clothing store","+353 44 966 4755","http://www.farm-wardrobe.com/","alison@farm-wardrobe.com","https://www.facebook.com/218545098270537","Ballin Farm",53.60767,-7.00737,"Copperalley ED","IE","n",65,""]];

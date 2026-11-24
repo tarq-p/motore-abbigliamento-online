@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["45_251"]=[["029993ac06be","Synåla As","a","clothing store","+47 907 23 042","https://www.turbua.no/","","","BØRRE LANGLANDS VEG 32",62.83696,11.31823,"ÅLEN","NO","a",50,"m"]];

@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Motore Abbigliamento · Boutique all'estero per Vela Blu</title>
+<meta name="description" content="Trova all'estero le boutique uomo di fascia alta a cui proporre polo in filo di Scozia e maglieria italiana: punteggio e messaggio nella loro lingua.">
+<meta name="theme-color" content="#14284b">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314284b'/%3E%3Cpath d='M32 10v36H14z' fill='%23fff'/%3E%3Cpath d='M35 16l15 30H35z' fill='%239fc3f0'/%3E%3Cpath d='M10 50h44' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="stile.css">
+<style>
+.hero{background:linear-gradient(135deg,#0d1b36 0%,#14284b 55%,#1f4f8c 100%)}
+.lingue{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 12px}
+.nota{border-left:3px solid var(--gold);padding:6px 12px;background:var(--soft);border-radius:0 8px 8px 0;margin:10px 0}
+.marchi{font-size:13px;margin-top:4px}
+.marchi b{font-weight:600}
+</style>
+</head>
+<body>
+
+<header class="hero"><div class="in">
+  <div class="logo"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 8v38H12z" fill="#fff"/><path d="M36 15l16 31H36z" fill="#9fc3f0"/><path d="M8 52h48" stroke="#fff" stroke-width="4" stroke-linecap="round"/></svg><span>Motore Abbigliamento · Vela Blu</span></div>
+  <h1>Trova le boutique giuste all'estero</h1>
+  <p>Negozi uomo di fascia alta che vendono già maglieria italiana: ti dico da chi partire e ti preparo il messaggio nella loro lingua.</p>
+</div></header>
+
+<div class="wrap">
+
+<!-- 1 · LA TUA AZIENDA -->
+<section class="card" id="s1">
+  <h2><span class="num">1</span><span>La tua azienda</span></h2>
+  <p class="lead-in">Come ti presenti nei messaggi.</p>
+  <div class="row" style="margin-bottom:12px">
+    <label style="flex:1 1 200px">Il tuo nome<input id="chi" placeholder="es. Mario Rossi"></label>
+    <label style="flex:1 1 220px">Il nome dell'azienda<input id="azienda" placeholder="Maglificio Vela Blu"></label>
+    <label style="flex:1 1 260px">Link al catalogo (facoltativo)<input id="catalogo" placeholder="es. https://www.velablu.it/catalogo"></label>
+  </div>
+</section>
+
+<!-- 2 · DOVE CERCARE -->
+<section class="card" id="s2">
+  <h2><span class="num">2</span><span>Dove cercare</span></h2>
+  <p class="lead-in">Scegli un paese: senza città cerca in tutto il paese (solo i negozi di cui ho già letto il sito, con i migliori in cima). Con una città cerca entro i km indicati, anche i negozi non letti.</p>
+  <div class="row">
+    <label>Paese<select id="paese"></select></label>
+    <div class="field-comune"><label>Città (facoltativa)<input id="comune" placeholder="es. München, Zürich, Paris" autocomplete="off"></label><div id="sugg"></div></div>
+    <label>Entro quanti km<input id="radius" type="number" value="15" min="1" max="60" style="width:110px"></label>
+    <button id="go" class="big">Trova le boutique</button>
+  </div>
+  <div class="small" id="paesi" style="margin-top:8px"></div>
+  <div class="chips" id="types" style="margin-top:16px"></div>
+  <div id="status"></div>
+  <div id="autositi" class="small" style="margin-top:4px"></div><div class="prog" id="autoprog"><i></i></div>
+  <div id="datawarn"></div>
+
+  <div id="risultati" style="margin-top:22px">
+  <div id="legenda" class="small" style="margin:0 0 8px">In cima chi ha il punteggio più alto: conta soprattutto se vende già maglieria o abbigliamento uomo italiano di fascia alta, e lo dice solo il suo sito. Il motore legge da solo i siti dei primi in elenco. È una stima, non una garanzia.</div>
+  <div class="bar" id="barra">
+    <div class="l"><div id="count"></div></div>
+    <button class="ghost" id="bfiltra" aria-expanded="false" aria-controls="filtri" style="display:inline-flex;gap:6px;align-items:center"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filtra</button>
+  </div>
+  <div id="nascosti" class="small" style="display:none;gap:10px;align-items:center;flex-wrap:wrap;margin:0 0 10px"><span id="nasctxt"></span><label style="flex-direction:row;font-weight:600;font-size:13px;gap:6px;align-items:center"><input type="checkbox" id="fnasc"> mostrali</label></div>
+  <div id="filtri" hidden>
+    <div class="filters">
+      <label>Cerca nel nome<input id="q" placeholder="nome o via"></label>
+      <label>Tipo di negozio<select id="ftype"></select></label>
+      <label>Come contattarli<select id="fcontact"><option value="">Tutti</option><option value="0">Solo con email</option><option value="2">Con email, WhatsApp o Instagram</option></select></label>
+      <label>Ordina per<select id="fordine"><option value="prob">Punteggio (dal più alto)</option><option value="tipo">Tipo, poi punteggio</option><option value="km">Distanza</option></select></label>
+      <label style="flex-direction:row;align-items:center;gap:6px;font-weight:600"><input type="checkbox" id="fscaffale"> Solo chi vende già marchi di fascia alta (dal suo sito)</label>
+    </div>
+  </div>
+  <div id="empty"></div>
+  <div id="rows"></div>
+  <div id="altri" style="text-align:center;margin:14px 0 4px"></div>
+  </div>
+</section>
+
+<!-- 3 · MESSAGGI -->
+<section class="card" id="s3">
+  <h2><span class="num">3</span><span>I messaggi</span></h2>
+  <p class="lead-in">Ogni negozio qui sopra ha già il suo messaggio, nella lingua del suo sito (o del suo paese). Cambia una sola frase a seconda del tipo, più una cosa vera letta sul suo sito. Qui puoi riscriverli.</p>
+  <div class="nota small">Prima di scrivere a liste intere: in alcuni paesi (Germania e Austria in testa) l'email promozionale non richiesta è vietata anche tra aziende. Chiedi a un legale quali canali usare per ogni paese; nel dubbio telefono, visita o fiera.</div>
+  <details><summary class="small" style="font-weight:600">Modifica i messaggi e vedi le anteprime</summary>
+  <div class="lingue" id="lingue"></div>
+  <label style="margin-top:6px">Il messaggio per i negozi<textarea id="tpl"></textarea></label>
+  <label style="margin-top:12px">Il messaggio per i marchi (produzione conto terzi)<textarea id="tplm"></textarea></label>
+  <label style="margin-top:12px">Oggetto dell'email<input id="ogg"></label>
+  <div class="small" style="margin:6px 0 14px"><code>{chi}</code> chi scrive («sono Mario Rossi di Maglificio Vela Blu», nella lingua giusta) · <code>{frase}</code> la frase del suo tipo, qui sotto · <code>{spunto}</code> una cosa vera letta sul suo sito, se c'è · <code>{catalogo}</code> il link al catalogo, se l'hai scritto · <code>{nome}</code> il nome del negozio.</div>
+  <div style="font-weight:600">La frase per ogni tipo</div>
+  <div class="frasi" id="frasi"></div>
+  <button class="ghost" id="ripristina">Rimetti i messaggi di partenza</button>
+  <div style="font-weight:600;margin:16px 0 2px">Come risultano</div>
+  <div id="anamsg"></div>
+  </details>
+</section>
+
+<p class="small" style="text-align:center">Dati dei negozi: <span id="datainfo"></span>. Categorie e contatti non sono verificati: controlla prima di scrivere.</p>
+</div>
+
+<script src="dati/index.js"></script>
+<script src="dati/citta.js"></script>
+<script src="dati/siti_index.js" onerror="void 0"></script>
+<script src="punteggio.js"></script>
+<script>
+const P = window.MA_PUNTEGGIO;
+const TYPES = P.TIPI;
+const T2K = {u:'uomo', b:'boutique', a:'abiti', s:'sartoria', g:'magazzino', m:'marchio'};
+const $ = id => document.getElementById(id);
+// dati che arrivano da fuori (elenchi di terzi, siti): mai fidarsi, anche se mostrati come testo
+function urlSicuro(u){
+  u=String(u==null?'':u).trim(); if(!u||u.length>300) return '';
+  if(/^[a-z][a-z0-9+.\-]*:/i.test(u)) return /^https?:\/\/[^\s"'<>]+$/i.test(u)?u:'';
+  return /^[^\s"'<>@]+\.[^\s"'<>@]+$/.test(u)?'http://'+u:'';
+}
+function mailSicura(m){ m=String(m==null?'':m).trim(); return /^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$/.test(m)?m:''; }
+function telSicuro(t){ t=String(t==null?'':t).trim(); return /^[+\d][\d\s().\-]{5,24}$/.test(t)?t:''; }
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ß/g,'ss');
+function load(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function dist(a,b,c,d){ const R=6371,t=x=>x*Math.PI/180,dl=t(c-a),dn=t(d-b);
+  const h=Math.sin(dl/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dn/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
+function hostDi(u){ return String(u||'').trim().toLowerCase().replace(/^https?:\/\//,'').replace(/^www\./,'').split(/[\/:?#]/)[0]; }
+
+// ---- paesi: nome e lingua dei messaggi quando il sito non è stato letto
+const PAESI = {DE:['Germania','de'], AT:['Austria','de'], CH:['Svizzera','de'], LI:['Liechtenstein','de'], FR:['Francia','fr'], BE:['Belgio','fr'],
+  LU:['Lussemburgo','fr'], MC:['Monaco','fr'], NL:['Paesi Bassi','en'], GB:['Regno Unito','en'], IE:['Irlanda','en'], DK:['Danimarca','en'],
+  SE:['Svezia','en'], NO:['Norvegia','en'], FI:['Finlandia','en'], US:['Stati Uniti','en'], CA:['Canada','en'], ES:['Spagna','en'], IT:['Italia','it']};
+const LINGUE = {it:'Italiano', en:'English', de:'Deutsch', fr:'Français'};
+
+// ---- testi di partenza dei messaggi (da far controllare al maglificio: prodotto, campioni, catalogo)
+const TPL0 = {
+  it:'Buongiorno, {chi}. Produciamo polo in filo di Scozia e maglieria uomo nel nostro maglificio in Puglia, tutto fatto in Italia. {frase}{spunto} Posso mandarvi il catalogo e il listino all\'ingrosso{catalogo}? Se vi interessa, vi spediamo anche dei campioni.',
+  en:'Good morning, {chi}. We make cotton lisle (filo di Scozia) polo shirts and men\'s knitwear in our own mill in Puglia, entirely made in Italy. {frase}{spunto} May I send you our catalogue and wholesale price list{catalogo}? We would also be glad to send you some samples.',
+  de:'Guten Tag, {chi}. Wir fertigen Poloshirts aus Filo di Scozia (merzerisierte Baumwolle) und Herrenstrick in unserer eigenen Strickerei in Apulien, komplett in Italien. {frase}{spunto} Darf ich Ihnen unseren Katalog und die Händlerpreisliste schicken{catalogo}? Gerne senden wir Ihnen auch Muster.',
+  fr:'Bonjour, {chi}. Nous fabriquons des polos en fil d\'Écosse et de la maille homme dans notre propre atelier dans les Pouilles, entièrement en Italie. {frase}{spunto} Puis-je vous envoyer notre catalogue et nos tarifs revendeurs{catalogo} ? Nous pouvons aussi vous envoyer des échantillons.'
+};
+const TPLM0 = {
+  it:'Buongiorno, {chi}. Siamo un maglificio in Puglia e produciamo anche per altri marchi: polo in filo di Scozia e maglieria, dal campione alla produzione, tutto in Italia. {spunto} Se state cercando chi produca la vostra maglieria, posso mandarvi qualche lavoro fatto{catalogo}?',
+  en:'Good morning, {chi}. We are a knitwear mill in Puglia, Italy, and we also produce for other brands: cotton lisle polo shirts and knitwear, from sampling to production, all made in Italy. {spunto} If you are looking for a manufacturer for your knitwear, may I send you some of our work{catalogo}?',
+  de:'Guten Tag, {chi}. Wir sind eine Strickerei in Apulien und produzieren auch für andere Marken: Poloshirts aus Filo di Scozia und Strickwaren, vom Muster bis zur Serie, komplett in Italien. {spunto} Falls Sie einen Hersteller für Ihre Strickkollektion suchen: Darf ich Ihnen einige unserer Arbeiten zeigen{catalogo}?',
+  fr:'Bonjour, {chi}. Nous sommes un atelier de maille dans les Pouilles et nous produisons aussi pour d\'autres marques : polos en fil d\'Écosse et maille, du prototype à la production, entièrement en Italie. {spunto} Si vous cherchez un fabricant pour votre maille, puis-je vous montrer quelques-unes de nos réalisations{catalogo} ?'
+};
+const OGG0 = {it:'Polo e maglieria made in Italy per {nome}', en:'Made in Italy polo shirts and knitwear for {nome}',
+  de:'Poloshirts und Strick aus Italien für {nome}', fr:'Polos et maille made in Italy pour {nome}'};
+const FRASI0 = {
+  it:{uomo:'Sono capi che stanno bene accanto all\'abbigliamento uomo che una boutique come la vostra tratta già.',
+      boutique:'Per un multimarca sono un capo uomo classico, facile da affiancare ai marchi che avete.',
+      abiti:'Se vendete uomo, una polo italiana fatta bene è un capo facile da aggiungere.',
+      sartoria:'Vanno bene con la sartoria: una polo o una maglia fine è quello che i vostri clienti indossano sotto una giacca su misura.',
+      magazzino:'Per il vostro reparto uomo possiamo proporre una linea fatta direttamente dal maglificio.',
+      marchio:''},
+  en:{uomo:'They sit naturally next to the men\'s collections a boutique like yours already carries.',
+      boutique:'For a multi-brand store they are a classic men\'s piece, easy to place next to the brands you already have.',
+      abiti:'If you sell menswear, a well-made Italian polo is an easy piece to add.',
+      sartoria:'They go well with tailoring: a fine polo or knit is what your clients wear under a made-to-measure jacket.',
+      magazzino:'For your menswear department we can offer a line made directly by the mill.',
+      marchio:''},
+  de:{uomo:'Sie passen gut zu den Herrenkollektionen, die eine Boutique wie Ihre bereits führt.',
+      boutique:'Für ein Multibrand-Geschäft sind sie ein klassisches Herrenteil, das sich leicht neben Ihre Marken stellen lässt.',
+      abiti:'Wenn Sie Herrenmode führen, ist ein gut gemachtes italienisches Polo ein einfaches Teil zum Ergänzen.',
+      sartoria:'Sie passen zur Maßkonfektion: Ein feines Polo oder ein feiner Strick ist das, was Ihre Kunden unter einem Maßsakko tragen.',
+      magazzino:'Für Ihre Herrenabteilung können wir eine Linie direkt aus der Strickerei anbieten.',
+      marchio:''},
+  fr:{uomo:'Ils trouvent naturellement leur place à côté des collections homme qu\'une boutique comme la vôtre propose déjà.',
+      boutique:'Pour un multimarque, c\'est une pièce homme classique, facile à placer à côté de vos marques.',
+      abiti:'Si vous vendez de l\'homme, un polo italien bien fait est une pièce facile à ajouter.',
+      sartoria:'Ils vont bien avec le sur-mesure : un polo ou une maille fine, c\'est ce que vos clients portent sous une veste sur mesure.',
+      magazzino:'Pour votre rayon homme, nous pouvons proposer une ligne fabriquée directement par l\'atelier.',
+      marchio:''}
+};
+const CAT_TXT = {it:' (catalogo: {u})', en:' (catalogue: {u})', de:' (Katalog: {u})', fr:' (catalogue : {u})'};
+const cfg = load('abbigliamento_cfg', {});
+cfg.azienda = cfg.azienda==null ? 'Maglificio Vela Blu' : cfg.azienda;
+cfg.tpl = {...TPL0, ...(cfg.tpl||{})}; cfg.tplm = {...TPLM0, ...(cfg.tplm||{})}; cfg.ogg = {...OGG0, ...(cfg.ogg||{})};
+cfg.frasi = cfg.frasi||{}; for(const k of Object.keys(FRASI0)) cfg.frasi[k] = {...FRASI0[k], ...(cfg.frasi[k]||{})};
+let LANG = 'en';
+const saveCfg = () => save('abbigliamento_cfg', cfg);
+
+// ---- dati (dati/, creati da estrai_paesi.py)
+const META = window.MA_META || null, CITTA = window.MA_CITTA || [];    // [nome, regione, paese, lat, lon, popolazione]
+(function(){
+  if(META&&CITTA.length){
+    $('datainfo').textContent = 'aggiornamento del '+META.data.split('-').reverse().join('/')+', '+META.negozi.toLocaleString('it-IT')+' negozi in '+META.paesi.length+' paesi';
+    $('paesi').textContent = 'Paesi: '+META.paesi.map(p=>(PAESI[p]||[p])[0]).join(', ')+'.';
+    return; }
+  $('datawarn').innerHTML = 'Non trovo i dati: serve la cartella <b>dati</b> accanto a index.html. Per rifarli: <code>.venv/bin/python estrai_paesi.py</code> (vedi LEGGIMI.md).';
+})();
+const cittaLabel = c => c[0]+(c[1]&&c[1]!==c[0]?', '+c[1]:'')+' ('+((PAESI[c[2]]||[c[2]])[0])+')';
+function loadTile(key){
+  return new Promise(res=>{
+    if(window.MA_T&&window.MA_T[key]) return res(window.MA_T[key]);
+    const sc=document.createElement('script'); sc.src='dati/t/'+key+'.js';
+    sc.onload=()=>res((window.MA_T&&window.MA_T[key])||[]); sc.onerror=()=>res([]);
+    document.head.appendChild(sc);
+  });
+}
+function loadSiti(key){
+  return new Promise(res=>{
+    if(!(window.MA_SITI_TESSERE||[]).includes(key)) return res();
+    if(window.MA_S&&window.MA_S[key]) return res();
+    const sc=document.createElement('script'); sc.src='dati/s/'+key+'.js'; sc.onload=()=>res(); sc.onerror=()=>res();
+    document.head.appendChild(sc);
+  });
+}
+async function tessereIntorno(lat,lon,R){
+  const T=META.tile, dLat=R/111000, dLon=R/(111000*Math.cos(lat*Math.PI/180)), have=new Set(META.tiles), keys=[];
+  for(let ix=Math.floor((lon-dLon)/T); ix<=Math.floor((lon+dLon)/T); ix++)
+    for(let iy=Math.floor((lat-dLat)/T); iy<=Math.floor((lat+dLat)/T); iy++){ const k=ix+'_'+iy; if(have.has(k)) keys.push(k); }
+  await Promise.all(keys.map(loadSiti));
+  return (await Promise.all(keys.map(loadTile))).flat();
+}
+
+// ---- impostazioni
+['chi','azienda','catalogo'].forEach(id=>{ $(id).value=cfg[id]||''; $(id).addEventListener('input',()=>{ cfg[id]=$(id).value; saveCfg(); render(); }); });
+function renderLingua(){
+  $('lingue').innerHTML = Object.entries(LINGUE).map(([k,n])=>`<button type="button" class="abbchip${k===LANG?' on':''}" data-lang="${k}">${n}</button>`).join('');
+  $('tpl').value=cfg.tpl[LANG]||''; $('tplm').value=cfg.tplm[LANG]||''; $('ogg').value=cfg.ogg[LANG]||'';
+  $('frasi').innerHTML = Object.entries(TYPES).filter(([k])=>k!=='marchio').map(([k,t])=>`<label>${esc(t.label)}<textarea data-frase="${k}">${esc(cfg.frasi[LANG][k]||'')}</textarea></label>`).join('');
+  renderSampleMsgs();
+}
+$('lingue').addEventListener('click',e=>{ const b=e.target.closest('[data-lang]'); if(b){ LANG=b.dataset.lang; renderLingua(); } });
+[['tpl','tpl'],['tplm','tplm'],['ogg','ogg']].forEach(([id,k])=>$(id).addEventListener('input',()=>{ cfg[k][LANG]=$(id).value; saveCfg(); render(); }));
+$('frasi').addEventListener('input',e=>{ const k=e.target.dataset.frase; if(!k) return; cfg.frasi[LANG][k]=e.target.value; saveCfg(); render(); });
+$('ripristina').onclick=()=>{ cfg.tpl={...TPL0}; cfg.tplm={...TPLM0}; cfg.ogg={...OGG0}; cfg.frasi={}; for(const k of Object.keys(FRASI0)) cfg.frasi[k]={...FRASI0[k]}; saveCfg(); renderLingua(); render(); };
+
+// ---- paese: scelto da solo cerca in tutto il paese (solo i negozi col sito gia' letto); con una città restringe i suggerimenti
+$('paese').innerHTML='<option value="">Tutti i paesi</option>'+(META?META.paesi:[]).map(p=>`<option value="${p}">${esc((PAESI[p]||[p])[0])}</option>`).join('');
+$('paese').addEventListener('change',()=>{ selCitta=null; $('comune').value=''; $('sugg').style.display='none'; });
+async function tuttoPaese(P){
+  const keys=window.MA_SITI_TESSERE||[], out=[];
+  for(let i=0;i<keys.length;i+=20){
+    const blocco=keys.slice(i,i+20);
+    $('status').textContent='Cerco in tutto il paese: '+Math.min(i+20,keys.length)+' zone su '+keys.length+'...';
+    await Promise.all(blocco.map(loadSiti));
+    const tess=await Promise.all(blocco.map(loadTile));
+    blocco.forEach((k,j)=>{ const S=(window.MA_S&&window.MA_S[k])||{}; for(const o of tess[j]) if(o[12]===P && S['o'+o[0]]) out.push(o); });
+  }
+  return out;
+}
+// ---- tipi e città da cercare
+$('types').innerHTML = Object.entries(TYPES).map(([k,t])=>`<label class="chip"><input type="checkbox" value="${k}"${k==='marchio'?'':' checked'}> ${t.label}</label>`).join('');
+$('ftype').innerHTML = '<option value="">Tutti</option>'+Object.entries(TYPES).map(([k,t])=>`<option value="${k}">${t.label}</option>`).join('');
+let selCitta=null;
+function suggest(q){
+  q=norm(q.trim()); if(q.length<2) return [];
+  const starts=[], has=[];
+  const P0=$('paese')?$('paese').value:'';
+  for(const c of CITTA){ if(P0&&c[2]!==P0) continue; const n=norm(c[0]); if(n.startsWith(q)) starts.push(c); else if(has.length<12 && n.includes(q)) has.push(c); if(starts.length>=12) break; }
+  return starts.concat(has).slice(0,12);
+}
+function showSugg(){
+  const list=suggest($('comune').value), box=$('sugg');
+  if(!list.length){ box.style.display='none'; return; }
+  box.innerHTML=list.map((c,i)=>`<div data-i="${i}"><b>${esc(c[0])}</b> <span class="small">${esc((c[1]&&c[1]!==c[0]?c[1]+', ':'')+((PAESI[c[2]]||[c[2]])[0]))}</span></div>`).join('');
+  box.style.display='block'; box._list=list;
+}
+function pickCitta(c){ selCitta=c; $('comune').value=cittaLabel(c); $('sugg').style.display='none'; }
+$('comune').addEventListener('input',()=>{ selCitta=null; $('comune').style.outline=''; showSugg(); });
+$('comune').addEventListener('keydown',e=>{ if(e.key==='Enter'){ const l=$('sugg')._list; if($('sugg').style.display!=='none'&&l&&l.length&&!selCitta) pickCitta(l[0]); $('go').click(); } });
+$('sugg').addEventListener('mousedown',e=>{ const d=e.target.closest('[data-i]'); if(d){ e.preventDefault(); pickCitta($('sugg')._list[+d.dataset.i]); } });
+document.addEventListener('click',e=>{ if(!e.target.closest('#comune')&&!e.target.closest('#sugg')) $('sugg').style.display='none'; });
+
+// ---- negozi da non proporre: catene e negozi monomarca di grandi marchi (comprano dalla loro sede, non da un maglificio)
+const CATENE = /\b(zara|h ?& ?m|hennes|c ?& ?a|primark|kik|takko|new yorker|jack ?& ?jones|vero moda|peek ?& ?cloppenburg|p ?& ?c|esprit|s\.? ?oliver|tom tailor|celio|kiabi|uniqlo|mango|bershka|pull ?& ?bear|massimo dutti|stradivarius|gap|marks ?& ?spencer|tk ?maxx|t\.?k\.? maxx|ernsting'?s?|bonita|gerry weber|tommy hilfiger|levi'?s|g-?star|superdry|hugo boss|boss store|lacoste|ralph lauren|polo ralph|burberry|gucci|prada|louis vuitton|hermes|hermès|armani|dolce ?& ?gabbana|benetton|united colors|calzedonia|intimissimi|tezenis|terranova|calliope|ovs|decathlon|intersport|sports direct|jd sports|foot locker|nike|adidas|puma|the north face|timberland|desigual|guess|calvin klein|diesel|replay|pepe jeans|wrangler|camel active|bugatti|olymp|walbusch|engbers|wöhrl|woehrl|breuninger outlet|outlet|second ?hand|vintage|humana|oxfam|fripe?rie|tally weijl|mister ?\*? ?lady|orsay|sinsay|cropp|lindex|kappahl|dressmann|cubus|carlings|bik bok|ellos|halens|devred|la halle|gemo|camaieu|promod|cache cache|okaidi|tape a l'oeil|zeeman|wibra|we fashion|e5 mode|m&s|matalan|tesco|asda|river island|topman|burton|new look|debenhams|selected homme|jack and jones|suitsupply|suit supply|tom ford|boggi|bogner|mytheresa|zegna|brioni|kiton|loro piana|brunello cucinelli|canali|corneliani|hackett|paul ?& ?shark|cos|arket|& ?other stories|sandro|maje|the kooples|ami paris|acne studios|a\.p\.c\.|isabel marant|moncler|stone island|max ?mara|marc o'? ?polo|closed|drykorn|strellson|joop|windsor|baldessarini|digel|hugo|boss|lodenfrey outlet|bugatti|eterna|seidensticker|van laack|gant|tommy|scotch ?& ?soda|napapijri|peuterey|woolrich|barbour|belstaff|fred perry|ben sherman|lacoste|jil sander|bottega veneta|saint laurent|balenciaga|dior|chanel|valentino|versace|fendi|celine|loewe|givenchy|off-white|zadig ?& ?voltaire|dsquared2?|philipp plein|trussardi|liu jo|pinko|patrizia pepe|falconeri|alcott|piazza italia|celio|jules|nudie jeans|camicissima|dan john|sunspel|miinto|studio nicholson|human couture|linus store|edwin|woodbird|nobrakes|wolford|manufactum|limango|zalando|intimo|lingerie|dessous|tessuti|yoox|outletcity|about you|vente.?priv[eé]e|showroompriv[eé]|bestsecret|benvenuto|hirmer outlet)\b/i;
+const NO_CAT = /(women|womens|lingerie|underwear|bridal|wedding|children|childrens|baby|kids|maternity|uniform|costume|swimwear|sports|surf|plus_size|used|second_hand|vintage|thrift)/;
+
+// ---- stato
+let leads = {};
+let CERCATO=false, MOSTRA=30, TOLTI_CATENE=0, SENZA_CONTATTI=0;
+let locInfo = load('abbigliamento_loc', {});     // cosa dice il sito del negozio (letto una volta e ricordato)
+let emptyMsg = 'Scegli una città e premi «Trova le boutique»: in pochi secondi hai l\'elenco.';
+
+// ---- ricerca
+$('go').onclick = async ()=>{
+  const stop=(msg,campo)=>{ $('status').textContent=msg; emptyMsg=msg; leads={}; if(campo){ $('comune').style.outline='2px solid var(--wine)'; $('comune').focus(); } render(); };
+  $('comune').style.outline='';
+  const sel=[...document.querySelectorAll('#types input:checked')].map(i=>i.value);
+  if(!META||!CITTA.length) return stop('Non trovo i dati: serve la cartella dati accanto a index.html.');
+  const scritto=$('comune').value.trim();
+  const PAESE=$('paese').value, perPaese=!scritto&&!!PAESE;
+  const sc=perPaese ? [PAESI[PAESE][0],'',PAESE,0,0,0] : ((selCitta && $('comune').value===cittaLabel(selCitta)) ? selCitta : (suggest(scritto)[0]||null));
+  if(!scritto&&!PAESE) return stop('Scegli un paese per cercare in tutto il paese, oppure scrivi una città.', true);
+  if(!sc) return stop(scritto ? 'Non trovo «'+scritto.slice(0,40)+'» tra le città dei paesi coperti: scegli dall\'elenco che compare.' : 'Scrivi il nome di una città (per esempio München), scegli dall\'elenco e premi «Trova le boutique».', true);
+  if(!sel.length) return stop('Scegli almeno un tipo di negozio.');
+  const R=Math.min(60,Math.max(1,+$('radius').value||15))*1000;
+  $('go').disabled=true; CERCATO=true; MOSTRA=30; leads={}; render();
+  try{
+    if(!perPaese&&!selCitta) pickCitta(sc);
+    const g={lat:sc[3], lon:sc[4], name:sc[0]};
+    $('status').textContent=perPaese?'Cerco in tutto il paese...':'Cerco i negozi intorno a '+g.name+'...';
+    const recs=perPaese ? await tuttoPaese(PAESE) : await tessereIntorno(g.lat,g.lon,R);
+    let tot=0, catene=0;
+    for(const o of recs){
+      // [id, nome, tipo, categoria, telefono, sito, email, social, indirizzo, lat, lon, città, paese, stato, affidabilità, cellulare]
+      const type=T2K[o[2]]; if(!type||!sel.includes(type)) continue;
+      if(!perPaese && dist(g.lat,g.lon,o[9],o[10])*1000>R) continue;
+      if(CATENE.test(o[1]||'') || NO_CAT.test(o[3]||'')){ catene++; continue; }
+      const id='o'+o[0];
+      { const k=`${Math.floor(o[10]/META.tile)}_${Math.floor(o[9]/META.tile)}`, pre=window.MA_S&&window.MA_S[k]&&window.MA_S[k][id]; if(pre&&!locInfo[id]) locInfo[id]={...pre,pre:true}; }
+      leads[id]={id, nome:String(o[1]||'').slice(0,120), type, cat:o[3]||'', addr:String(o[8]||'').slice(0,200), citta:o[11]||'', paese:o[12]||'',
+        soc:urlSicuro(o[7]), phone:telSicuro(o[4]), email:mailSicura(o[6]), web:urlSicuro(o[5]),
+        lat:o[9], lon:o[10], km:perPaese?null:Math.round(dist(g.lat,g.lon,o[9],o[10])*10)/10,
+        stato:o[13]||'n', aff:o[14]==null?null:+o[14], cel:o[15]==='m'};
+      tot++;
+    }
+    { // Doppioni: stesso telefono, stessa email, stesso sito o stesso nome nella stessa città. Un contatto che compare
+      // in più di 6 negozi è un centralino o una piattaforma: non unisce niente.
+      const ids=Object.keys(leads), padre={}; ids.forEach(i=>padre[i]=i);
+      const trova=i=>{ while(padre[i]!==i){ padre[i]=padre[padre[i]]; i=padre[i]; } return i; };
+      const unisci=(a,b)=>{ a=trova(a); b=trova(b); if(a!==b) padre[b]=a; };
+      const chiavi={}, metti=(k,id)=>{ if(k) (chiavi[k]=chiavi[k]||[]).push(id); };
+      for(const l of Object.values(leads)){
+        const d=String(l.phone||'').replace(/\D/g,''); if(d.length>=7) metti('t'+d,l.id);
+        const m=(l.email||'').toLowerCase(); if(m) metti('m'+m,l.id);
+        const h=hostDi(l.web); if(h && !/facebook|instagram|google|linktr|wix|jimdo|business\.site/.test(h)) metti('w'+h,l.id);
+        const n=norm(l.nome).replace(/[^a-z0-9]+/g,''); if(n) metti('n'+n+'|'+norm(l.citta||''),l.id);
+      }
+      Object.values(chiavi).forEach(g=>{ if(g.length>=2 && g.length<=6) g.slice(1).forEach(id=>unisci(g[0],id)); });
+      const gruppi={}; ids.forEach(i=>{ const r=trova(i); (gruppi[r]=gruppi[r]||[]).push(leads[i]); });
+      const punti=l=>(l.email?2:0)+(l.phone?2:0)+(l.web?2:0)+(l.soc?1:0)+(l.stato==='a'?1:0)+(l.aff||0)/1000+(TYPES[l.type].rango<=2?.5:0);
+      let doppi=0;
+      Object.values(gruppi).forEach(g=>{
+        if(g.length<2){ g[0].sedi=1; return; }
+        g.sort((a,b)=>punti(b)-punti(a)); const t=g[0], nomi=new Set([norm(t.nome)]), posti=[t]; t.anche=[];
+        g.slice(1).forEach(l=>{
+          ['phone','email','web','soc','addr'].forEach(c=>{ if(!t[c]&&l[c]) t[c]=l[c]; });
+          if(l.cel) t.cel=true;
+          if(!nomi.has(norm(l.nome))){ nomi.add(norm(l.nome)); t.anche.push(l.nome); }
+          if(!posti.some(q=>dist(q.lat,q.lon,l.lat,l.lon)<=0.3)) posti.push(l);
+          if(l.stato==='a') t.stato='a';
+          delete leads[l.id]; doppi++;
+        });
+        t.sedi=posti.length;
+      });
+      tot-=doppi;
+      let senza=0; Object.values(leads).forEach(l=>{ if(!l.phone&&!l.email&&!l.web&&!l.soc){ delete leads[l.id]; senza++; } });
+      tot-=senza; SENZA_CONTATTI=senza; TOLTI_CATENE=catene;
+    }
+    $('status').textContent = tot ? (perPaese?`Ho trovato ${tot} negozi in ${g.name} con il sito già letto.`:`Ho trovato ${tot} negozi entro ${R/1000} km da ${g.name}.`)+(()=>{ const t=[TOLTI_CATENE?TOLTI_CATENE+' tra catene, monomarca di grandi marchi, donna, bambino, sport e usato':'', SENZA_CONTATTI?SENZA_CONTATTI+' senza nessun contatto':''].filter(Boolean); return t.length?' Ne ho tolti '+t.join(' e ')+'.':''; })()
+                                  : 'Nessun negozio trovato: prova ad aumentare i km o a scegliere altri tipi.';
+    emptyMsg=perPaese?'Nessun negozio con il sito letto in '+g.name+' con i tipi scelti.':'Nessun negozio entro '+(R/1000)+' km da '+g.name+' con i tipi scelti. Aumenta i km (massimo 60) o scegli più tipi.';
+    autoGiro++; $('autositi').textContent=''; progres(0,0);
+    render();
+    if(tot){ $('risultati').scrollIntoView({behavior:'smooth',block:'start'}); setTimeout(leggiSitiPrimi,300); }
+  }catch(e){ $('status').textContent='Qualcosa non ha funzionato: '+e.message+'.'; render(); }
+  $('go').disabled=false;
+};
+
+// ---- contatti: all'estero prima l'email (anche quella trovata sul suo sito), poi WhatsApp, Instagram, telefono
+function phoneDigits(p){ let d=String(p).replace(/[^\d+]/g,''); if(d.startsWith('+')) d=d.slice(1); else if(d.startsWith('00')) d=d.slice(2); return d; }
+function mailDi(l){ const li=locInfo[l.id]; return mailSicura(l.email) || ((li&&li.vivo&&Array.isArray(li.email))?li.email.map(mailSicura).find(Boolean):'') || ''; }
+function waDi(l){
+  const li=locInfo[l.id], dalSito=((li&&li.vivo&&Array.isArray(li.whatsapp))?li.whatsapp:[]).map(String).filter(d=>/^\d{10,15}$/.test(d));
+  if(dalSito.length) return {d:dalSito[0], sito:true};
+  return l.cel&&telSicuro(l.phone) ? {d:phoneDigits(l.phone), sito:false} : null;
+}
+function igDi(l){
+  const li=locInfo[l.id], s=(li&&li.vivo&&li.social&&li.social.instagram)||'';
+  return urlSicuro(s) || (/instagram\.com/i.test(l.soc||'')?urlSicuro(l.soc):'') || (/instagram\.com/i.test(l.web||'')?urlSicuro(l.web):'');
+}
+function canale(l){ return mailDi(l)?0 : waDi(l)?1 : igDi(l)?2 : telSicuro(l.phone)?3 : 4; }
+function etichettaLink(u){ const h=hostDi(u); return /(^|\.)instagram\.com$|^instagr\.am$/.test(h)?'Instagram' : /(^|\.)(facebook\.com|fb\.com|fb\.me)$/.test(h)?'Facebook' : /(^|\.)tiktok\.com$/.test(h)?'TikTok' : /(^|\.)linkedin\.com$/.test(h)?'LinkedIn' : 'Sito'; }
+
+// ---- messaggi: lingua del suo sito, altrimenti del suo paese
+function linguaDi(l){
+  const li=locInfo[l.id];
+  if(li&&li.vivo&&LINGUE[li.lingua]) return li.lingua;
+  return (PAESI[l.paese]||[0,'en'])[1];
+}
+function chiSono(lang){
+  const c=(cfg.chi||'').trim(), a=(cfg.azienda||'').trim()||'Maglificio Vela Blu';
+  if(c) return {it:'sono '+c+' di '+a, en:'my name is '+c+' from '+a, de:'mein Name ist '+c+' von '+a, fr:'je suis '+c+', de '+a}[lang];
+  return {it:'vi scrive '+a, en:'this is '+a, de:'hier schreibt '+a, fr:'ici '+a}[lang];
+}
+function elenco(a,lang){ const e={it:' e ',en:' and ',de:' und ',fr:' et '}[lang]; return a.length<2?a.join(''):a.slice(0,-1).join(', ')+e+a[a.length-1]; }
+function spuntoDi(l,lang){
+  const li=locInfo[l.id]; if(!li||!li.vivo) return '';
+  const mm=(li.marchiMaglia||[]).slice(0,2), mu=(li.marchiUomo||[]).slice(0,2);
+  if(l.type==='marchio'){
+    if(li.marchio>0) return {it:'Ho visto che avete una collezione vostra.',en:'I saw that you have your own collection.',de:'Ich habe gesehen, dass Sie eine eigene Kollektion haben.',fr:'J\'ai vu que vous avez votre propre collection.'}[lang];
+    return '';
+  }
+  if(mm.length) return {it:' Ho visto che trattate già '+elenco(mm,lang)+': conoscete bene questo tipo di capo.',
+    en:' I saw that you already carry '+elenco(mm,lang)+', so you know this kind of product well.',
+    de:' Ich habe gesehen, dass Sie bereits '+elenco(mm,lang)+' führen: Sie kennen diese Art von Produkt also gut.',
+    fr:' J\'ai vu que vous proposez déjà '+elenco(mm,lang)+' : vous connaissez bien ce type de produit.'}[lang];
+  if(mu.length) return {it:' Ho visto che trattate '+elenco(mu,lang)+': le nostre polo ci stanno bene accanto.',
+    en:' I saw that you carry '+elenco(mu,lang)+': our polo shirts would sit well next to them.',
+    de:' Ich habe gesehen, dass Sie '+elenco(mu,lang)+' führen: Unsere Polos passen gut dazu.',
+    fr:' J\'ai vu que vous proposez '+elenco(mu,lang)+' : nos polos s\'y associent bien.'}[lang];
+  if(li.sartoria>0) return {it:' Ho visto che fate anche su misura.',en:' I saw that you also offer made-to-measure.',de:' Ich habe gesehen, dass Sie auch Maßkonfektion anbieten.',fr:' J\'ai vu que vous proposez aussi du sur-mesure.'}[lang];
+  return '';
+}
+function riempi(tpl,val){ return String(tpl||'').replace(/\{(\w+)\}/g,(m,k)=>Object.prototype.hasOwnProperty.call(val,k)?val[k]:m).replace(/\s{2,}/g,' ').trim(); }
+function msgFor(l, lang){
+  lang = lang || linguaDi(l);
+  const cat=urlSicuro(cfg.catalogo||'');
+  const val={_lang:lang, chi:chiSono(lang), frase:(cfg.frasi[lang]||{})[l.type]||'', spunto:spuntoDi(l,lang), nome:l.nome, catalogo:cat?CAT_TXT[lang].replace('{u}',cat):''};
+  return riempi(l.type==='marchio'?cfg.tplm[lang]:cfg.tpl[lang], val);
+}
+function oggettoFor(l, lang){ lang = lang || linguaDi(l); return riempi(cfg.ogg[lang], {_lang:lang, nome:l.nome}); }
+const IC={
+  wa:'<svg class="ic fill" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>',
+  mail:'<svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>',
+  tel:'<svg class="ic" viewBox="0 0 24 24"><path d="M5 4h3.5l1.5 4-2 1.5a11 11 0 0 0 6.5 6.5l1.5-2 4 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>',
+  ig:'<svg class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>'
+};
+function actions(l){
+  const out=[], lang=linguaDi(l), m=msgFor(l,lang), tel=telSicuro(l.phone), mail=mailDi(l), w=waDi(l), ig=igDi(l);
+  let primo=true; const cls=()=>{ const c=primo?'main':''; primo=false; return c; };
+  if(mail) out.push(`<a class="${cls()}" href="mailto:${esc(mail)}?subject=${encodeURIComponent(oggettoFor(l,lang))}&body=${encodeURIComponent(m)}">${IC.mail}Email</a>`);
+  if(w) out.push(`<a class="${cls()}" target="_blank" rel="noopener noreferrer" title="${w.sito?'Numero WhatsApp preso dal suo sito':'Cellulare dai dati: non si sa se è su WhatsApp'}" href="https://wa.me/${w.d}?text=${encodeURIComponent(m)}">${IC.wa}WhatsApp</a>`);
+  if(ig) out.push(`<a class="${cls()}" target="_blank" rel="noopener noreferrer" href="${esc(ig)}" data-copia="${esc(l.id)}" title="Apre Instagram e copia il messaggio: incollalo in un messaggio diretto">${IC.ig}Instagram</a>`);
+  if(tel) out.push(`<a class="${cls()}" href="tel:${esc(tel.replace(/[^\d+]/g,''))}">${IC.tel}Chiama</a>`);
+  out.push(`<button class="lnk" data-copia="${esc(l.id)}">Copia il messaggio (${esc(LINGUE[lang])})</button>`);
+  return out.join('');
+}
+
+// ---- punteggio (punteggio.js): calcolato qui, sul tuo computer
+const LS_CLASSI = {hi:'Alta priorità', mid:'Buona opportunità', val:'Da valutare', low:'Bassa priorità'};
+function leadScore(l){
+  if(l._s && l._sv===(l._v||0)) return l._s;
+  l._s=P.calcola({type:l.type, nome:l.nome, cat:l.cat, canale:canale(l), li:locInfo[l.id]||null, sedi:l.sedi});
+  l._sv=(l._v||0); return l._s;
+}
+
+// ---- lettura dei siti (serve il motore acceso: Avvia.command)
+async function chiediSitoLocale(web){
+  for(let tentativo=0; tentativo<3; tentativo++){
+    let r; try{ r=await fetch('/api/analizza?url='+encodeURIComponent(web)); }catch(e){ break; }
+    let j; try{ j=await r.json(); }catch(e){ break; }
+    if(r.status===429){ await new Promise(ok=>setTimeout(ok,3000)); continue; }
+    if(!r.ok) throw new Error(j.errore||('errore '+r.status));
+    return j;
+  }
+  throw new Error('NOSERVER');
+}
+function salvaLoc(){ const o={}; for(const [k,v] of Object.entries(locInfo)) if(!v.pre) o[k]=v; save('abbigliamento_loc',o); }
+function salvaSitoLocale(id,j){ locInfo[id]=j; salvaLoc(); }
+function sitoDaLeggere(l){
+  if(!urlSicuro(l.web) || /instagram|facebook|tiktok|linktr|google\.|zalando|amazon|ebay|etsy/i.test(l.web)) return false;
+  const li=locInfo[l.id]; if(!li) return true;
+  if(li.vivo===false && li.dns) return true;
+  return (Date.now()-new Date(li.data).getTime())/864e5 > 60;
+}
+function progres(f,t){ const b=$('autoprog'); b.style.display=t?'block':'none'; b.firstElementChild.style.width=(t?Math.min(100,f/t*100):0)+'%'; }
+const AUTO_SITI=40, PER_TIPO=6; let autoGiro=0, SERVER=null;
+// i primi 40 dell'elenco più i primi 6 di ogni tipo. Dopo ogni giro l'ordine cambia (chi vende marchi giusti sale): si rilegge la nuova testa
+function daLeggereOra(){
+  const ord=filtered(true), scelti=new Set(ord.slice(0,AUTO_SITI)), visti={};
+  for(const l of ord){ const n=visti[l.type]||0; if(n<PER_TIPO && urlSicuro(l.web)){ scelti.add(l); visti[l.type]=n+1; } }
+  return [...scelti].filter(sitoDaLeggere);
+}
+async function leggiSitiPrimi(){
+  const giro=++autoGiro, st=$('autositi'); let fatti=0, totale=0;
+  for(let passo=0; passo<3 && giro===autoGiro; passo++){
+    const coda=daLeggereOra();
+    if(!coda.length) break;
+    totale+=coda.length;
+    const lavora=async()=>{ while(coda.length && giro===autoGiro){
+      const l=coda.shift();
+      try{ salvaSitoLocale(l.id, await chiediSitoLocale(l.web)); SERVER=true; }
+      catch(e){ if(e.message==='NOSERVER'){ SERVER=false; coda.length=0; break; }
+        locInfo[l.id]={vivo:false, motivo:String(e.message||e).slice(0,60), data:new Date().toISOString().slice(0,10)}; salvaLoc(); }
+      l._v=(l._v||0)+1; fatti++; progres(fatti,totale); st.textContent=`Leggo i siti dei primi in elenco: ${fatti} di ${totale} letti...`; render();
+    } };
+    await Promise.all([lavora(),lavora(),lavora()]);
+    if(SERVER===false) break;
+  }
+  if(giro!==autoGiro) return;
+  progres(0,0);
+  if(SERVER===false) st.textContent='Qui online non si leggono nuovi siti: restano i siti già letti (marchi e prezzi) e il punteggio che ne viene.';
+  else if(fatti) st.textContent=`Ho letto i siti di ${fatti} negozi: punteggio e messaggi ora tengono conto dei marchi che trattano e dei loro prezzi.`;
+}
+async function leggiSitoLocale(id,btn){
+  const l=leads[id]; if(!l||!l.web) return;
+  btn.disabled=true; btn.textContent='Leggo il sito...';
+  try{ salvaSitoLocale(id, await chiediSitoLocale(l.web)); l._v=(l._v||0)+1; render(); }
+  catch(e){ btn.disabled=false; btn.textContent=e.message==='NOSERVER'?'Non disponibile online':'Non riuscito: riprova'; }
+}
+
+// ---- negozi con dati poco affidabili: senza stato al registro e affidabilità della fonte sotto 50 su 100
+function pocoAffidabile(l){ return l.stato!=='a' && l.aff!=null && l.aff<50; }
+
+// ---- elenco
+function filtered(perLettura){
+  const q=$('q').value.toLowerCase(), t=$('ftype').value, c=$('fcontact').value, ord=$('fordine').value, tutti=$('fnasc').checked, sc=$('fscaffale').checked&&!perLettura;
+  return Object.values(leads).filter(l=>(tutti||!pocoAffidabile(l)) && (!q||(l.nome+' '+l.addr).toLowerCase().includes(q)) && (!t||l.type===t) && (c===''||canale(l)<=+c) && (!sc||leadScore(l).scaffale))
+    .sort((a,b)=>{
+      const sa=leadScore(a).lead, sb=leadScore(b).lead;
+      if(ord==='km') return (a.km||0)-(b.km||0) || sb-sa;
+      if(ord==='tipo') return TYPES[a.type].rango-TYPES[b.type].rango || sb-sa || (a.km||0)-(b.km||0);
+      return sb-sa || TYPES[a.type].rango-TYPES[b.type].rango || (a.km||0)-(b.km||0);
+    });
+}
+function card(l){
+  const ls=leadScore(l), li=locInfo[l.id], letto=li&&li.vivo;
+  const web=urlSicuro(l.web), soc=urlSicuro(l.soc), mail=mailDi(l), tel=telSicuro(l.phone);
+  const visti=new Set(), link=u=>{ if(!u) return ''; const e=etichettaLink(u); if(visti.has(e)) return ''; visti.add(e); return `<a target="_blank" rel="noopener noreferrer" href="${esc(u)}">${e}</a>`; };
+  const contatti=[tel?`<span>${IC.tel}${esc(tel)}</span>`:'', mail?`<span>${IC.mail}${esc(mail)}</span>`:'',
+    ...[web, soc, ...Object.values((letto&&li.social)||{}).map(urlSicuro)].filter(Boolean).sort((a,b)=>(etichettaLink(a)==='Sito'?0:1)-(etichettaLink(b)==='Sito'?0:1)).map(link)].filter(Boolean).join('');
+  const badge=[`<span class="prio ${ls.classe}">${LS_CLASSI[ls.classe]}</span>`,
+    pocoAffidabile(l)?'<span class="prio gia" title="Nessuno stato al registro e affidabilità dei dati sotto 50 su 100">Dati poco affidabili</span>':'',
+    ls.scaffale?'<span class="prio stag" title="Lo dice il suo sito">Vende marchi di fascia alta</span>':'',
+    ls.catena?'<span class="prio prod">Più negozi</span>':''].join('');
+  const marchi = letto && ((li.marchiMaglia||[]).length||(li.marchiUomo||[]).length)
+    ? `<div class="marchi">${(li.marchiMaglia||[]).length?'<b>Maglieria:</b> '+esc(li.marchiMaglia.join(', '))+'. ':''}${(li.marchiUomo||[]).length?'<b>Uomo:</b> '+esc(li.marchiUomo.join(', '))+'.':''}</div>` : '';
+  const perche = [...ls.perche.filter(p=>!/^Vende già|^Tratta abbigliamento/.test(p)), ...ls.crit].slice(0,4);
+  const sitoTxt = !web ? '' : !li ? 'Sito non ancora letto.' : li.vivo ? (li.vuoto?'Sito letto ma quasi vuoto (forse fatto solo di immagini).':'') : 'Sito non letto: '+String(li.motivo||'').slice(0,80)+'.';
+  return `<article class="lead" data-lid="${esc(l.id)}">
+    <div class="score ${ls.classe}" title="Punteggio da 0 a 100: da chi partire. È una stima, non una garanzia">${ls.lead}</div>
+    <div>
+      <div class="name">${esc(l.nome)}${badge}</div>
+      <div class="meta">${esc(TYPES[l.type].label)}${l.cat?' <span class="small">('+esc(l.cat)+')</span>':''} · ${l.km!=null?l.km+' km · ':''}${esc(l.citta)}${l.addr?' · '+esc(l.addr):''}</div>
+      ${(l.anche||[]).length?`<div class="small">Compare anche come: ${esc(l.anche.slice(0,3).join(', '))}${l.anche.length>3?' e altri '+(l.anche.length-3):''}</div>`:''}
+      ${marchi}
+      ${perche.length?`<div class="small">${esc(perche.join(' '))}</div>`:''}
+      ${sitoTxt?`<div class="small">${esc(sitoTxt)}</div>`:''}
+      <div class="contacts">${contatti||'<span class="small">Nessun contatto in elenco: usa la mappa.</span>'}</div>
+    </div>
+    <div class="side">
+      <div class="act">${actions(l)}</div>
+      <div class="sub">
+        <a class="lnk" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.nome+' '+l.citta)}">Mappa</a>
+        ${web&&!letto?`<button class="lnk" data-leggi="${esc(l.id)}">Leggi il suo sito</button>`:''}
+      </div>
+    </div>
+  </article>`;
+}
+function renderSampleMsgs(){
+  const box=$('anamsg'); box._msgs=[];
+  box.innerHTML=Object.keys(TYPES).map(k=>{
+    const l={id:'camp:'+k, type:k, nome:'[nome del negozio]', paese:''};
+    const t=msgFor(l,LANG); box._msgs.push(t);
+    return `<div class="msgbox"><b>${esc(TYPES[k].label)} · ${esc(LINGUE[LANG])}</b><div class="small">${esc(oggettoFor(l,LANG))}</div><div class="t">${esc(t)}</div><button class="ghost" data-copymsg="${box._msgs.length-1}" style="padding:6px 12px">Copia il messaggio</button></div>`;
+  }).join('');
+}
+async function copia(testo,b,dopo){
+  try{ await navigator.clipboard.writeText(testo); if(b&&b.tagName==='BUTTON') b.textContent='Copiato'; }catch(err){ if(b&&b.tagName==='BUTTON') b.textContent='Copia a mano'; }
+  if(b&&b.tagName==='BUTTON') setTimeout(()=>b.textContent=dopo,2500);
+}
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-copymsg]'); if(b) return copia($('anamsg')._msgs[+b.dataset.copymsg], b, 'Copia il messaggio');
+  const c=e.target.closest('[data-copia]'); if(c){ const l=leads[c.dataset.copia]; if(l) copia(msgFor(l), c, c.textContent); }
+});
+function render(){
+  renderSampleMsgs();
+  const nCh=Object.values(leads).filter(pocoAffidabile).length;
+  $('nascosti').style.display=nCh?'flex':'none'; $('nasctxt').textContent='Nascosti dall\'elenco: '+nCh+' con dati poco affidabili.'; if(!nCh) $('fnasc').checked=false;
+  const rows=filtered();
+  $('empty').textContent=rows.length?'':(Object.keys(leads).length?'I filtri nascondono tutti i negozi trovati: allargali per rivederli.':emptyMsg);
+  $('empty').style.display=rows.length?'none':'block';
+  $('count').textContent=rows.length?`${rows.length} negozi${rows.length>MOSTRA?' · ne vedi '+MOSTRA+', i primi in cima':''}`:'';
+  { const mostra=CERCATO||Object.keys(leads).length>0; ['legenda','barra'].forEach(id=>$(id).style.display=mostra?'':'none'); if(!mostra) $('empty').style.display='none'; }
+  $('altri').innerHTML=rows.length>MOSTRA?`<button class="ghost" id="piu">Mostra altri ${Math.min(30,rows.length-MOSTRA)}</button>`:'';
+  $('rows').innerHTML=rows.slice(0,MOSTRA).map(card).join('');
+}
+$('bfiltra').addEventListener('click',()=>{ const f=$('filtri'); f.hidden=!f.hidden; $('bfiltra').setAttribute('aria-expanded',String(!f.hidden)); });
+['q','ftype','fcontact','fordine','fnasc','fscaffale'].forEach(id=>$(id).addEventListener('input',()=>{ MOSTRA=30; render(); }));
+$('altri').addEventListener('click',e=>{ if(e.target.id==='piu'){ MOSTRA+=30; render(); } });
+$('rows').addEventListener('click',e=>{ const b=e.target.closest('[data-leggi]'); if(b) return leggiSitoLocale(b.dataset.leggi,b); });
+
+renderLingua();
+render();
+</script>
+</body>
+</html>

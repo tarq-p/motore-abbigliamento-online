@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["40_221"]={"od96604361683":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://tojmand.dk/"},"ob1cce7945590":{"vivo":true,"lingua":"en","data":"2026-11-23","url":"http://www.dintojmand.dk"}};

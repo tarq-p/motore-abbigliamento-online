@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-16_209"]=[["813a82d503c4","Retail & Commercial Supply Company","a","clothing store","+44 1974 282419","http://www.zoom.co.uk","","","Pendre, Ysbyty Ystwyth",52.31014,-3.85011,"Tregaron","GB","n",77,""]];

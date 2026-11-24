@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["21_213"]={"o1dc514138878":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://www.debedstied.nl"},"o08693da5bcae":{"vivo":true,"vuoto":true,"lingua":"nl","nPrezzi":1,"negozio":1,"data":"2026-11-23","url":"http://www.boetiek44.online/"}};

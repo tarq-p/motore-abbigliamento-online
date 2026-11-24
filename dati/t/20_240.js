@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["20_240"]=[["27a4ef3ef754","Dryss Mote","a","clothing store","+47 55 08 63 33","http://www.handlegaten.no/dryssmote","","","STOREBØVEGEN 50",60.09632,5.22532,"STOREBØ","NO","a",100,""]];

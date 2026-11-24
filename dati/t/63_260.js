@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["63_260"]=[["a49eaa155086","Hamrebys","a","clothing store","+46 940 800 37","","","https://www.facebook.com/1406497986250688","Dikanäsvägen 68",65.23596,15.99221,"Dikanäs","SE","a",97,""]];

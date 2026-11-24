@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["54_230"]=[["9c1bf74c3d00","Ölsremma Träverkstad","a","fashion and apparel store","+46 70 816 22 26","http://www.olsremmatraverkstad.se/","","https://www.facebook.com/576625022542381","Aspvägen 4",57.63658,13.6227,"Ölsremma","SE","a",96,"m"]];

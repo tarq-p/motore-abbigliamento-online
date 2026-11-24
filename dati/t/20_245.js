@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["20_245"]=[["1bc851c50643","Marmic","a","fashion and apparel store","+47 469 16 281","","therese@homestore.no","https://www.facebook.com/1782987248682125","Sund Senter",61.4557,5.18262,"Skogsvåg","NO","n",77,"m"]];

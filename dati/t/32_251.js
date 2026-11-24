@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["32_251"]=[["f4482a3e78aa","Nordrag","a","fashion and apparel store","+47 416 59 095","https://nordrag.no/","","","Kråkholmvegen 8",62.77576,8.06572,"Eidsvåg","NO","a",27,"m"]];

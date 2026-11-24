@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-2_177"]=[["522764727a57","Mö Gältä Atelier De Stylisme, Couture, Haute Couture","b","designer clothing","+33 9 80 64 93 84","","","","6 Landrac",44.49773,-0.28192,"Mazères","FR","a",50,""],["9411f3d4a637","Maria Des Anges","b","designer clothing","+33 5 56 25 48 13","","","","64 Aux Carrières",44.38572,-0.30965,"Pompéjac","FR","a",50,""]];

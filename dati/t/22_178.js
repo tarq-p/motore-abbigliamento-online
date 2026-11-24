@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["22_178"]=[["2f6542898fdc","Créations du Bochaine","a","clothing store","+33 4 92 58 10 65","https://www.creationsdubochaine.com/","info@creationsdubochaine.com","https://www.facebook.com/100296071477153","Route de Grenoble ",44.6173,5.70832,"Saint-Julien-en-Beauchêne","FR","n",54,""]];

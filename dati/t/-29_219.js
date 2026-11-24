@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-29_219"]=[["d6f839054d6c","Pay Fashion Forward","a","clothing store","+44 28 8284 8323","","","","23 MAIN STREET",54.76814,-7.24995,"OMAGH","GB","a",39,""],["4d39cc18ce9f","Lisa Murphy Millinery","a","fashion and apparel store","+44 7749 111073","","","","1 LAUREL HILL COTTAGES",54.86302,-7.08488,"LONDONDERRY","GB","a",91,"m"]];

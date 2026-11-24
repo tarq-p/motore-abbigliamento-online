@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["12_189"]=[["e7865780cf98","Les Petites Choses De Mayte","b","fashion boutique","+33 6 23 55 99 56","","","","19 rue Notre-Dame",47.38372,3.00466,"Donzy","FR","a",50,"m"]];

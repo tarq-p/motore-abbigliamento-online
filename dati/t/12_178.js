@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["12_178"]=[["375f6ba288e0","Activemploi - La Ressourcerie","b","fashion boutique","+33 4 75 69 29 14","","activ-emploi@orange.fr","https://www.facebook.com/105368111917652","33 Boulevard de la République",44.60663,3.04352,"Annonay","FR","n",71,""]];

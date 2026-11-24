@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["54_228"]=[["cebb35f9ccac","Smålänningen","g","department store","+46 370 807 80","http://www.xn--smlnningen-s5ak.com/","","","INDUSTRIVÄGEN 12",57.172,13.74924,"VÄRNAMO","SE","a",100,""]];

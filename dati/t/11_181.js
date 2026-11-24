@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["11_181"]=[["c3b23d6dcd89","Fleuriste Beflore","b","fashion boutique","+33 3 81 41 69 61","http://www.beflore.fr/","beflore25@gmail.com","https://www.facebook.com/102510472388864","1 rue Ribot",45.31044,2.88501,"Besançon","FR","n",94,""]];

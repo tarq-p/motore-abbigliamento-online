@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["49_237"]=[["b3a31094ab5c","Gerds Keramik","a","fashion and apparel store","+46 76 800 15 71","","","https://www.facebook.com/1692792074267949","Sjösala sillerud ",59.31062,12.30715,"Årjäng","SE","n",77,"m"]];

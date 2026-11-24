@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["22_176"]=[["851a9fbc200c","Eurl Giovannoni","a","clothing store","+33 6 29 84 81 14","","","","place de la République",44.03897,5.62795,"Banon","FR","a",50,"m"],["337908108b2b","Stephanie","a","clothing store","","","","https://www.facebook.com/170193143393475","",44.03832,5.62821,"Banon","FR","n",32,""]];

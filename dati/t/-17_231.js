@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-17_231"]=[["28c506690571","Campbell and Co","a","clothing store","+44 1862 857197","","","https://www.facebook.com/106043118501729","Carnegie Courthouse, Castle St",57.87981,-4.02938,"Dornoch","GB","n",67,""]];

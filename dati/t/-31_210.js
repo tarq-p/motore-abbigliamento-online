@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-31_210"]=[["73e69238bca0","SewNua","a","fashion and apparel store","+353 86 124 7474","","sewnua77@gmail.com","https://www.facebook.com/595123560550994","Templetouhy ",52.63988,-7.73829,"Thurles","IE","n",53,"m"]];

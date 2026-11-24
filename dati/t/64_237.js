@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_237"]=[["305fd1aba5f8","Combimed","m","apparel manufacturer","+46 227 120 30","http://www.combimed.se/","post@combimed.se","https://www.facebook.com/202084459807697","Drottninggatan 50",59.42048,16.10068,"Kungsör","SE","a",83,""]];

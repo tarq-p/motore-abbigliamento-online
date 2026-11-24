@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["65_230"]=[["c600ce4fa546","Josua Rehabiliteringscenter","u","mens clothing store","+46 493 521 70","","","","ANKARSRUMS SÄTERI 1",57.71654,16.31115,"Ankarsrum","SE","a",50,""]];

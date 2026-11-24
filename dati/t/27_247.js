@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["27_247"]=[["093b7d3c5726","Cubus","a","clothing store","","https://cubus.com","","https://www.instagram.com/cubusofficial","",61.83465,6.80457,"","NO","n",77,""],["b62a6a1d4bf6","Skogstad Olden","a","clothing store","+47 480 60 051","http://www.skogstadsport.no","","","FJORDVEGEN 1653",61.83549,6.80692,"OLDEN","NO","a",100,"m"]];

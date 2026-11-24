@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-31_214"]=[["e4f6617e983b","Manor Boutique","a","clothing store","+353 43 667 1621","","","https://www.facebook.com/193433370682249","Main St",53.69467,-7.60761,"Longford","IE","n",32,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["112_280"]=[["b824b0c45ea5","Solsiden Galleri & Gøy","a","fashion and apparel store","+47 951 81 984","","","https://www.facebook.com/675568699459339","Polmakveien 1580",70.0706,28.00743,"Polmak","NO","a",75,"m"]];

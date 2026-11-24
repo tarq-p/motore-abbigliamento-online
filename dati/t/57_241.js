@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["57_241"]=[["ea57f11c18a0","La Familia Piléus","a","clothing store","+46 281 303 20","http://www.pileus.se/thematic/parajumpers-jacka-barn.html","","","BORGBYGATAN 4",60.45454,14.4922,"NÅS","SE","a",50,""],["e17a8e8e7189","RabClo","a","clothing store","","","","https://www.facebook.com/110012571736637","",60.45689,14.49582,"Nås","SE","n",17,""]];

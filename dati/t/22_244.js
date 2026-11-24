@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["22_244"]=[["13e79f9d6d28","Søstrene Lavik As","a","clothing store","+47 991 63 828","http://sostrenelavik.no/","","","HELLEBØSTRANDA 2",61.10369,5.51158,"LAVIK","NO","a",99,"m"],["29dd8343e8fe","Bunnpris Lavim","g","department store","+47 57 70 75 00","","","","KVAMSVEGEN 59",61.10606,5.50814,"LAVIK","NO","a",50,""]];

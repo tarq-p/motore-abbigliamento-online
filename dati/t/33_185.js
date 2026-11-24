@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["33_185"]=[["842fca1a3b97","Coop Supermercato Bosco Gurin","g","department store","+41 91 754 13 68","https://www.coop.ch/it/sedi/coop-supermercato-bosco-gurin/1561_POS","","","Bosco Gurin",46.31487,8.49485,"Bosco/Gurin","CH","n",99,""]];

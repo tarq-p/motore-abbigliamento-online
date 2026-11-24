@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["68_236"]={"o1c4b55e912f3":{"vivo":true,"social":{"instagram":"https://www.instagram.com/sevenflowers.se/"},"uomo":1,"data":"2026-11-23","url":"http://www.sevenflowers.se/"}};

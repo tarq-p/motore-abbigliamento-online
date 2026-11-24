@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["53_215"]={"o4b483fd6a671":{"vivo":true,"lingua":"de","nPrezzi":1,"social":{"facebook":"https://www.facebook.com/kik.de/","instagram":"https://www.instagram.com/kik.de/","tiktok":"https://www.tiktok.com/@kikdeutschlandoffiziell"},"uomo":102,"donna":135,"maglia":20,"lusso":1,"marchio":12,"lavoro":12,"data":"2026-11-23","url":"https://www.kik.de/"}};

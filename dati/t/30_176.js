@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["30_176"]=[["9c66bd29c199","Quincaillerie GUIDO Pierre","b","fashion boutique","+33 4 93 04 62 57","https://boutique-guido.fr/","scottalorda@guidobat.fr","https://www.facebook.com/1191711657517632","4 Place Général de Gaulle",44.08862,7.59384,"Tende","FR","n",88,""]];

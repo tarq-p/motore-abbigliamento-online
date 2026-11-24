@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["44_253"]=[["22eda79436f8","Koko Jeans And Fashion","a","clothing store","+47 940 77 916","https://kokojeans.no/","","","MELLOMRIKSVEGEN 1851",63.44381,11.24587,"HEGRA","NO","a",50,"m"]];

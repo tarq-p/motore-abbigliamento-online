@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["61_238"]=[["c68cbe320749","Sarrias Underkläder","a","clothing store","+46 70 497 47 68","http://www.sarriasunderklader.se/","","","Wirséns väg 4",59.52911,15.4517,"Frövi","SE","a",50,"m"]];

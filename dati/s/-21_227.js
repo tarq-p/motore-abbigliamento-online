@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-21_227"]={"ob7fd71b6c9f8":{"data":"2026-11-23","motivo":"HTTP Error 500: Internal Server Error","url":"https://www.fatface.com/storelocator/glasgowbuchananstreet-fatface/5471"},"o215e6b723240":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"http://www.dv8fashion.com/"}};

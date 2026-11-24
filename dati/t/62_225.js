@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["62_225"]=[["50a4e8e02076","Stromberg","a","clothing store","+46 76 847 51 50","https://avlancee.myshopify.com/","","","Karlskronavägen",56.25188,15.61551,"karlskrona","SE","a",97,"m"]];

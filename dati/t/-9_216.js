@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-9_216"]=[["cad22e465bae","Aherne's of Hellifield","a","clothing store","+44 1729 850201","http://www.ahernesuk.com/","enquiries@ahernesuk.com","https://www.facebook.com/1422788467971348","10-11/ The Green",54.00386,-2.2224,"Skipton","GB","n",94,""]];

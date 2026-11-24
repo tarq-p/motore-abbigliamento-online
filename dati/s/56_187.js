@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["56_187"]={"o9dea61f82bdf":{"vivo":true,"lingua":"de","email":["office@hut-kollmann.at","huterzeugung@a1.net"],"social":{"facebook":"https://www.facebook.com/hutmanufakur.kollmann"},"uomo":3,"donna":1,"sartoria":1,"marchio":4,"data":"2026-11-23","url":"http://www.hut-kollmann.at/"}};

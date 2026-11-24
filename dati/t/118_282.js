@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["118_282"]=[["c7672e955d8e","Best Clothes.","a","clothing store","+47 78 98 31 42","http://shop.bestclothes.org/","","","HAVNEGATA 9",70.6376,29.726,"BÅTSFJORD","NO","a",97,""]];

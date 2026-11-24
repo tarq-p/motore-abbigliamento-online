@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["54_222"]={"o3add2f7341f3":{"vivo":true,"email":["camilla@hittaplagget.se","baps@slimminge.nu"],"social":{"facebook":"http://facebook.com/boutiquebaps","instagram":"https://www.instagram.com/hittaplagget.se"},"data":"2026-11-23","url":"https://www.hittaplagget.se/1668/Butik-Boutique-Baps-Skurup"}};

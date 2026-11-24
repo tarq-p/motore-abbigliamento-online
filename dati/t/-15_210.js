@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-15_210"]=[["39da7dfea2ab","Sasha Kagan Knitwear","a","clothing store","+44 1686 430436","http://www.sashakagan.co.uk/","","","The Studio, Y Fron",52.50651,-3.58476,"Caersws","GB","n",97,""]];

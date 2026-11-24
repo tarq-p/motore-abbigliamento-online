@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["60_220"]={"o331f35d3fcb8":{"vivo":true,"lingua":"nl","uomo":3,"negozio":1,"data":"2026-11-23","url":"http://amaliedesign.com/"},"o702e936c32f3":{"vivo":true,"social":{"facebook":"https://www.facebook.com/profile.php?id=1146557337&fref=ts"},"data":"2026-11-23","url":"http://www.oen.dk/"}};

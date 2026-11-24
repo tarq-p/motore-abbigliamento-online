@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["55_237"]=[["0ef7dbcbd671","Mias Systuga","a","clothing store","+46 70 158 21 44","http://miassystuga.se/","","","BJÖRKGATAN 5",59.3812,13.84767,"VÄSE","SE","a",50,"m"]];

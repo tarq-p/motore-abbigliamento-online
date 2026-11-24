@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["20_193"]=[["ba6ab3892d61","La petite boutique","a","clothing store","+33 6 81 13 37 86","http://lapetiteboutiquejoinville.fr","laurent4ps@ozone.net","https://www.facebook.com/560476457707185","47 Rue Aristide Briand",48.44241,5.13972,"Joinville","FR","n",65,"m"]];

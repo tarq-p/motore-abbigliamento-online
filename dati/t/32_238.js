@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["32_238"]=[["e8f0b14e48a1","Straumebui","a","clothing store","+47 971 59 557","","","https://www.facebook.com/662716540516653","Drivarbekkdalen 64",59.61639,8.19623,"Vinje","NO","n",44,"m"],["43909ff5c0de","Straumebui","a","clothing store","+47 971 59 557","","","","DRIVARBEKKDALEN 64",59.61717,8.21017,"VINJE","NO","a",50,"m"]];

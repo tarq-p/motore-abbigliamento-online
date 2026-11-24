@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["50_216"]={"o5702d3ca5f09":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://www.bau-tech2012.com"}};

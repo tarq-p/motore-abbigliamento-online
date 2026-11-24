@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["54_208"]=[["f06225601a29","NKD","a","clothing store","","https://www.nkd.com/","","","Rudolf-Breitscheid-Str. 62",52.04243,13.50949,"Baruth","DE","n",100,""],["76dc65515a55","Pod Pit","b","designer clothing","+49 172 4944922","https://podpit.de/","","","Karl-Marx-Straße 30",52.20161,13.58502,"Mittenwalde","DE","a",50,"m"]];

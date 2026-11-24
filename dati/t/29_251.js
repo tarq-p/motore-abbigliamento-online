@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["29_251"]=[["948fb499619c","Lanulva","a","clothing store","+47 71 29 58 00","www.lanullva.no","post@lanullva.no","https://www.facebook.com/158231884269912","Naustvikvegen 5",62.9629,7.37535,"Lyngstad","NO","n",72,""]];

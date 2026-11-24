@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-20_232"]=[["c80a3b2176c8","Revival","a","clothing store","+44 1484 422255","http://www.revivalvintage.co.uk/","help@revivalvintage.co.uk","https://www.facebook.com/50668882437","1-3 Swan Lane",58.07787,-4.92188,"","GB","n",33,""]];

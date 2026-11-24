@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["69_252"]={"o48c39ff5481a":{"vivo":true,"marchiBassi":1,"prezzo":300,"nPrezzi":6,"data":"2026-11-23","url":"https://www.granngarden.se"},"o7917f0c11167":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://dressmann.com/en/"}};

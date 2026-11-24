@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["60_227"]=[["0cc160e0b62a","Dannes Källare","a","clothing store","+46 470 475 39","","","https://www.facebook.com/141660079222705","Björkv. 15",56.85284,15.02915,"Furuby","SE","n",34,""]];

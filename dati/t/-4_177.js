@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-4_177"]=[["bf729d767d2d","Ventura Sophie","a","clothing store","+33 5 58 82 01 26","","","","quartier la Layere",44.40062,-0.84018,"Saugnacq et Muret","FR","a",50,""],["3a3a819f2cd9","Duo Moda - Boutique Prêt À Porter","a","clothing store","+33 6 50 98 72 80","","","","986 avenue de la Gare",44.35017,-0.76951,"Moustey","FR","a",48,"m"]];

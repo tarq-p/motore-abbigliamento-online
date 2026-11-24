@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["98_283"]=[["4a543fbae3b0","NYE Stabells Havøysund","a","fashion and apparel store","+47 476 37 923","","stabellshavoy@hotmail.com","https://www.facebook.com/118918367837070","Strandgata 164",70.9963,24.66415,"Havøysund","NO","a",82,"m"]];

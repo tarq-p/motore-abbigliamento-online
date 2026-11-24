@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["65_189"]={"od48840da66c9":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://www.yanez.at"},"ob20cdc38873e":{"data":"2026-11-23","motivo":"HTTP Error 429: Too Many Requests","url":"https://www.firmenabc.at/falke-gesellschaft-m-b-h_EMrs"}};

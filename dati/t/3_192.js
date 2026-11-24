@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["3_192"]=[["ca15d62c96e4","Annie C","b","fashion boutique","+33 2 37 81 26 87","http://www.mercerie-bazoche-gouet.fr/","annie.c28330@orange.fr","https://www.facebook.com/483629005166289","2 Rue Jean Moulin",48.13744,0.97924,"La Bazoche-Gouet","FR","n",60,""]];

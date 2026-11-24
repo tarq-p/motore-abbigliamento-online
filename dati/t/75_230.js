@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["75_230"]=[["bd3f9ccfc5ce","Strumpfabriken","m","clothing company","+46 73 644 07 37","https://www.gotlandsstrumpfabrik.se/","ulrika@ullinek.se","https://www.facebook.com/1478317322426044","BOGE MOJNER 828B",57.69103,18.79836,"Slite","SE","n",92,"m"]];

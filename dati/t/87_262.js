@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["87_262"]=[["a398b27f1889","Birdie Golf Wear","m","clothing company","+46 70 282 40 06","","","","LANTMÄTARVÄGEN 93",65.65374,21.9591,"SÖDRA SUNDERBYN","SE","a",50,"m"]];

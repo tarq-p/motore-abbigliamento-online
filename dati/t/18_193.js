@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["18_193"]=[["4ab2b4b87eac","Les Fees V'mode","a","clothing store","+33 7 81 31 60 20","","","","66 Rue de l'École Militaire",48.39141,4.52756,"","FR","a",95,"m"],["2cabb4844d20","La Friperie De Lili","a","clothing store","+33 7 83 09 96 26","","","","72 rue de l'École Militaire",48.39191,4.52721,"Brienne-Le-Château","FR","a",38,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["47_235"]={"o8c4646453954":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://www.karlsson.se"}};

@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["26_240"]={"o0d9b5cfb05d1":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"http://www.terjestorhaug.no/"},"o5d035ff7172c":{"data":"2026-11-23","motivo":"HTTP Error 308: Permanent Redirect","url":"http://cubus.com/no/bedriftssider/butikkliste/Sweden/R05/"}};

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["16_198"]=[["a6bf61294453","Rencard avec mes placards","a","clothing store","+33 6 18 10 28 21","","rencardavecmesplacards@gmail.com","https://www.facebook.com/766550556534840","2 Pl. de L Hôtel de ville",49.69545,4.01397,"Montcornet","FR","a",42,"m"]];

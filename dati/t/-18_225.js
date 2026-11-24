@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-18_225"]=[["b23d2032e20b","Bridgend Mill","a","clothing store","+44 1567 820508","http://www.thepresentshop.co.uk","","https://www.facebook.com/119897045077687","Main Street",56.46304,-4.32057,"Killin","GB","n",98,""]];

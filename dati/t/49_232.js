@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["49_232"]=[["7ba8ff8d05d8","Almedahls Alingsås Ab","m","apparel manufacturer","+46 322 66 93 00","http://www.almedahls.com/","","","BROBACKAVÄGEN 19",58.06568,12.47499,"ALINGSÅS","SE","a",100,""],["1d29947f3d68","Montague Clothing","a","clothing store","+46 76 038 52 92","","","","HÄFTÄNGSVÄGEN 8",58.15746,12.30558,"UPPHÄRAD","SE","a",50,"m"]];

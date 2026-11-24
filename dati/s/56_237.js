@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["56_237"]={"ob6ada158ab61":{"vivo":true,"lingua":"de","social":{"instagram":"http://www.instagram.com/rustadeutschland","facebook":"http://www.facebook.com/rustadeutschland"},"negozio":1,"outlet":1,"lavoro":1,"data":"2026-11-23","url":"https://www.rusta.com/de-de/filialen/rusta-halle---saale---peiben"}};

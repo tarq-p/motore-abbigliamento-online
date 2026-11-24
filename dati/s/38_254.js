@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["38_254"]={"o2b9c5841e0ed":{"vivo":true,"lingua":"en","uomo":14,"negozio":1,"data":"2026-11-23","url":"http://www.felleskjopet.no/"},"o85c164131cf9":{"data":"2026-11-23","motivo":"HTTP Error 308: Permanent Redirect","url":"http://cubus.com/no/bedriftssider/butikkliste/Sweden/R05/"}};

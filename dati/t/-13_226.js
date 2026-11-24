@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-13_226"]=[["9ce14b47107e","Because of Birds Ltd.","a","clothing store","+44 1575 570808","http://www.becauseofbirds.co.uk/","","","3 The Moon",56.67056,-3.00323,"Forfar","GB","n",85,""]];

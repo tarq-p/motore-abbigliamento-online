@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_190"]=[["61bff3ca7e11","Diva","a","clothing store","","http://www.divaladiva.com","","","Centre cial trifontaine 19 route de ganges",47.56152,2.30509,"Saint Clément de Rivière","FR","a",77,""],["7f04a2f835ff","Scdom","a","clothing store","+33 6 75 28 80 25","","","","12 rue des Palis",47.6207,2.49779,"Coullons","FR","a",50,"m"]];

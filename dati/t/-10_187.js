@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-10_187"]=[["97bbc4aecc66","Station de la plage","b","fashion boutique","+33 7 88 84 38 31","","stationdelaplage@gmail.com","https://www.facebook.com/669273246872724","30 Av. de la Liberté",46.9792,-2.27074,"L'Épine","FR","a",99,"m"]];

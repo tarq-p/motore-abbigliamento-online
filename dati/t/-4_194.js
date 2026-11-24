@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-4_194"]=[["c5635cd5ac12","Boulangerie Perrier Valérie & Nicolas","b","fashion boutique","+33 2 33 59 07 40","","","https://www.facebook.com/104134304894548","13 Rue de Mortain",48.64263,-0.9426,"Juvigny les Vallées","FR","n",90,""]];

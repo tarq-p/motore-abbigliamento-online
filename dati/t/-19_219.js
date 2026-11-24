@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-19_219"]=[["4e726369cd44","In4aDig.co.uk","a","clothing store","+44 7919 363539","https://www.in4adig.co.uk/","","","45 Main Street",54.76352,-4.58473,"Newton Stewart","GB","a",99,"m"]];

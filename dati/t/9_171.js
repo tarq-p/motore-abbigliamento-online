@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_171"]=[["e70b87d08897","1 Peu de Tout - Lapradelle","b","fashion boutique","","","","https://www.facebook.com/100998562365759","29 Avenue du Languedoc",42.80996,2.30771,"Puilaurens","FR","a",74,""]];

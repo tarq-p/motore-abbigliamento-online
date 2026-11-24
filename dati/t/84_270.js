@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["84_270"]=[["b0ba654d1c0e","Susannes Älgskinnsbod","a","clothing store","+46 980 303 14","","s.stalnacke@telia.com","https://www.facebook.com/117080355026842","Postvägen 3",67.64932,21.04663,"Svappavaara","SE","a",58,""]];

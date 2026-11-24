@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["31_187"]={"o77b72dbc5381":{"vivo":true,"lingua":"de","prezzo":42,"nPrezzi":64,"email":["info@wohnfee.ch"],"social":{"facebook":"https://www.facebook.com/wohnfee.ch","instagram":"https://www.instagram.com/wohnfee.ch/"},"negozio":13,"data":"2026-11-23","url":"https://wohnfee.ch/"}};

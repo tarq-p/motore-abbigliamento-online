@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["94_266"]=[["d7f96b75a386","Sixten Keisu - samiskt hantverk och renfarm","a","fashion and apparel store","+46 70 635 04 81","https://sixtenkeisu.wordpress.com/","sixtenkeisu@gmail.com","https://www.facebook.com/752980741505100","Pyhäjärvi 110",66.66208,23.6526,"Övertorneå","SE","a",78,"m"]];

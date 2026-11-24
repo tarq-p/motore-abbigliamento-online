@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_227"]=[["301019fa541a","Syrummet Lin & Trikå","a","clothing store","+46 70 680 72 74","http://syrummet.com/","","https://www.facebook.com/550530521688372","Bygdevägen 17",56.88783,16.06896,"Alsterbro","SE","a",61,"m"]];

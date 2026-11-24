@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["62_226"]={"o588449ac5fa7":{"vivo":true,"prezzo":799,"nPrezzi":102,"social":{"facebook":"https://www.facebook.com/signesoas","instagram":"https://www.instagram.com/signes.oad"},"data":"2026-11-23","url":"http://www.signesoas.se/"}};

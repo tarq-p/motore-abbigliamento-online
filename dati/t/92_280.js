@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["92_280"]=[["7217955c6e3b","Nabosøm","a","clothing store","+47 419 30 030","http://xn--nabosm-fya.no/","anne.merete.jorgensen@hotmail.com","https://www.facebook.com/568688096895964","Storekorsnesveien 104",70.20892,23.20779,"Kviby","NO","a",93,"m"]];

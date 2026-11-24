@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["23_242"]={"obfa2390eca5c":{"vivo":true,"lingua":"en","email":["helpdesk@dale.no"],"social":{"instagram":"https://www.instagram.com/daleofnorway/","tiktok":"https://www.tiktok.com/@daleofnorway","facebook":"https://www.facebook.com/DaleofNorwayNO/"},"maglia":1,"data":"2026-11-23","url":"http://no.daleofnorway.com/"}};

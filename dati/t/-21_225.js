@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-21_225"]=[["15246e7fa7f5","Turadh Crafts and Clothing","a","clothing store","","http://www.turadhcraftsandclothing.co.uk","","","Crafts and Clothing, Turadh",56.43007,-5.2387,"Taynuilt","GB","n",77,""]];

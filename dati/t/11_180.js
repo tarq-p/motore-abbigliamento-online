@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["11_180"]=[["78f8554a1460","Flo Couture","a","clothing store","+33 4 71 20 23 15","","","","12 avenue des 12 et 24 Juin 1944",45.11117,2.86859,"Murat","FR","a",98,""],["d6ae16066657","Cool Et Chic","a","clothing store","+33 4 71 20 84 14","","","","8 place du Planol",45.11209,2.86816,"Murat","FR","a",98,""]];

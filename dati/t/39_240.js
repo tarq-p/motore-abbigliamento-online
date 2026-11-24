@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["39_240"]=[["a55804c4317c","Norwegian Re:textile","a","fashion and apparel store","","https://retextile.store.fioobra.no/","","","SUNDVOLLHOVET 60",60.11676,9.80091,"KRØDEREN","NO","a",48,""]];

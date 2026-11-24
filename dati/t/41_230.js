@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["41_230"]=[["436cfa276c1d","Corner","a","clothing store","+45 98 48 83 60","http://butikcorner.lund9900.dk","","","CENTRALVEJ 4",57.59348,10.41187,"ÅLBÆK","DK","a",100,""]];

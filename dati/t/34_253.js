@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["34_253"]=[["ad1a15efc11e","Strand Klær As","a","clothing store","+47 71 64 63 79","http://www.strand-kler.no/","","","BANKVEGEN 10",63.26846,8.52908,"AURE","NO","a",100,""]];

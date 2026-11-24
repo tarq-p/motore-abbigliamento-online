@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["55_249"]={"oc921a6d09e04":{"vivo":true,"lingua":"nl","prezzo":1595,"nPrezzi":64,"email":["info@stellahalo.com"],"social":{"facebook":"https://www.facebook.com/stellahalohome/","instagram":"https://www.instagram.com/stellahalohome/"},"uomo":2,"lusso":9,"data":"2026-11-23","url":"http://www.stellahalo.com/"}};

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["49_238"]=[["83e848f6ebb0","Progymstuff","a","clothing store","+46 70 835 28 53","https://www-progymstuff.myshopify.com/","","","skogerud 1",59.70773,12.2795,"Arvika","SE","a",50,"m"]];

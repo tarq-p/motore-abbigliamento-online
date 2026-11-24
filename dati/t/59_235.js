@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["59_235"]=[["eca830732649","Europa Mode","a","clothing store","+46 76 208 55 86","","","","STORGATAN 22",58.88028,14.90224,"ASKERSUND","SE","a",100,"m"],["d0ec7cf56df6","Annicas Syservice","a","clothing store","+46 70 130 20 95","","","","SUNDSBROGATAN 14",58.87939,14.90373,"ASKERSUND","SE","a",92,"m"]];

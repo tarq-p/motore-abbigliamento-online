@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-27_208"]={"ob6dfa314d472":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://www.juliecaulfield.com/"}};

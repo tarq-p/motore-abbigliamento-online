@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-11_224"]={"o06484b96a141":{"vivo":true,"lingua":"en","email":["studio@janshelley.com"],"maglia":3,"data":"2026-11-23","url":"http://janshelley.com/"},"o9ce4c103dbba":{"data":"2026-11-23","motivo":"HTTP Error 500: Internal Server Error","url":"https://www.fatface.com/storelocator/glasgowbuchananstreet-fatface/5471"}};

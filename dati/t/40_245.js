@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["40_245"]=[["98d9b1a0dd27","Felleskjøpet Agri","g","department store","+47 992 56 138","https://www.felleskjopet.no","","https://www.twitter.com/felleskjopet","Bjørndalsvollen 5",61.2565,10.16445,"Østre Gausdal","NO","n",77,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["16_178"]=[["df73693a3b3e","Le Myrtillier","a","clothing store","+33 6 04 16 21 96","http://www.lemyrtillier.fr/","lemyrtillier@gmail.com","https://www.facebook.com/1596632980568462","5 Rue Victor Hugo",44.71196,4.20728,"Montpezat-sous-Bauzon","FR","a",77,"m"]];

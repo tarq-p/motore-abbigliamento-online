@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-16_204"]={"o17250e80bb45":{"data":"2026-11-23","motivo":"HTTP Error 404: Not Found","url":"https://aa-snack-shack.square.site/"},"oa1e6e79f9a26":{"data":"2026-11-23","motivo":"HTTP Error 530: <none>","url":"http://www.shelleyshotel.co.uk/"}};

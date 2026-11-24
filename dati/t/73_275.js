@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["73_275"]=[["248399787fb5","Stines Lykkerom AS","a","clothing store","+47 909 36 333","http://www.stineslykkerom.no/","post@stineslykkerom.no","https://www.facebook.com/848875225132981","Fogd Holmboes gate 38",68.86228,18.3476,"Setermoen","NO","a",99,"m"]];

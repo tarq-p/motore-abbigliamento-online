@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-11_223"]={"o7814b43a3c7b":{"vivo":true,"lingua":"en","social":{"facebook":"https://facebook.com/milliescottstudio","instagram":"https://www.instagram.com/milliescottstudio"},"uomo":2,"donna":2,"sartoria":2,"data":"2026-11-23","url":"http://www.milliescottstudio.co.uk/"}};

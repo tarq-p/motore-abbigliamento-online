@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-17_230"]=[["c64f3f8005ab","Sweets And Treats","a","fashion and apparel store","+44 1349 853111","","","","89 HIGH STREET",57.68859,-4.16836,"INVERGORDON","GB","a",99,""]];

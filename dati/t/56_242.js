@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["56_242"]=[["d66dea9df4cd","Kollektion I Vansbro","a","clothing store","+46 281 714 30","http://kollektion.se/","","","33, Norra Allégatan",60.5106,14.22418,"Vansbro","SE","a",100,""]];

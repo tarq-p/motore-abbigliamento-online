@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-10_218"]=[["99efa0251ea8","Hollberrie","a","clothing store","+44 17683 51027","http://www.hollberrie.co.uk","","","28 Boroughgate",54.57656,-2.4909,"Appleby-in-westmorlan","GB","a",88,""],["96af33683b80","Laboutique-Shop","a","clothing store","+44 17683 98715","","","","Bridge Street",54.57787,-2.4907,"Appleby-In-Westmorland","GB","n",85,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["17_191"]=[["fa638d7cee95","L’Audacieuse CBD","b","fashion boutique","+33 6 83 77 76 83","","l-audacieuse@orange.fr","https://www.facebook.com/111805624601610","1 Ruelle Valentin Serbource",47.86903,4.35142,"Griselles","FR","n",64,"m"]];

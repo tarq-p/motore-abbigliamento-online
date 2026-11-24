@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-38_214"]=[["25458e2f342e","Mrs Tea's Boutique & Bakery","b","fashion boutique","+353 94 954 6003","https://ashfordcastle.com/shopping/mrs-tea-s-boutique-and-bakery","","","Strandhill, Ashford Castle Drive, The Ashford Castle Estate",53.53581,-9.28246,"Cong","IE","n",85,""]];

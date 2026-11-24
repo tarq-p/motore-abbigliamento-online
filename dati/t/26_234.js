@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["26_234"]=[["ad4464ce6fee","Tonstad Foto og Papir","g","department store","+47 38 37 04 55","","tonfot@online.no","https://www.facebook.com/395082710544363","Tonstadhallen",58.66396,6.71736,"Tonstad","NO","n",43,""]];

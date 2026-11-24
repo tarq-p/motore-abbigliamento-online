@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["61_243"]=[["ca1384852acc","MTC Design","a","fashion and apparel store","+237 6 58 05 08 97","","cfpmt@gmail.com","https://www.facebook.com/123970057352939","Tradex borne 10",60.95932,15.27235,"Östra Born","SE","n",20,"m"]];

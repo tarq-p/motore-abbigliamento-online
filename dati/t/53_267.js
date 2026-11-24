@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["53_267"]=[["2dec9a263361","Fredheims garnlykke","a","fashion and apparel store","+47 482 18 739","","linda_130279@hotmail.com","https://www.facebook.com/115881512612112","Jektvikveien 9",66.78866,13.44821,"Engavågen","NO","a",76,"m"]];

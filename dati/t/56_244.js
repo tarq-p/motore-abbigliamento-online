@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["56_244"]=[["9945280accd6","Inez & Ivar - Mode Å Sånt Ab","a","clothing store","+46 70 334 66 70","","","","DALGATAN 71A",61.22793,14.03891,"ÄLVDALEN","SE","a",100,"m"]];

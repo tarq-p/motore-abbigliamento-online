@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["66_235"]=[["d5d1c8dc8dae","Studio Vattenverket","b","fashion boutique","+46 73 745 57 38","","","https://www.facebook.com/1853550481534692","Lilla Stentorp 7",58.86967,16.72858,"Vrena","SE","a",91,"m"]];

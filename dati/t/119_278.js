@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["119_278"]=[["2c4f30bb3ada","Coop Prix Bjørnevatn","g","department store","+47 416 44 377","http://www.coop.no","bjornevatn.prix@coop.no","","",69.66658,29.98392,"Bjørnevatn","NO","n",77,"m"]];

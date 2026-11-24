@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["49_219"]={"o4ac8dcfe2f7d":{"vivo":true,"lingua":"fr","marchiBassi":2,"prezzo":1499,"nPrezzi":12,"social":{"facebook":"https://www.facebook.com/toejeksperten.dk","instagram":"https://www.instagram.com/toejeksperten/"},"uomo":2,"maglia":28,"lusso":18,"lavoro":4,"data":"2026-11-23","url":"https://www.toejeksperten.dk/"}};

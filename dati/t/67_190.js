@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["67_190"]=[["ba32dfc62af7","Vugodits Erich","g","department store","+43 2174 2119","","","https://www.facebook.com/187954024578712","Marktstraße 43",47.70192,16.91013,"Pamhagen","AT","n",46,""]];

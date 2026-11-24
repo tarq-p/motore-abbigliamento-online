@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-11_227"]=[["58c06f6310d4","Encore Dress Agency","a","clothing store","+44 1561 340550","","info@encoredressagency.co.uk","https://www.facebook.com/120513844670060","Glengowan",56.85132,-2.57558,"Laurencekirk","GB","n",94,""]];

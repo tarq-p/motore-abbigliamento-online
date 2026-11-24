@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_187"]=[["967dd3c66919","Celio Ruaudin","a","clothing store","","http://store.celio.com/vetement-homme/le-mans-sud/0058","","","ZAC des Hunaudières",46.76917,2.444,"Ruaudin","FR","n",77,""]];

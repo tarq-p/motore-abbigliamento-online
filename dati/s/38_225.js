@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["38_225"]={"o2ba0466eef6e":{"vivo":true,"lingua":"en","prezzo":549,"nPrezzi":67,"social":{"instagram":"https://www.instagram.com/fluggerofficial/","facebook":"https://www.facebook.com/flugger.farver"},"uomo":1,"outlet":25,"marchio":1,"lavoro":3,"data":"2026-11-23","url":"http://flugger.dk"}};

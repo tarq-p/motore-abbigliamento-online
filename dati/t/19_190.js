@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["19_190"]=[["8c55f51b54dd","Domaine la Tour de Labergement","a","clothing store","","http://latourdelabergement.com/","","https://www.facebook.com/433500626985931","Labergement",47.54514,4.91636,"Moloy","FR","n",62,""]];

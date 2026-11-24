@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-18_229"]=[["61d7d42dec3b","Campbell's of Beauly","a","clothing store","+44 1463 782239","","","https://www.facebook.com/100383029077924","Highland Tweed House, High St",57.48293,-4.46038,"Beauly","GB","n",100,""]];

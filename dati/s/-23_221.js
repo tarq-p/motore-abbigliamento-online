@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-23_221"]={"o3c0e637623d0":{"vivo":true,"lingua":"en","social":{"facebook":"https://www.facebook.com/todaysman.menswear/","instagram":"https://www.instagram.com/todaysmanmenswear/"},"uomo":8,"lavoro":1,"data":"2026-11-23","url":"https://todaysman.com.au/"}};

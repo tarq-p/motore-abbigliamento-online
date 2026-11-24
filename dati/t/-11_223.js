@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-11_223"]=[["7814b43a3c7b","Millie Scott Studio","b","designer clothing","+44 7454 015108","http://www.milliescottstudio.co.uk/","","","5 DUKE STREET",55.99511,-2.55457,"DUNBAR","GB","a",50,"m"]];

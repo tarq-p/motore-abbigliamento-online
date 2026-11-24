@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["59_243"]={"of6eb505b2022":{"vivo":true,"email":["info@pirjodesign.se"],"social":{"facebook":"https://www.facebook.com/search/top?q=pirjo%20design","instagram":"https://www.instagram.com/almpirjo/"},"uomo":5,"data":"2026-11-23","url":"http://www.pirjodesign.se/"}};

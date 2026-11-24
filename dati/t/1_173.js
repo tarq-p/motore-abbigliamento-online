@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["1_173"]=[["1a082bad3356","L'amusette","b","fashion boutique","+33 6 88 07 95 92","","","","8 place de la Mairie",43.32116,0.37043,"Trie-Sur-Baïse","FR","a",100,"m"],["38ae4670d496","3 Dimensions","a","clothing store","+33 5 62 35 64 01","","","","29 place de la Mairie",43.32055,0.37107,"Trie-Sur-Baïse","FR","a",99,""]];

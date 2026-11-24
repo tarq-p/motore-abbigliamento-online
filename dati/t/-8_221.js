@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-8_221"]=[["0738e1e5660d","Stag Rock Coast And Country Clothing","a","clothing store","+44 1668 212671","","","","22 FRONT STREET",55.42468,-1.89155,"BAMBURGH","GB","a",28,""]];

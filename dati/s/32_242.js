@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["32_242"]={"ofc6dbf912e70":{"vivo":true,"lingua":"en","prezzo":499,"nPrezzi":52,"social":{"facebook":"https://www.facebook.com/PrincessInterior/","instagram":"https://www.instagram.com/princess_interior/"},"uomo":10,"data":"2026-11-23","url":"https://www.princessbutikken.no/"}};

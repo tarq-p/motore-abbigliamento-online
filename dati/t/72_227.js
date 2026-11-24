@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["72_227"]=[["af8799a6badc","Vamlingbolaget","m","clothing company","+46 70 637 99 66","http://www.vamlingbolaget.com","info@vamlingbolaget.com","https://www.facebook.com/131504626704711","Vamlingbo Ängvards 302",56.97179,18.23554,"Burgsvik","SE","a",96,"m"]];

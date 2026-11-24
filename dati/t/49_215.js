@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["49_215"]=[["2930bccab5f4","Ruß M.","a","clothing store","+49 4938 45967790","","","","Breesener Str. 34",53.9276,12.34605,"Laage","DE","a",50,""],["fafdaa108548","Kledagekonzept","b","designer clothing","+49 172 3810644","https://kledage.com/","","","Am Buchenberg 12",53.96804,12.27411,"Dummerstorf","DE","a",50,"m"]];

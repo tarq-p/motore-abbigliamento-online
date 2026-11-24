@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["8_180"]=[["435069c45af9","Vitrine Pleaux","b","fashion boutique","+33 4 71 68 03 28","","vitrine.pleaux@gmail.com","https://www.facebook.com/101037125694652","31 Pl. Georges Pompidou",45.13445,2.22601,"Pleaux","FR","a",96,""]];

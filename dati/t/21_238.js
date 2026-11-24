@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["21_238"]=[["98f95ad2226a","Astrids Ballettbutikk","a","clothing store","+47 464 56 424","","astridhrb@hotmail.com","https://www.facebook.com/111389344026759","Søre Naustbakken 11",59.71704,5.35031,"Mosterhamn","NO","a",87,"m"]];

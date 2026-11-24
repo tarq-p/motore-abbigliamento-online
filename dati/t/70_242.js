@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["70_242"]=[["d2edb383236e","Personlig Design","a","clothing store","+46 70 944 48 97","http://personligdesign.se/kontakt","","","MOGATAN 10",60.52222,17.60938,"KARLHOLMSBRUK","SE","a",50,"m"]];

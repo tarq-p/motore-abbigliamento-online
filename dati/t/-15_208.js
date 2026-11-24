@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-15_208"]=[["ace3df31c06d","Akin Journals","a","clothing store","","http://www.akinclothing.com/","hello@akinclothing.com","https://www.facebook.com/101924406589231","",52.05249,-3.51562,"","GB","n",9,""]];

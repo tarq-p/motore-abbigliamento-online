@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["51_188"]={"ocf87092923dc":{"vivo":true,"lingua":"en","marchiBassi":1,"prezzo":79,"nPrezzi":129,"social":{"instagram":"https://www.instagram.com/soliver/","facebook":"https://www.facebook.com/s.OliverFashion"},"uomo":15,"donna":16,"maglia":29,"negozio":4,"lusso":4,"outlet":4,"data":"2026-11-23","url":"http://www.soliver.com/"}};

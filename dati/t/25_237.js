@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["25_237"]=[["31ac3f9f349a","Perlesaum","a","fashion and apparel store","+47 909 51 624","http://www.perlesaum.no/","","","SANDSVEGEN 134",59.48085,6.27224,"SAND","NO","a",91,"m"],["10f015262ec3","Bustad","a","clothing store","+47 52 79 71 48","","","","NORDENDEN 2",59.48465,6.25057,"SAND","NO","a",100,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["6_183"]=[["a52623be9d94","Weldom Contact Saint Léonard","b","fashion boutique","+33 5 55 56 28 87","","siege@agricentre-dumas.fr","https://www.facebook.com/841997542799645","20 Avenue Jean Moulin",45.83016,1.5029,"Saint-Léonard-de-Noblat","FR","n",62,""]];

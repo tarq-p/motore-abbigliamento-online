@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["11_174"]=[["3c009a0c56b8","Atelier Du Cuir- Jantara","b","fashion boutique","+33 6 31 66 78 61","","","","1 rue de la Place",43.55665,2.91375,"Olargues","FR","a",50,"m"]];

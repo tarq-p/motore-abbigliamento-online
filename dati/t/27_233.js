@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["27_233"]=[["cf7c9203f4d1","Åmot Klær","a","clothing store","+47 38 35 08 77","","","","NESGATA 13B",58.3158,6.96319,"KVINESDAL","NO","a",100,""],["41e9755625df","Handelshuset Kvinesdal","a","fashion and apparel store","+47 957 21 783","http://www.handelshusetkvinesdal.no/","","","FJOTLANDSGATA 13",58.3157,6.96422,"KVINESDAL","NO","a",100,"m"]];

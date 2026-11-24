@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-16_227"]=[["776b129efac2","The House of Bruar","g","department store","+44 1796 483236","http://www.houseofbruar.com","mailorder@houseofbruar.com","https://www.facebook.com/246483185477149","",56.77091,-3.92944,"Perth and Kinross","GB","n",100,""]];

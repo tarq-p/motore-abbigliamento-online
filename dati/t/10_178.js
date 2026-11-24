@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["10_178"]=[["c06d68bf0464","Monika Line-golz","a","clothing store","+33 5 65 48 22 46","http://www.atelierdurequista.com/","","","3 Requista",44.5359,2.69968,"Sébrazac","FR","a",99,""],["f87a4353cd96","Ad Création","a","fashion and apparel store","+33 6 80 08 80 85","","","","31 rue Basse",44.53852,2.56476,"Villecomtal","FR","a",88,"m"]];

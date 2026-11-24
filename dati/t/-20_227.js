@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-20_227"]=[["23b3b3fc9b64","Spean Bridge Woollen Mill","a","clothing store","+44 1397 712260","https://www.ewm.co.uk","speanbridge@ewm.co.uk","https://www.facebook.com/1331565966713392","Station Rd",56.89219,-4.9208,"Spean Bridge","GB","n",98,""]];

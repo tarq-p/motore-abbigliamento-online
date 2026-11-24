@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_198"]=[["baee037aed07","Fauvergue Pascal","a","clothing store","+33 3 44 78 86 20","http://www.reparation-cuir.fr","","","144 rue de Thieux",49.52108,2.36841,"Catillon-Fumechon","FR","a",95,""],["953dd168d9d8","O Petit Trésor","a","clothing store","+33 6 12 04 63 82","","","","60 rue de la Hercherie",49.54638,2.35851,"Wavignies","FR","a",50,"m"]];

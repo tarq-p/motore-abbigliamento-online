@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["66_230"]=[["ec6c048b321c","Lager 157","a","clothing store","+46 490 157 72","https://www.lager157.com/","vastervik@lager157.com","https://www.facebook.com/179337505431136","Lysingsvägen 18",57.7431,16.66043,"Västervik","SE","n",93,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["50_247"]=[["0a098d6bd3bd","Kurvans Tyg & Kläder","a","clothing store","+46 253 205 04","http://www.kurvanstyg.se/","info@kurvanstyg.se","https://www.facebook.com/133288246776275","Bergevägen 7",61.85959,12.71714,"Idre","SE","a",99,""]];

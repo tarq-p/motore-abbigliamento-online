@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["63_247"]=[["fe1e602f9814","ByaBoa","a","clothing store","+46 73 971 35 72","http://www.byaboa.se/","","https://www.facebook.com/6139304813","Stocksbovägen 65",61.76976,15.81783,"Färila","SE","a",91,"m"]];

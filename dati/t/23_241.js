@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["23_241"]=[["638a73ae56a9","Safa of Norway","m","clothing company","+47 56 58 98 00","https://www.safa.no/","kundeservice@safa.no","https://www.facebook.com/292078754537160","Ytre-Tysse 23",60.37416,5.75787,"Tysse","NO","n",46,""]];

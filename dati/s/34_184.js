@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["34_184"]={"oc82e9c63533e":{"vivo":true,"lingua":"de","prezzo":99,"nPrezzi":3,"email":["andy@leonielouis.com"],"negozio":4,"data":"2026-11-23","url":"https://leonielouis.com/"}};

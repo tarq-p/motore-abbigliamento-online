@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["57_189"]={"o2666e32e644e":{"vivo":true,"lingua":"de","social":{"instagram":"https://www.instagram.com/nkddeutschland/","facebook":"https://www.facebook.com/nkd.friends"},"uomo":48,"donna":773,"maglia":46,"negozio":4,"lusso":12,"outlet":2,"marchio":3,"multimarca":8,"lavoro":8,"data":"2026-11-23","url":"https://www.nkd.com/"}};

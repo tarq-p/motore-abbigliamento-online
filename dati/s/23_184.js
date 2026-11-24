@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["23_184"]={"oa1f1c833a62f":{"data":"2026-11-23","motivo":"HTTP Error 404: Not Found","url":"https://www.yougnshop.com/?utm_source=google&utm_medium=wix_google_business_profile&utm_campaign=16713263931907035922"}};

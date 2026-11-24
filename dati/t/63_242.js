@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["63_242"]=[["f187886161a6","Rut & Knut","a","clothing store","+46 246 100 32","http://www.rutknut.se/","","","BORGÄRDESVÄGEN 16",60.73637,15.89768,"SVÄRDSJÖ","SE","a",100,""]];

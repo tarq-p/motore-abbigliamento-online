@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-28_208"]=[["493a6b20d779","Dorothy Perkins","a","clothing store","+353 51 871 969","https://stores.dorothyperkins.com/waterford/the-quay","","https://www.twitter.com/dorothy_perkins","The Quay",52.23939,-6.97316,"Waterford","IE","n",77,""]];

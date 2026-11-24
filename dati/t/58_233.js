@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["58_233"]=[["16d67b103524","Precis Vid Omberg och Vättern","a","clothing store","","","","https://www.facebook.com/308770439283955","Ödeshög, Sweden",58.32426,14.68703,"Hästholmen","SE","n",9,""]];

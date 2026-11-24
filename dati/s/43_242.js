@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["43_242"]={"ob33cbca9025f":{"vivo":true,"email":["peter@peteraas.no"],"social":{"facebook":"https://www.facebook.com/KIWISkreia?locale=nb_NO"},"uomo":1,"data":"2026-11-23","url":"https://www.peteraas.no/"}};

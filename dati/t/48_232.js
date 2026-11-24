@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["48_232"]=[["d6e2843fe05a","Amstaff Store","a","clothing store","+46 31 799 55 57","","","","SANNERSBY 151",58.1155,12.11531,"Västerlanda","SE","a",50,""],["c6d08c77e9e2","Vint Uf","u","mens clothing store","+46 73 582 14 97","","","","TROLLHÄTTEVÄGEN 21",58.19149,12.23078,"SJUNTORP","SE","a",50,"m"]];

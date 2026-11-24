@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["44_216"]={"o003b322418a9":{"data":"2026-11-23","motivo":"<urlopen error reindirizzamento verso un indirizzo non pubblico>","url":"https://unternehmen.kaufhaus-stolz.com/filialen/kellenhusen"}};

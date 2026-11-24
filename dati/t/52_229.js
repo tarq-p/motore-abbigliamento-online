@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["52_229"]=[["a5ee772a819e","Axelda Footwear Ab","a","fashion and apparel store","+46 325 120 90","http://WWW.axelda.com/","","","STATIONSGATAN 4",57.49511,13.10966,"SVENLJUNGA","SE","a",99,""]];

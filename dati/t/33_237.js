@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["33_237"]=[["a8e3aff99772","Elizabeth Mote","a","clothing store","+47 35 05 31 77","https://elizabethmote.no/","kundeservice@elizabethmote.no","https://www.facebook.com/131648730237673","Garverivegen 2",59.40173,8.49036,"Kviteseid","NO","a",97,""]];

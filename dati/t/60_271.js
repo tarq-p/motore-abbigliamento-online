@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["60_271"]=[["87f7ac23a2d9","Klea og Krushuinna","a","clothing store","+47 940 35 250","","teresa_selvik@hotmail.com","https://www.facebook.com/111791848938500","",67.77602,15.01501,"Myklebostad","NO","n",82,"m"]];

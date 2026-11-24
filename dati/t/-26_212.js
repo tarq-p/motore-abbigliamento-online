@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-26_212"]=[["a0166f35579e","Tweeds And Woolens","b","fashion boutique","+353 404 45793","http://glendaloughwoollenmills.com","","","2M5R+GJ Derrybawn,",53.0087,-6.30853,"Glendalough","IE","n",77,""]];

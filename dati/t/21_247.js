@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["21_247"]=[["2c0da75951ed","Saga Bryggja","a","fashion and apparel store","+47 994 86 160","https://app.flealover.com/66959/login","","","STRANDAVEGEN 128",61.93755,5.42641,"BRYGGJA","NO","a",50,"m"]];

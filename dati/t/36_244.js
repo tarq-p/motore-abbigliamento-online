@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["36_244"]=[["bfd12ee5b2a0","Tunet Butikken","a","fashion and apparel store","+47 988 07 863","http://www.tunetbutikken.no/","","","BYGDINVEGEN 548",61.02566,9.18219,"FAGERNES","NO","a",100,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["68_240"]=[["19cde673357d","Schonannes Klader Och Skor","a","clothing store","+46 73 180 22 06","http://SchoNannes.se/","","","VILLAGATAN 2",60.1819,17.17909,"HEBY","SE","a",100,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["60_235"]=[["c9030cc70abc","Varuhuset Rönneshytta","g","department store","+46 583 400 32","http://www.varuhuset.se/","","","HYTTVÄGEN 10",58.92277,15.04122,"RÖNNESHYTTA","SE","a",100,""]];

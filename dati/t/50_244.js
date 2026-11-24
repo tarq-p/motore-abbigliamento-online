@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["50_244"]=[["c1a29fdeec0f","Scandinavian Outlet","a","clothing store","+46 564 49 09 50","","","https://www.facebook.com/517389858449725","Långflon 40",61.02621,12.53509,"Höljes","SE","n",57,""],["a627523cf580","Scandinavian Outlet","a","clothing store","+46 564 49 09 50","","","","40, Långflon",61.04628,12.59684,"Höljes","SE","a",52,""]];

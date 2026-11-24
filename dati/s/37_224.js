@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["37_224"]={"oa1f7d0451988":{"data":"2026-11-23","motivo":"<urlopen error [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version ","url":"https://www.mascot.dk/"}};

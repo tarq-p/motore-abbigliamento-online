@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["9_169"]=[["aaf8be542b7c","Defresne Béatrice","a","clothing store","+33 9 66 85 50 43","","","https://www.facebook.com/1490331054311107","4 Voie Communale Carrer de la Favorit",42.40349,2.47996,"Prats-de-Mollo-la-Preste","FR","n",33,""]];

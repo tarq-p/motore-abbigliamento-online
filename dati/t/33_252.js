@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["33_252"]=[["e21dff6f88fc","Skjoldmøy As","a","clothing store","+47 477 63 181","https://parsleyandme.com/","","","HØVIKVEGEN 136",63.24971,8.2736,"FOLDFJORDEN","NO","a",50,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["28_245"]=[["a754482f9811","Hafslo Sewing Shop","m","apparel manufacturer","+47 413 36 979","https://sewingshop.no/","","","MOBAKKEN 1",61.31609,7.20219,"HAFSLO","NO","a",50,"m"]];

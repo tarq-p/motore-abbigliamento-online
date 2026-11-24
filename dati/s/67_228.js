@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["67_228"]={"o4797cee052a3":{"vivo":true,"email":["kontakt@snackan.com"],"social":{"facebook":"https://facebook.com/Sn%C3%A4ckan-L%C3%B6ttorp-680249335437484","instagram":"https://instagram.com/snackanlottorp/"},"data":"2026-11-23","url":"http://www.snackan.com/"}};

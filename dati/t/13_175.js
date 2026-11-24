@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["13_175"]=[["cffa4ac22c8c","La Boutique Mauricette","b","fashion boutique","+33 6 49 01 14 24","http://laboutiquemauricette.fr/","laboutiquemauricette@gmail.com","https://www.facebook.com/524537484699369","659 Rte de Saint-Etienne",43.76627,3.3512,"Soubès","FR","a",49,"m"]];

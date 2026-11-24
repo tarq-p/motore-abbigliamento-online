@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-10_203"]={"o3670ec394c3b":{"vivo":true,"lingua":"en","marchiBassi":1,"prezzo":89,"nPrezzi":103,"social":{"facebook":"https://www.facebook.com/HartsOfStur","instagram":"https://www.instagram.com/hartsofstur/"},"uomo":49,"maglia":8,"negozio":9,"outlet":7,"lavoro":4,"data":"2026-11-23","url":"https://www.hartsofstur.com/"}};

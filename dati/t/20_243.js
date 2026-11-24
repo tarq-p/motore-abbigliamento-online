@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["20_243"]=[["afa9e07a7e5d","Mongstad Offshore Base","m","apparel manufacturer","+47 56 36 30 00","http://www.mongstadbase.no","","https://www.facebook.com/439993763194120","Mongstad Sør",60.7934,5.06712,"Mongstad","NO","n",93,""]];

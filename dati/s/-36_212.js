@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-36_212"]={"o389f5a8b8b58":{"vivo":true,"lingua":"en","marchiUomo":["Hand Picked"],"email":["info@misetusa.ie"],"social":{"facebook":"http://facebook.com/squarespace","instagram":"http://instagram.com/squarespace"},"data":"2026-11-23","url":"http://www.misetusa.ie/"}};

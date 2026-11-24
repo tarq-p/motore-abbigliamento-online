@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["59_221"]={"oa2653578c5a5":{"vivo":true,"email":["bazaren@fairbutik.dk"],"social":{"facebook":"https://www.facebook.com/FairTradeBazarenAarhus/","instagram":"https://www.instagram.com/fairtrade.bazaren/"},"uomo":1,"data":"2026-11-23","url":"http://www.fairtradebazaren.dk"}};

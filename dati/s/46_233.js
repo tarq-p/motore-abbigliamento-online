@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["46_233"]={"o203077768f2d":{"vivo":true,"social":{"facebook":"https://www.facebook.com/Rotan-Varuhus-och-mat-700505903299609"},"data":"2026-11-23","url":"http://rotan.se/"}};

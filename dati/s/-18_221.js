@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-18_221"]={"odeee5d6c3e44":{"vivo":true,"lingua":"en","prezzo":105,"nPrezzi":88,"italia":2,"negozio":12,"lusso":1,"marchio":2,"data":"2026-11-23","url":"https://www.clandavidsondesigns.com/"}};

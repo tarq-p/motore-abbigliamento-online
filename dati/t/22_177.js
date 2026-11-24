@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["22_177"]=[["604c95c2c5f6","into the cliff","b","fashion boutique","+33 6 89 90 83 94","http://www.intothecliff.com/","intothecliff@gmail.com","https://www.facebook.com/163488450803677","60 Quartier des écoles",44.31333,5.69496,"Orpierre","FR","n",43,"m"]];

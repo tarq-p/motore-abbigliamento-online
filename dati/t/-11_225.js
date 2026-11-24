@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-11_225"]=[["8f6ad5a39d41","Watchesuk-online","a","clothing store","+44 1241 410617","","","","29 Macdonald Smith Dr",56.49687,-2.74167,"Carnoustie","GB","a",50,""],["f792307b3abb","Dogs'n'togs","m","clothing company","+44 7960 540248","https://www.dogsntogs.co.uk/","","","11 THOMPSON AVENUE",56.49906,-2.73376,"CARNOUSTIE","GB","a",50,"m"]];

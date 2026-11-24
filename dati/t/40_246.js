@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["40_246"]=[["c1796968c40b","Landsbyen Ringebu","a","fashion and apparel store","+47 419 37 714","https://forms.gle/BRv82MA3CfcYpko69","post@ringebu.com","https://www.facebook.com/477418385611368","Jernbanegata 7",61.53076,10.13928,"Ringebu","NO","n",77,"m"]];

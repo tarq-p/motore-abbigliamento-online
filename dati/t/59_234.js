@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["59_234"]=[["48f116e111c8","Lammskinnsprodukter","a","fashion and apparel store","+46 70 418 51 01","","mariel.ost@hotmail.com","https://www.facebook.com/331829990528296","Skänninge, Mjölbygatan 20",58.62094,14.94545,"Skänninge","SE","a",84,"m"]];

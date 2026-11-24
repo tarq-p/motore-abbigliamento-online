@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["29_238"]=[["82fda7a0b2ba","Nos mote","a","clothing store","+47 37 93 94 06","https://hovden.com/nos-mote","","https://www.facebook.com/992582317554983","Hovdetun",59.56016,7.35609,"Hovden i Setesdal","NO","n",91,""]];

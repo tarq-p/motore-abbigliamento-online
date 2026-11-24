@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-14_219"]={"oe8fe8d776c6a":{"vivo":true,"lingua":"en","email":["walter@wglendinning.co.uk"],"social":{"facebook":"http://www.facebook.com/WGlendinningAndSon"},"uomo":2,"data":"2026-11-23","url":"http://www.wglendinning.co.uk/"}};

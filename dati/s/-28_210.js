@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-28_210"]={"oeb70c98430cd":{"vivo":true,"lingua":"en","marchiBassi":4,"prezzo":61,"nPrezzi":234,"social":{"facebook":"https://www.facebook.com/MarksandSpencer","instagram":"https://www.instagram.com/marksandspencer/"},"uomo":66,"donna":47,"maglia":61,"lusso":11,"lavoro":4,"data":"2026-11-23","url":"http://www.marksandspencer.ie/"}};

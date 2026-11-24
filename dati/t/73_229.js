@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["73_229"]=[["8a132666249e","Visby Hyrtält & Hyrporslin","s","custom clothing store","+46 498 65 71 11","http://www.vht.se/","","","SJONHEM STORA SOJVIDE 116",57.49127,18.49822,"","SE","a",93,""]];

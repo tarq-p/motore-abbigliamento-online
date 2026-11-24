@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["14_188"]=[["78247a290616","Parole D'une Couturiere","a","fashion and apparel store","+33 7 86 89 59 94","","","","2 rue des Sabotiers",47.10298,3.51692,"St-Saulge","FR","a",98,"m"]];

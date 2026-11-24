@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["44_255"]=[["54efb33ac985","7th Heaven moteklær","a","fashion and apparel store","+47 917 08 598","","laila.dolmseth@gmail.com","https://www.facebook.com/1759538177694745","Follafossvegen 1120",63.98607,11.10838,"Follafoss","NO","n",18,"m"]];

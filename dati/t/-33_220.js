@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-33_220"]=[["dafff815e305","Margarets Fashions","a","clothing store","+353 74 916 5066","","","https://www.facebook.com/330365913784476","Main Street Falcarragh",55.13634,-8.10436,"Letterkenny","IE","n",42,""]];

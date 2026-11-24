@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["38_246"]={"o09033d52a802":{"vivo":true,"prezzo":599,"nPrezzi":44,"social":{"facebook":"https://www.facebook.com/ClasOhlsonSverige","instagram":"https://instagram.com/clasohlsonsverige"},"uomo":1,"lusso":2,"outlet":3,"data":"2026-11-23","url":"http://clasohlson.com"}};

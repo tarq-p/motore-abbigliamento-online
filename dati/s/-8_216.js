@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-8_216"]={"o034fe4694021":{"vivo":true,"lingua":"en","prezzo":50,"nPrezzi":6,"email":["hazelgladrags@gmail.com"],"social":{"facebook":"https://www.facebook.com/Glad-Rags-Boutique-458654327487883/","instagram":"https://www.instagram.com/glad_rags_boutique/"},"italia":6,"lusso":2,"data":"2026-11-23","url":"http://www.glad-rags-boutique.co.uk/"}};

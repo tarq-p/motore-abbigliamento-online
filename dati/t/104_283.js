@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["104_283"]=[["3903c9953952","Havfiskeri As","a","fashion and apparel store","+47 951 37 656","https://havfiskeri.no/","","","HOVEDVEIEN 7",70.98735,26.03072,"NORDVÅGEN","NO","a",98,"m"]];

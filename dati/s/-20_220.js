@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-20_220"]={"o886ef9f456b3":{"vivo":true,"lingua":"de","data":"2026-11-23","url":"http://www.woolworths.co.uk"},"oad28d6e91b03":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://www.tofs.com/storelocator/store/index/id/Whitley-Bay/"}};

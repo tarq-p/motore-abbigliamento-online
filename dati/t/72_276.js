@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["72_276"]=[["71f2f041c843","Felleskjøpet Shop Finnsnes","g","department store","+47 904 00 822","http://www.felleskjopet.no/","butikk.finnsnes@felleskjopet.no","https://www.facebook.com/114292063752565","Sjøgata 42",69.231,18.00094,"Finnsnes","NO","n",100,"m"]];

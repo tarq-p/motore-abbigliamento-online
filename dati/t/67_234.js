@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["67_234"]=[["c48c316806d2","ÖoB","g","department store","","https://www.xn--ob-eka.se/","kundtjanst@runsvengruppen.com","","Idbäcksvägen 8B",58.74587,16.99628,"Nyköping","SE","a",100,""]];

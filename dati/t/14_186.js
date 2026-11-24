@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["14_186"]=[["a5fe116cbe59","Fleur de Peau","a","clothing store","+33 4 70 34 52 77","http://mazillefabienne.site-solocal.com","","","2 rue Nationale",46.52166,3.68184,"Dompierre sur Besbre","FR","n",77,""]];

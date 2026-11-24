@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["32_252"]=[["96cd4124f3ed","Sveiva","a","clothing store","+47 454 44 064","http://www.sveivajakken.no/","","","HALSVEGEN 37",63.1574,8.17655,"AURE","NO","a",62,"m"],["be8ea2270efe","Sveiva","a","clothing store","+47 454 44 064","","sveiva1@online.no","https://www.facebook.com/560685687600323","Halsvegen 37",63.07075,8.23088,"Hals","NO","n",81,"m"]];

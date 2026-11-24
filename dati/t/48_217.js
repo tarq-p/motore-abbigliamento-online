@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["48_217"]=[["a5d455ba67d5","Modeboutique Pink Lady","a","clothing store","+49 38206 136622","https://modeboutique-pinklady.de/","","","Zur Seebrücke 35",54.25826,12.2421,"Graal-Müritz","DE","a",100,""],["49dd8bbed594","Maxim I 34","a","clothing store","+49 38206 748280","","","","Zur Seebrücke 34",54.25737,12.24473,"Graal-Müritz","DE","a",50,""]];

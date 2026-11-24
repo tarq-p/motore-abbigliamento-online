@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["33_243"]=[["1a60423e6be3","Tallak","a","clothing store","+47 922 65 909","http://www.dragonoptical.no","","","RØGGEVEGEN 1",60.87722,8.48626,"HEMSEDAL","NO","a",95,"m"]];

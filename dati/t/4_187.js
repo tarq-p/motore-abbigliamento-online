@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["4_187"]=[["f0c928c257ed","Friperie 87","a","clothing store","+33 5 55 79 10 84","","","","2 La Maison Neuve",46.84152,1.03996,"Azay-le-Ferron","FR","a",50,""],["65345afa7fbe","Dpl - Hervier Productions","m","apparel manufacturer","+33 2 54 38 75 01","","","","3 rue de la Varenne",46.99319,1.15615,"Châtillon-sur-Indre","FR","a",67,""]];

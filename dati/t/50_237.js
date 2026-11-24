@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["50_237"]=[["9c900f650202","Stilmagazinet","a","clothing store","+46 70 581 03 51","https://www.wiksforsbruk.se/","","https://www.facebook.com/207650239267104","Viksforsfabriken",59.26394,12.63228,"Säffle kommun","SE","n",45,"m"]];

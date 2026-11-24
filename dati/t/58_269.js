@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["58_269"]=[["db9387159c1a","Lyfe Full Of Prints","a","clothing store","+47 978 94 871","https://9535ae.myshopify.com/","","","OLAV DUUNS VEI 18",67.28076,14.51423,"BODØ","NO","a",50,"m"],["cbd1ea6eccbd","Mørkved Bydelssenter","g","department store","","","","https://www.facebook.com/255798355280974","",67.29026,14.56494,"Bodø","NO","n",60,""]];

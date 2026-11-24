@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["74_231"]=[["2a4f0f928aad","Textilt Hantverk Othem","m","apparel manufacturer","+46 73 687 68 60","","","","OTHEM BARSHAGE 721",57.75637,18.74308,"SLITE","SE","a",50,"m"]];

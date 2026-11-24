@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["62_250"]={"o1716d0263b98":{"vivo":true,"social":{"facebook":"https://www.facebook.com/rinab.nu","instagram":"https://www.instagram.com/rinab.nu/"},"uomo":1,"data":"2026-11-23","url":"https://www.rinab.nu/"}};

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["74_260"]=[["df41bf839d4b","CG Nystedts Kläder AB","a","clothing store","+46 76 136 18 55","http://www.nystedtsklader.se","nystedts@gmail.com","https://www.facebook.com/102961236439043","Storgatan 32",65.18069,18.74517,"Malå","SE","n",99,"m"]];

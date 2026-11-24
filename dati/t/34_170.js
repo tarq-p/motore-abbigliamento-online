@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["34_170"]=[["dce92e818d6a","Styl O Habille","a","clothing store","+33 4 95 60 63 21","","","https://www.facebook.com/137333563468866","Centre Cial Madonna Di A Serra chem Notre Dame de la Serra ",42.55835,8.74838,"Calvi","FR","n",72,""]];

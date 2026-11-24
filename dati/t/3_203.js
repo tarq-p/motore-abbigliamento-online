@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["3_203"]=[["40546f353288","Rajshree Gotapati Store","a","clothing store","+91 80589 52322","","","","1 NEW LYDD ROAD",50.9374,0.78577,"RYE","GB","a",50,""],["c85f0e8a4a9e","Lyons","g","department store","+44 1797 320590","","","https://www.facebook.com/126709010712464","Coronation Square",50.95067,0.9064,"Romney Marsh","GB","n",58,""]];

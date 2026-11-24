@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["48_245"]={"ob9378f49d94d":{"data":"2026-11-23","motivo":"nome del sito non trovato (rete o sito: riprovo la prossima volta)","dns":true,"url":"http://www.julssportshop.no"}};

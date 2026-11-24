@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["82_279"]=[["e57b349ded48","Asiri","a","fashion and apparel store","+47 411 22 155","http://www.asiri.no/","ailosiri@gmail.com","https://www.facebook.com/1631297366891135","Rotsundveien 608",69.79081,20.66643,"Rotsundelv","NO","a",67,"m"]];

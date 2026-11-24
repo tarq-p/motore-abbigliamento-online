@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["64_235"]={"oe007c3fe99f5":{"vivo":true,"vuoto":true,"lingua":"en","data":"2026-11-23","url":"http://www.bela.nu/"},"o15f80bb23a75":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://dressmann.com/en/"}};

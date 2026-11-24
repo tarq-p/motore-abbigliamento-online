@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["35_186"]=[["3d3a1298d1b3","Ophelia Textilias Finas","a","clothing store","+41 81 936 42 39","","","https://www.facebook.com/1185275231561375","",46.70555,8.85404,"Disentis/Mustér","CH","n",50,""]];

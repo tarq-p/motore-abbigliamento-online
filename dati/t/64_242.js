@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_242"]=[["6c8a251e1a67","Morris Stockholm","a","clothing store","","https://morrisstockholm.com/","customercare@morrisstockholm.com","https://www.facebook.com/292402182797","",60.58696,16.17188,"","SE","n",46,""]];

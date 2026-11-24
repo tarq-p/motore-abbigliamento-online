@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["14_193"]=[["c76c087f14cf","L'Atelier - Un moment convivial ou c'est vous le tapissier.","a","fashion and apparel store","+33 6 50 21 81 99","http://www.dgdc.fr/","desgoutsetdescouleurs@orange.fr","https://www.facebook.com/2324466901133324","53 Grande Rue",48.25487,3.7247,"Aix-Villemaur-Pâlis","FR","n",79,"m"]];

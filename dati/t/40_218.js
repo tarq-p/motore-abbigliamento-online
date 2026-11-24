@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["40_218"]=[["15d38bf2b1ad","Solskinn Sun'n Soul Concept Store","a","clothing store","+49 4642 69159","https://www.solskinn.de/","","","Oehe 1A",54.70712,10.00299,"Maasholm","DE","a",50,""],["0314c26e4918","Cafer Carpan Mode La Su","m","apparel manufacturer","+49 4352 911266","","","","Ladenzeile 8",54.58267,10.02236,"Damp","DE","a",50,""]];

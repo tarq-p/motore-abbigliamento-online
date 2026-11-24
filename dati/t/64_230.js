@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_230"]=[["1dcf5b8dc6bd","Frödinge Hällerum","g","department store","","","","https://www.facebook.com/787470744648786","",57.61189,16.03139,"Vimmerby","SE","n",76,""]];

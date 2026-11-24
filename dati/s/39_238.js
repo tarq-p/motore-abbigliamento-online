@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["39_238"]={"oc57e0184482d":{"vivo":true,"lingua":"en","email":["ole@komnesmaskin.no","rolf@therkelsen.no"],"uomo":1,"data":"2026-11-23","url":"http://komnesmaskin.no/"}};

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["30_251"]=[["1ffbec1976e5","Sus I Gjemnes As","a","clothing store","+47 920 66 067","http://www.dyregod-dagane.no/","","","NORDMØRSVEGEN 23",62.8942,7.67846,"BATNFJORDSØRA","NO","a",50,"m"]];

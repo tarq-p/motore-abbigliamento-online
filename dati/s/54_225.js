@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["54_225"]={"o55f8e8a18bac":{"vivo":true,"vuoto":true,"email":["jannica@trendpunkten.se"],"social":{"facebook":"https://www.facebook.com/trendpunkten","instagram":"https://instagram.com/trendpunkten/"},"data":"2026-11-23","url":"http://www.trendpunkten.se/"}};

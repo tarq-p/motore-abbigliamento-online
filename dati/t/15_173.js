@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["15_173"]=[["bbb9161aa209","Val Boutique","a","fashion and apparel store","+33 6 60 66 62 27","","","","1 rue de l'Hôtel de Ville",43.44598,3.75677,"Frontignan","FR","a",98,"m"],["3530d9e267e6","Modz","a","clothing store","+33 6 11 86 31 36","https://www.modzstore.fr/","","","52 boulevard Victor Hugo",43.44599,3.75402,"Frontignan","FR","a",50,"m"]];

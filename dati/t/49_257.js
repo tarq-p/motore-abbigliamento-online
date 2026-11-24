@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["49_257"]=[["8c67a85f2f32","Skálkur Gellan Saltangará","a","clothing store","+298 45 95 12","http://www.skalkur.fo/","","","57, Heiavegen",64.26648,12.27887,"Snåsa","NO","a",79,""]];

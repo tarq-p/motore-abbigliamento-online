@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["58_236"]=[["b2ee3b240eb8","Bålby Säteri","a","clothing store","+46 70 540 80 06","http://www.balby.se/","info@balby.se","https://www.facebook.com/191358637542570","Bålby Säteri",59.10178,14.68971,"Hasselfors","SE","n",90,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["37_239"]=[["9919b079b51e","Gislegård Profil og Design","a","fashion and apparel store","+47 482 49 111","","profilogdesign@gislegaard.no","https://www.facebook.com/988415294360047","Numedalsvegen 2966",59.86445,9.42325,"Flesberg","NO","n",25,"m"]];

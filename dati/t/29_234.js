@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["29_234"]=[["555196ca1bf0","Mitt Lille Rom","a","fashion and apparel store","+47 951 82 284","https://timma.no/salong/mitt-lille-rom-salong?isSearch=true","","https://www.facebook.com/1805041593092171","Torslandsvegen 153",58.64541,7.44813,"Åseral","NO","n",74,"m"]];

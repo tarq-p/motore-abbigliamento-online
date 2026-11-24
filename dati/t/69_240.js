@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["69_240"]=[["7b9ae5bcc9d9","Wiik Kyrkotextil","a","clothing store","+46 18 15 86 00","http://www.wiikkyrkotextil.se/","info@wiikkyrkotextil.se","https://www.facebook.com/529407097137419","Forsby 119",60.04293,17.48998,"Björklinge","SE","a",98,""]];

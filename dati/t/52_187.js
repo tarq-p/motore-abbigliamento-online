@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["52_187"]=[["5fd5887a68a2","Modezentrum Franz Reiter GmbH","a","clothing store","+43 4782 2024","http://www.modezentrum-reiter.at","modezentrum.reiter@aon.at","https://www.facebook.com/260090784071362","Obervellach 22",46.93208,13.20232,"Obervellach","AT","a",100,""]];

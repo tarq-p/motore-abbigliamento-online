@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["24_241"]={"o990d03a3dbcd":{"data":"2026-11-23","motivo":"HTTP Error 308: Permanent Redirect","url":"http://cubus.com/no/bedriftssider/butikkliste/Sweden/R05/"},"ob7c135428949":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://www.gulesider.no/andersen+larvik/84346186/bedrift"}};

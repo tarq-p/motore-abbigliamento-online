@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["48_245"]=[["b9378f49d94d","Juls Sportshop","g","department store","+47 62 45 79 50","http://www.julssportshop.no","juls@julssportshop.no","","",61.30746,12.23874,"","NO","n",77,""]];

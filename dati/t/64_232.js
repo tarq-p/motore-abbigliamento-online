@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_232"]=[["0edfd9509f12","Klädhuset","a","clothing store","+46 120 201 39","http://www.kladhuset.se","info@kladhuset.se","https://www.facebook.com/182091541831675","Uknavägen 27",58.1438,16.20517,"Falerum","SE","n",100,""]];

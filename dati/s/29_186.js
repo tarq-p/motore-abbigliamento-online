@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["29_186"]={"o434a082d021c":{"vivo":true,"lingua":"fr","prezzo":130,"nPrezzi":27,"email":["info@metamorphoses.ch"],"social":{"facebook":"https://www.facebook.com/metamorphoses.ch","instagram":"https://www.instagram.com/metamorphoses.ch/"},"uomo":2,"negozio":46,"data":"2026-11-23","url":"http://www.metamorphoses.ch/"}};

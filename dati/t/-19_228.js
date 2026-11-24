@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-19_228"]=[["e7b033a84102","Kiltane","a","clothing store","+44 1320 310008","https://www.kiltane.com/","","","Unit 1, Canal Centre, Canalside",57.14512,-4.68105,"Fort Augustus","GB","n",85,""]];

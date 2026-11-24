@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["39_220"]=[["9095eb3494ae","Nyvejs Gavebod","a","fashion and apparel store","+45 74 49 16 14","","","https://www.facebook.com/345653159641305","Nyvej 11",55.04767,9.78369,"Nordborg","DK","a",63,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["19_192"]=[["75688d16c7a0","Atelier Tricouture","a","clothing store","+33 3 25 31 06 52","http://www.alittlemarket.com/","ateliertricouture@orange.fr","https://www.facebook.com/350096715120187","1 Rue de la Fontaine",48.00205,4.81487,"Latrecey-Ormoy-sur-Aube","FR","n",70,""]];

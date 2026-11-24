@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-35_212"]={"o88e0f645dcf1":{"vivo":true,"lingua":"en","prezzo":109,"nPrezzi":156,"social":{"facebook":"https://www.facebook.com/toplinebeattys/","instagram":"https://www.instagram.com/beattysofloughrea/?hl=en"},"negozio":174,"lusso":7,"data":"2026-11-23","url":"https://www.beattys.ie/"}};

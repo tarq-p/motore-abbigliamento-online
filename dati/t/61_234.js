@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["61_234"]=[["962efaec8568","Femina Shop","a","clothing store","+46 141 400 82","","","","VALLGATAN 9",58.56313,15.28405,"MOTALA","SE","a",100,""],["7982ab8ee237","Most Wanted Dhmotor/ Most Wanted Mc Butik Tjällmo Ab","b","fashion boutique","+46 76 639 67 35","","","","YXHULTSVÄGEN 10",58.71568,15.3469,"TJÄLLMO","SE","a",60,"m"]];

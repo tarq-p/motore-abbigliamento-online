@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["68_236"]=[["1c4b55e912f3","Hedlandets Varuhus","g","department store","+46 159 133 40","http://www.sevenflowers.se/","info@hedlandet.se","https://www.facebook.com/106628632759629","Hedlandavägen 1",59.24514,17.23117,"Mariefred","SE","n",99,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["22_242"]=[["e8ba30c29f6c","Mann & Mini","a","fashion and apparel store","","","","https://www.facebook.com/272162489306688","Osterøy Senter",60.52546,5.50165,"Lonevåg","NO","n",60,""]];

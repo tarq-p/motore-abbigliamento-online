@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["10_171"]=[["46652c59d8dc","Créationsresinebougies","a","fashion and apparel store","+33 7 67 69 13 40","","","","108 avenue Jean Jaurès",42.80983,2.58989,"Maury","FR","a",20,"m"]];

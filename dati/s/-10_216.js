@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-10_216"]={"o2620746f87e3":{"vivo":true,"lingua":"en","email":["post@rohan.co.uk"],"social":{"facebook":"https://www.facebook.com/Rohanclothing/","instagram":"https://www.instagram.com/rohanclothing"},"uomo":3,"negozio":9,"lusso":6,"outlet":9,"lavoro":3,"data":"2026-11-23","url":"https://www.rohan.co.uk/our-shops/lymington/"}};

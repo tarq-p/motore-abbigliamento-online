@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["92_276"]=[["fa49525c5f59","Puls Sko Og Klær","a","clothing store","+47 901 49 904","http://www.pulsbutikken.no/","","","ALTTALUODDA 15",69.01274,23.0422,"KAUTOKEINO","NO","a",100,"m"]];

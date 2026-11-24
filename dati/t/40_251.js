@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["40_251"]=[["f982ada0584b","Polyalkemi","a","fashion and apparel store","+47 940 72 324","http://www.polyalkemi.no/","","","SOKNEDALSVEIEN 581",62.94736,10.19021,"SOKNEDAL","NO","a",89,"m"]];

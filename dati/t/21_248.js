@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["21_248"]=[["a8f3dd0fc010","One Node As","a","clothing store","","http://www.onenode.no/","","","KYRKJEVEGEN 31",62.04643,5.35078,"SELJE","NO","a",57,""],["922620eb6c10","Occo Paris","a","clothing store","","","","https://www.facebook.com/272637640306716","Hakallestranda",62.17395,5.44093,"Vanylven","NO","n",70,""]];

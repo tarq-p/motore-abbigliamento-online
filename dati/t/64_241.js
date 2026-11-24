@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["64_241"]=[["58e9a66a4bed","Irénes Modebutik","b","fashion boutique","+46 70 216 40 58","","irenesklader@live.com","https://www.facebook.com/247084822049464","Klostergatan 5A",60.45243,16.0336,"Långshyttan","SE","n",95,"m"]];

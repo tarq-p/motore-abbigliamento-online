@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["68_250"]=[["e6c9aad9a1ad","Häreboden 22","a","clothing store","+46 60 56 54 56","http://www.hareboden22.se/","","","HÄREVÄGEN 22",62.57798,17.10441,"INDAL","SE","a",99,""]];

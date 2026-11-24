@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["65_249"]=[["e0ec77a181a7","Nytt & Nåt Viskan ","b","fashion boutique","+46 72 067 21 43","","","https://www.facebook.com/482739128265490","Sj-vägen 34",62.44444,16.45072,"Stöde","SE","a",53,"m"]];

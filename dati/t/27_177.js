@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["27_177"]=[["47ba2dc87b49","La P'tite Boutique De Cathy","b","fashion boutique","+33 6 10 12 72 05","","laptiteboutiquedecathy@gmail.com","https://www.facebook.com/716195935225381","5 Place de l'Église",44.25591,6.92568,"Saint-Étienne-de-Tinée","FR","a",73,"m"]];

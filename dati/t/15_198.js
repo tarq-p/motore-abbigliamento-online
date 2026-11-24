@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["15_198"]=[["27c6f5db1a04","La Fabrique d'Aurélie ","a","fashion and apparel store","+33 6 20 05 68 02","","lafabriquedaurelie1@gmail.com","https://www.facebook.com/518818867975797","2 Chemin de Fussigny",49.51966,3.78737,"Courtrizy-et-Fussigny","FR","n",26,"m"]];

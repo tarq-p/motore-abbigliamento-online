@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["28_243"]=[["a617ffcdad2f","Huldra Husflid og Brukskunst","u","mens clothing store","+47 934 23 934","","post@huldrahusflid.no","https://www.facebook.com/208254572543259","Flåmsdalsvegen 45",60.85075,7.11335,"Flåm","NO","a",99,"m"]];

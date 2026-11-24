@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-25_223"]={"oddc4b387e92c":{"vivo":true,"lingua":"en","email":["mill@islaywoollenmill.co.uk"],"marchio":1,"data":"2026-11-23","url":"http://www.islaywoollenmill.co.uk"}};

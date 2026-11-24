@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["59_237"]=[["c21ba6134986","Björntorpets Handyman Service","a","fashion and apparel store","+46 70 659 47 63","http://www.bjorntorpet.se/","info@bjorntorpet.se","https://www.facebook.com/159562808078453","Norra Korsgatan Björntorp 1",59.26907,14.91855,"Vintrosa","SE","n",76,"m"]];

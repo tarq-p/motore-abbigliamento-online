@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["60_205"]=[["9b8755925775","Zen-topia, Mark Schulte Einzelhandel","a","clothing store","+49 15561 940340","https://zen-topia.de/","","","Zentendorfer Straße 24",51.2792,15.03105,"Neißeaue","DE","a",53,"m"]];

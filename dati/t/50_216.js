@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["50_216"]=[["5702d3ca5f09","Bau-tech Solarenergie Gmbh","b","fashion boutique","+49 4938 22978510","http://www.bau-tech2012.com","","","Tribseeser Straße 6",54.10828,12.6664,"Bad Sülze","DE","a",98,""]];

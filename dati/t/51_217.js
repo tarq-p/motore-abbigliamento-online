@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["51_217"]=[["471bc7092e84","Landwarenhaus Velgast Dirk Leu","a","clothing store","+49 38324 248","","","","Ernst-Thälmann-Str. 20",54.27341,12.81061,"Velgast","DE","a",100,""]];

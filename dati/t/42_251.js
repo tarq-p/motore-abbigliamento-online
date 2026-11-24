@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["42_251"]=[["20ae0d4f793f","The Curly Girl's World","b","fashion boutique","","http://www.thecurlygirlsworld.no/","","","RØROSVEIEN 2946",62.95632,10.72914,"SINGSÅS","NO","a",69,""]];

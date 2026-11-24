@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["119_280"]=[["71521eb427b3","Cubus","a","clothing store","+47 77 01 36 07","http://cubus.com/no/bedriftssider/butikkliste/Norway/88B/","88b@cubus.com","","Strandgata 18",70.07195,29.75295,"Vadsø","NO","a",100,""]];

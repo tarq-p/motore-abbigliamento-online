@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["32_184"]=[["508b077799f2","Shop Minnig Marion Linda","a","clothing store","+41 27 979 12 40","","","","Simplonstrasse 2",46.19711,8.13645,"Zwischbergen","CH","a",50,""]];

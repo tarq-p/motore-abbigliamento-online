@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["83_262"]=[["a280883be97e","NTM Butiken","a","clothing store","+46 929 140 00","http://www.ntm-norr.se/","info@ntm-norr.se","https://www.facebook.com/200390233326728","Jägargatan 5",65.67601,20.99922,"Älvsbyn","SE","n",93,""]];

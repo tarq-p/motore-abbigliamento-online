@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-11_229"]=[["5dd246dbbc92","Hill of Rothmaise","g","department store","","","","https://www.facebook.com/394901927747758","",57.39587,-2.51647,"Inverurie","GB","n",72,""]];

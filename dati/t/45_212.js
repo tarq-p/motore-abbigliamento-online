@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["45_212"]=[["789a12a38e37","Britta Zabel - Wohnge-chic","a","clothing store","+49 38758 364926","","","","Geschwister-Scholl-Straße 1A",53.13316,11.27087,"Dömitz","DE","a",50,""],["a4dc108d18f6","Kordula Waalkes","a","clothing store","+49 38750 20075","","","","Ludwigsluster Straße 14",53.21331,11.32229,"Malliß","DE","a",88,""]];

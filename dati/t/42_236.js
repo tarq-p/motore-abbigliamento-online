@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["42_236"]=[["ca682bf2938d","Bik Bok","a","clothing store","+47 66 77 34 50","https://bikbok.com","data.no@bisnode.com","https://www.instagram.com/bikbok","Farmandstredet",59.24686,10.50682,"Tønsberg","NO","n",77,""]];

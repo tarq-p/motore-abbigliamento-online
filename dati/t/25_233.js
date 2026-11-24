@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["25_233"]=[["b503cb66e26e","Lilla's Fashion","b","designer clothing","+47 941 99 883","","","","SKOGLIVEIEN 1",58.34708,6.29719,"HAUGE I DALANE","NO","a",50,"m"],["f82e1b25dc83","Rebekkaboden","m","clothing company","+47 900 28 720","http://www.rebekkaboden.no/","","","ØVRE MYSSAVEIEN 124",58.40032,6.48006,"HAUGE I DALANE","NO","a",99,"m"]];

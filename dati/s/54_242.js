@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["54_242"]={"o7321a29f5f2c":{"vivo":true,"lingua":"en","email":["dalarida@telia.com"],"social":{"facebook":"http://www.facebook.com/pages/Dalarid%c3%a5/181828141908740"},"uomo":1,"data":"2026-11-23","url":"http://dalarida.se/"}};

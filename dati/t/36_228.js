@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["36_228"]=[["c35ebe0c6f12","Tante Anna","a","clothing store","+45 69 13 54 10","https://www.tante-anna.dk/","","","BAGGESKÆR 8",57.13238,9.00537,"FRØSTRUP","DK","a",100,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["29_244"]=[["c82a3f3c28ca","Titten Tei Clothes","a","clothing store","+47 57 66 89 28","","info@mysafety.no","https://www.facebook.com/787806334696918","Øyragata 46",61.09719,7.48242,"Lærdalsøyri","NO","a",82,""]];

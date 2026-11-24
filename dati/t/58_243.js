@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["58_243"]=[["34dc90484214","Martin & Servera","a","clothing store","+46 250 469 00","http://www.martinservera.se/","","","Örjasvägen 11",60.98861,14.53155,"Mora","SE","n",85,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["42_257"]=[["e4156994726f","Fishmachine","m","apparel manufacturer","+47 468 01 794","https://www.fishmachine.eu/","","","SØRNESSVEIEN 1157",64.44271,10.58841,"HASVÅG","NO","a",50,"m"]];

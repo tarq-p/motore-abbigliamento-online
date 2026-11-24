@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["54_227"]=[["2c2064eacf44","Butik Paletti","a","clothing store","+46 70 896 39 79","http://www.butikpaletti.se/","","https://www.facebook.com/494483160577009","Bolmenv. 31, Unnaryd, 310",56.95471,13.52928,"Unnaryd","SE","n",62,"m"]];

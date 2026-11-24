@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["51_215"]=[["11a23c842015","Babaluna","a","clothing store","+49 174 7891551","http://babaluna.net/","","","Meesiger Damm 19",53.79609,12.89585,"Sommersdorf","DE","a",97,"m"]];

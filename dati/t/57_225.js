@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["57_225"]=[["53f546754f2a","Mimmis Mössor","a","clothing store","+46 454 77 13 81","http://www.mimmi.nu/kontakt.htm","","","MÖLLESJÖVÄGEN 9-1",56.39047,14.46178,"VILSHULT","SE","a",50,""]];

@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-12_228"]={"obbb384e05c36":{"vivo":true,"lingua":"en","social":{"facebook":"https://www.facebook.com/castlewarehouse/","instagram":"https://www.instagram.com/castlewarehouse.peebles/"},"uomo":6,"multimarca":1,"data":"2026-11-23","url":"http://www.castlewarehouse.com/"}};

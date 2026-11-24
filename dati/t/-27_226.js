@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-27_226"]=[["77b201acea39","Ross of Coll","a","clothing store","+44 1879 230240","http://www.rossofcoll.com/","rosco@branddaddy.co.uk","https://www.facebook.com/559040077618464","Tir nan Og, Arinagour",56.62734,-6.5298,"Argyll and Bute","GB","n",16,""]];

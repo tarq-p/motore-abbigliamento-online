@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["61_229"]=[["0e093ded5270","Alseda Hund & Fritidsbutik","a","clothing store","+46 383 520 28","http://www.tollartrollet.se","","","21, Alseda",57.41628,15.25453,"Holsbybrunn","SE","a",95,""]];

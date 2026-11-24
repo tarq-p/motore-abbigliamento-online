@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["12_185"]=[["1d72025dd39b","Gasolina Shop","a","clothing store","+33 4 70 42 09 29","http://www.gasolina-shop.net/","viviane.gasolina@gmail.com","https://www.facebook.com/170588966309111","La Loge",46.42485,3.21751,"Bresnay","FR","n",45,""]];

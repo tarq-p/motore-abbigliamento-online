@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-29_216"]={"oce4bebf0f54d":{"vivo":true,"lingua":"en","marchiBassi":5,"prezzo":109,"nPrezzi":57,"social":{"facebook":"https://www.facebook.com/profile.php?id=100063527830179","instagram":"https://www.instagram.com/boyle_for_men"},"uomo":12,"maglia":11,"sartoria":9,"negozio":20,"multimarca":7,"data":"2026-11-23","url":"http://www.boyleformen.com"}};

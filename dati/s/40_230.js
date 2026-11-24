@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["40_230"]={"o895b592b865a":{"vivo":true,"lingua":"en","prezzo":180,"nPrezzi":7,"social":{"facebook":"https://www.facebook.com/BindslevFiskepark"},"data":"2026-11-23","url":"http://bindslevfiskeparkputandtake.dk/"}};

@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["56_188"]={"ob628ee486a7e":{"vivo":true,"lingua":"en","sartoria":2,"data":"2026-11-23","url":"http://www.schneidermarak.at/"},"o88b783c17981":{"vivo":true,"italia":1,"data":"2026-11-23","url":"http://www.takko.com"},"o07c34f2c6f95":{"vivo":true,"italia":1,"data":"2026-11-23","url":"http://www.takko.com"}};

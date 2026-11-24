@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["48_261"]={"oa1480a5c690e":{"data":"2026-11-23","motivo":"HTTP Error 308: Permanent Redirect","url":"http://cubus.com/no/bedriftssider/butikkliste/Sweden/R05/"},"o7a1b9b0d454a":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://dressmann.com/en/"}};

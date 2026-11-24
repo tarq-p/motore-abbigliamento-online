@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["67_246"]=[["2f098964ac23","baraKlara","m","clothing company","","https://www.baraklara.se/","klara_lundgren@hotmail.com","https://www.facebook.com/1487654488171166","Norra Lundvägen 3",61.7244,16.98247,"Forsa","SE","a",92,""]];

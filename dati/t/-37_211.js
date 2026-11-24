@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-37_211"]=[["06d76b66f4e9","Paraffin Store","u","mens clothing store","","http://www.paraffinstore.com/","info@paraffinstore.com","https://www.facebook.com/116618535198946","",52.85586,-9.05273,"","IE","n",41,""]];

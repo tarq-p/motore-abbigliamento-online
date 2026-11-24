@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["53_232"]=[["ecdbd3ee7f22","Dyxon Apparel","m","apparel manufacturer","+46 70 593 87 61","http://www.dyxonapparel.com/","bjorn@dyxonapparel.com","https://www.facebook.com/106408021954308","Brogården 4",58.12372,13.45622,"Falköping","SE","a",81,"m"]];

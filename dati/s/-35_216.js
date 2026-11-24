@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["-35_216"]={"o5de3a3077b2a":{"vivo":true,"lingua":"en","marchiBassi":3,"prezzo":55,"nPrezzi":122,"social":{"facebook":"https://www.facebook.com/LavinsMenswear/","instagram":"https://www.instagram.com/lavinsmenswear/"},"uomo":15,"maglia":10,"sartoria":11,"negozio":16,"multimarca":6,"data":"2026-11-23","url":"http://www.lavinsmenswear.com/"}};

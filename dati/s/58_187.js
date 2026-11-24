@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["58_187"]={"oe0241281d4a5":{"vivo":true,"lingua":"de","email":["kundenservice@nahundfrisch.at"],"social":{"facebook":"https://www.facebook.com/nahundfrisch.at"},"lavoro":1,"data":"2026-11-23","url":"http://www.nahundfrisch.at"}};

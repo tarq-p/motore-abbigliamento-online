@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["60_235"]={"oc9030cc70abc":{"vivo":true,"email":["info@varuhuset.se"],"social":{"facebook":"http://www.facebook.com/varuhuset","instagram":"https://www.instagram.com/varuhusetronneshyttaab/"},"data":"2026-11-23","url":"http://www.varuhuset.se/"}};

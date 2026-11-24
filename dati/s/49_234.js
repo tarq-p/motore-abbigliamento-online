@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["49_234"]={"o58ff16855382":{"vivo":true,"email":["kontakt@blomsvaruhus.se"],"social":{"facebook":"https://www.facebook.com/hedlandet","instagram":"https://www.instagram.com/hedlandet/"},"uomo":1,"outlet":1,"data":"2026-11-23","url":"https://www.blomsvaruhus.se/"}};

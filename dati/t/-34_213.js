@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-34_213"]=[["3fc82029a200","Joe Ward Menswear","u","mens clothing store","+353 90 964 2776","http://www.joewardmenswear.ie/","info@joewardmenswear.ie","https://www.facebook.com/234329119963459","Main Street",53.40034,-8.33415,"Ballinasloe","IE","n",93,""]];

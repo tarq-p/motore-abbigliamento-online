@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["65_234"]=[["79b5d177b504","Återbruksshoppen","a","clothing store","+46 73 313 09 93","","","","LÖVBERGSVÄGEN 1M",58.57579,16.30561,"NORRKÖPING","SE","a",50,"m"],["89c2cad6f5bc","Lilla Paradiset","a","clothing store","+46 70 683 23 78","","","https://www.facebook.com/161483910929402","Strandvägen 277A",58.6672,16.32066,"Kolmården","SE","n",92,"m"]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["50_226"]=[["6a54dacc836e","Stabbe Design","a","clothing store","+46 72 551 32 22","https://stabbedesign.se/","info@stabbedesign.se","https://www.facebook.com/111696597150468","Klövervägen 1 B",56.73093,12.66927,"Haverdal","SE","n",77,"m"]];

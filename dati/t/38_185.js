@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["38_185"]=[["bde852dd1563","Giacometti Sport","a","clothing store","+41 81 834 10 30","http://www.giacomettisport.ch/","","","Strada Cantonale 322",46.4001,9.69592,"Maloja","CH","a",97,""]];

@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["52_214"]=[["7e54443aee0d","Modehaus Markau Inh. Hildburg Markau","a","clothing store","+49 3961 210409","","","","Bahnhofstraße 38",53.69287,13.24907,"Altentreptow","DE","a",88,""]];

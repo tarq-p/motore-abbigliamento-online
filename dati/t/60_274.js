@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["60_274"]=[["471e4bb12066","Tonje Sara","a","fashion and apparel store","+47 982 48 123","","tonjesara@live.no","https://www.facebook.com/233548450018674","Eidsfjordveien 84",68.74246,15.14139,"Sortland","NO","a",68,"m"]];

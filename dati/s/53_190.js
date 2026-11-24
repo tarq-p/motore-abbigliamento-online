@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["53_190"]={"ob398db158f42":{"data":"2026-11-23","motivo":"HTTP Error 403: Forbidden","url":"https://www.spar.at/standorte/spar-abtenau-5441-markt-255"},"o6a1ce2f5c8de":{"vivo":true,"lingua":"de","prezzo":210,"nPrezzi":8,"email":["info@altegreisslerei.at"],"uomo":1,"italia":1,"lusso":1,"data":"2026-11-23","url":"http://www.altegreisslerei.at/"}};

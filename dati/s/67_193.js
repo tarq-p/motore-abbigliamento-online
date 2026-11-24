@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["67_193"]={"o85f612c5b4b7":{"data":"2026-11-23","motivo":"timed out","url":"http://www.wohnen-schenken.at"},"o9cdd5a6fe04a":{"data":"2026-11-23","motivo":"HTTP Error 429: Too Many Requests","url":"https://www.firmenabc.at/falke-gesellschaft-m-b-h_EMrs"}};

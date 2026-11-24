@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["51_227"]=[["96f2aa3fa7e7","Herrgård Vintage","a","clothing store","+46 70 394 18 48","","","","BRUKSGATAN 17",56.80376,12.97132,"OSKARSTRÖM","SE","a",50,"m"],["c1ca55bcc050","Cws-boco Sweden","a","clothing store","+46 35 17 64 00","http://www.cws-boco.se","","","BROGATAN 32",56.80263,12.97022,"OSKARSTRÖM","SE","a",95,""]];

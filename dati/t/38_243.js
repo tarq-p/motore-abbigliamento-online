@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["38_243"]=[["86fee34d712f","Brustad Bagn","a","clothing store","+47 901 56 919","http://brustadshop.no/","","","STOREBRUVEGEN 55",60.82423,9.54532,"BAGN","NO","a",100,"m"]];

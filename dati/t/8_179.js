@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["8_179"]=[["ddefad9000ea","Lafon Jean-claude","a","clothing store","+33 4 71 46 11 81","http://galoche.over-blog.com","","","31 avenue du Quinze Septembre",44.85525,2.23359,"Le Rouget","FR","a",50,""]];

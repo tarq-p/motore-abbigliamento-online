@@ -1,0 +1,1 @@
+(window.MA_T=window.MA_T||{})["-33_217"]=[["0aac8450fa32","Miss B's Clothing","a","clothing store","+44 28 6865 8419","http://www.missbsclothing.co.uk/","","","33 MAIN STREET",54.47993,-8.0922,"ENNISKILLEN","GB","a",100,""]];

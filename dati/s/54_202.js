@@ -1,0 +1,1 @@
+(window.MA_S=window.MA_S||{})["54_202"]={"o5a3528bbc9da":{"vivo":true,"lingua":"de","nPrezzi":1,"email":["info@kaercherstore-lachmann.de"],"lusso":2,"data":"2026-11-23","url":"https://www.kaercher-store-lachmann.de/"}};

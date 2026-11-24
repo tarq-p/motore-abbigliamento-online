@@ -15,6 +15,7 @@
 .nota{border-left:3px solid var(--gold);padding:6px 12px;background:var(--soft);border-radius:0 8px 8px 0;margin:10px 0}
 .marchi{font-size:13px;margin-top:4px}
 .marchi b{font-weight:600}
+.name a.nm{color:inherit;text-decoration:none}.name a.nm:hover{text-decoration:underline;color:var(--wine)}
 </style>
 </head>
 <body>
@@ -539,7 +540,7 @@ function card(l){
   return `<article class="lead" data-lid="${esc(l.id)}">
     <div class="score ${ls.classe}" title="Punteggio da 0 a 100: da chi partire. È una stima, non una garanzia">${ls.lead}</div>
     <div>
-      <div class="name">${esc(l.nome)}${badge}</div>
+      <div class="name">${web?`<a class="nm" target="_blank" rel="noopener noreferrer" href="${esc(web)}" title="Apri il sito del negozio in una nuova scheda">${esc(l.nome)}</a>`:esc(l.nome)}${badge}</div>
       <div class="meta">${esc(TYPES[l.type].label)}${l.cat?' <span class="small">('+esc(l.cat)+')</span>':''} · ${l.km!=null?l.km+' km · ':''}${esc(itC(l.citta))}${l.addr?' · '+esc(l.addr):''}</div>
       ${(l.anche||[]).length?`<div class="small">Compare anche come: ${esc(l.anche.slice(0,3).join(', '))}${l.anche.length>3?' e altri '+(l.anche.length-3):''}</div>`:''}
       ${marchi}

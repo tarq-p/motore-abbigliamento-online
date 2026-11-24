@@ -44,7 +44,7 @@
   <p class="lead-in">Scegli un paese: senza città cerca in tutto il paese (solo i negozi di cui ho già letto il sito, con i migliori in cima). Con una città cerca entro i km indicati, anche i negozi non letti.</p>
   <div class="row">
     <label>Paese<select id="paese"></select></label>
-    <div class="field-comune"><label>Città (facoltativa)<input id="comune" placeholder="es. München, Zürich, Paris" autocomplete="off"></label><div id="sugg"></div></div>
+    <div class="field-comune"><label>Città (facoltativa)<input id="comune" placeholder="es. Monaco di Baviera, Zurigo, Parigi" autocomplete="off"></label><div id="sugg"></div></div>
     <label>Entro quanti km<input id="radius" type="number" value="15" min="1" max="60" style="width:110px"></label>
     <button id="go" class="big">Trova le boutique</button>
   </div>
@@ -126,6 +126,23 @@ function dist(a,b,c,d){ const R=6371,t=x=>x*Math.PI/180,dl=t(c-a),dn=t(d-b);
   const h=Math.sin(dl/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dn/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
 function hostDi(u){ return String(u||'').trim().toLowerCase().replace(/^https?:\/\//,'').replace(/^www\./,'').split(/[\/:?#]/)[0]; }
 
+// ---- nomi delle città in italiano (i dati hanno il nome locale: München, Zürich...). Si cerca con entrambi.
+const ITA_CITTA = (()=>{ const m={}; const L=[
+ ['München','Monaco di Baviera'],['Köln','Colonia'],['Nürnberg','Norimberga'],['Wien','Vienna'],['Zürich','Zurigo'],['Genève','Ginevra'],['Genf','Ginevra'],
+ ['Basel','Basilea'],['Bâle','Basilea'],['Bern','Berna'],['Luzern','Lucerna'],['Lausanne','Losanna'],['Sankt Gallen','San Gallo'],['Saint-Gall','San Gallo'],
+ ['Salzburg','Salisburgo'],['Frankfurt am Main','Francoforte sul Meno'],['Frankfurt','Francoforte sul Meno'],['Dresden','Dresda'],['Aachen','Aquisgrana'],['Mainz','Magonza'],['Trier','Treviri'],
+ ['Hamburg','Amburgo'],['Berlin','Berlino'],['Leipzig','Lipsia'],['Braunschweig','Brunswick'],['Freiburg im Breisgau','Friburgo in Brisgovia'],['Regensburg','Ratisbona'],['Augsburg','Augusta'],
+ ['Hannover','Hannover'],['Düsseldorf','Düsseldorf'],['Bremen','Brema'],['Lübeck','Lubecca'],['Koblenz','Coblenza'],['Konstanz','Costanza'],
+ ['København','Copenaghen'],['Kopenhagen','Copenaghen'],['Copenhagen','Copenaghen'],['Aarhus','Aarhus'],['Stockholm','Stoccolma'],['Göteborg','Göteborg'],['Gothenburg','Göteborg'],['Malmö','Malmö'],
+ ['Oslo','Oslo'],['Bergen','Bergen'],['Dublin','Dublino'],['London','Londra'],['Londen','Londra'],['Edinburgh','Edimburgo'],['Cardiff','Cardiff'],['Glasgow','Glasgow'],
+ ['Den Haag',"L'Aia"],["'s-Gravenhage","L'Aia"],['The Hague',"L'Aia"],['Antwerpen','Anversa'],['Anvers','Anversa'],['Brussel','Bruxelles'],['Bruxelles','Bruxelles'],['Brussels','Bruxelles'],['Brüssel','Bruxelles'],
+ ['Gent','Gand'],['Gand','Gand'],['Brugge','Bruges'],['Bruges','Bruges'],['Liège','Liegi'],['Luik','Liegi'],['Luxembourg','Lussemburgo'],['Luxemburg','Lussemburgo'],
+ ['Paris','Parigi'],['Lyon','Lione'],['Marseille','Marsiglia'],['Nice','Nizza'],['Strasbourg','Strasburgo'],['Toulouse','Tolosa'],['Lille','Lilla'],['Bordeaux','Bordeaux'],
+ ['Maastricht','Maastricht'],['Rotterdam','Rotterdam'],['Amsterdam','Amsterdam'],['Utrecht','Utrecht']]; 
+ for(const [a,b] of L) m[a.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ß/g,'ss')]=b; return m; })();
+function itC(n){ n=String(n==null?'':n); const k=norm(n); if(hasO(ITA_CITTA,k)) return ITA_CITTA[k];
+  return (n.length>3 && n===n.toUpperCase() && n!==n.toLowerCase()) ? n.toLowerCase().replace(/(^|[\s\-'])(\p{L})/gu,(m,a,b)=>a+b.toUpperCase()) : n; }
+
 // ---- paesi: nome e lingua dei messaggi quando il sito non è stato letto
 const PAESI = {DE:['Germania','de'], AT:['Austria','de'], CH:['Svizzera','de'], LI:['Liechtenstein','de'], FR:['Francia','fr'], BE:['Belgio','fr'],
   LU:['Lussemburgo','fr'], MC:['Monaco','fr'], NL:['Paesi Bassi','en'], GB:['Regno Unito','en'], IE:['Irlanda','en'], DK:['Danimarca','en'],
@@ -197,7 +214,7 @@ const META = window.MA_META || null, CITTA = window.MA_CITTA || [];    // [nome,
     return; }
   $('datawarn').innerHTML = 'Non trovo i dati: serve la cartella <b>dati</b> accanto a index.html. Per rifarli: <code>.venv/bin/python estrai_paesi.py</code> (vedi LEGGIMI.md).';
 })();
-const cittaLabel = c => c[0]+(c[1]&&c[1]!==c[0]?', '+c[1]:'')+' ('+((PAESI[c[2]]||[c[2]])[0])+')';
+const cittaLabel = c => itC(c[0])+(c[1]&&c[1]!==c[0]?', '+c[1]:'')+' ('+((hasO(PAESI,c[2])?PAESI[c[2]]:[c[2]])[0])+')';
 function loadTile(key){
   return new Promise(res=>{
     if(window.MA_T&&window.MA_T[key]) return res(window.MA_T[key]);
@@ -257,13 +274,13 @@ function suggest(q){
   q=norm(q.trim()); if(q.length<2) return [];
   const starts=[], has=[];
   const P0=$('paese')?$('paese').value:'';
-  for(const c of CITTA){ if(P0&&c[2]!==P0) continue; const n=norm(c[0]); if(n.startsWith(q)) starts.push(c); else if(has.length<12 && n.includes(q)) has.push(c); if(starts.length>=12) break; }
+  for(const c of CITTA){ if(P0&&c[2]!==P0) continue; const n=norm(c[0]), ni=norm(itC(c[0])); if(n.startsWith(q)||ni.startsWith(q)) starts.push(c); else if(has.length<12 && (n.includes(q)||ni.includes(q))) has.push(c); if(starts.length>=12) break; }
   return starts.concat(has).slice(0,12);
 }
 function showSugg(){
   const list=suggest($('comune').value), box=$('sugg');
   if(!list.length){ box.style.display='none'; return; }
-  box.innerHTML=list.map((c,i)=>`<div data-i="${i}"><b>${esc(c[0])}</b> <span class="small">${esc((c[1]&&c[1]!==c[0]?c[1]+', ':'')+((PAESI[c[2]]||[c[2]])[0]))}</span></div>`).join('');
+  box.innerHTML=list.map((c,i)=>`<div data-i="${i}"><b>${esc(itC(c[0]))}</b> <span class="small">${esc((itC(c[0])!==c[0]?c[0]+', ':'')+(c[1]&&c[1]!==c[0]?c[1]+', ':'')+((hasO(PAESI,c[2])?PAESI[c[2]]:[c[2]])[0]))}</span></div>`).join('');
   box.style.display='block'; box._list=list;
 }
 function pickCitta(c){ selCitta=c; $('comune').value=cittaLabel(c); $('sugg').style.display='none'; }
@@ -298,7 +315,7 @@ $('go').onclick = async ()=>{
   $('go').disabled=true; CERCATO=true; MOSTRA=30; leads={}; render();
   try{
     if(!perPaese&&!selCitta) pickCitta(sc);
-    const g={lat:sc[3], lon:sc[4], name:sc[0]};
+    const g={lat:sc[3], lon:sc[4], name:perPaese?sc[0]:itC(sc[0])};
     $('status').textContent=perPaese?'Cerco in tutto il paese...':'Cerco i negozi intorno a '+g.name+'...';
     const recs=perPaese ? await tuttoPaese(PAESE) : await tessereIntorno(g.lat,g.lon,R);
     let tot=0, catene=0;
@@ -523,7 +540,7 @@ function card(l){
     <div class="score ${ls.classe}" title="Punteggio da 0 a 100: da chi partire. È una stima, non una garanzia">${ls.lead}</div>
     <div>
       <div class="name">${esc(l.nome)}${badge}</div>
-      <div class="meta">${esc(TYPES[l.type].label)}${l.cat?' <span class="small">('+esc(l.cat)+')</span>':''} · ${l.km!=null?l.km+' km · ':''}${esc(l.citta)}${l.addr?' · '+esc(l.addr):''}</div>
+      <div class="meta">${esc(TYPES[l.type].label)}${l.cat?' <span class="small">('+esc(l.cat)+')</span>':''} · ${l.km!=null?l.km+' km · ':''}${esc(itC(l.citta))}${l.addr?' · '+esc(l.addr):''}</div>
       ${(l.anche||[]).length?`<div class="small">Compare anche come: ${esc(l.anche.slice(0,3).join(', '))}${l.anche.length>3?' e altri '+(l.anche.length-3):''}</div>`:''}
       ${marchi}
       ${perche.length?`<div class="small">${esc(perche.join(' '))}</div>`:''}

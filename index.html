@@ -173,6 +173,8 @@ const FRASI0 = {
 const CAT_TXT = {it:' (catalogo: {u})', en:' (catalogue: {u})', de:' (Katalog: {u})', fr:' (catalogue : {u})'};
 const cfg = load('abbigliamento_cfg', {});
 cfg.azienda = cfg.azienda==null ? 'Maglificio Vela Blu' : cfg.azienda;
+// link di partenza del catalogo: il sito di Vela Blu (chi lo svuota a mano lo lascia vuoto)
+cfg.catalogo = cfg.catalogo==null ? 'https://www.maglificiovelablu.com/en/home-eng/' : cfg.catalogo;
 cfg.tpl = {...TPL0, ...(cfg.tpl||{})}; cfg.tplm = {...TPLM0, ...(cfg.tplm||{})}; cfg.ogg = {...OGG0, ...(cfg.ogg||{})};
 cfg.frasi = cfg.frasi||{}; for(const k of Object.keys(FRASI0)) cfg.frasi[k] = {...FRASI0[k], ...(cfg.frasi[k]||{})};
 let LANG = 'en';

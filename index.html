@@ -115,9 +115,12 @@ function urlSicuro(u){
 }
 function mailSicura(m){ m=String(m==null?'':m).trim(); return /^[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}$/.test(m)?m:''; }
 function telSicuro(t){ t=String(t==null?'':t).trim(); return /^[+\d][\d\s().\-]{5,24}$/.test(t)?t:''; }
+const hasO = (o,k) => Object.prototype.hasOwnProperty.call(o,k);
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ß/g,'ss');
-function load(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function load(k,d){ try{ const v=localStorage.getItem(k); if(!v) return d; const x=JSON.parse(v);
+  // un valore salvato che non e' un oggetto (null, numero, lista, testo) non serve: si riparte da quello di partenza
+  return (x && typeof x==='object' && !Array.isArray(x)) ? x : d; }catch(e){ return d } }
 function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
 function dist(a,b,c,d){ const R=6371,t=x=>x*Math.PI/180,dl=t(c-a),dn=t(d-b);
   const h=Math.sin(dl/2)**2+Math.cos(t(a))*Math.cos(t(c))*Math.sin(dn/2)**2; return 2*R*Math.asin(Math.sqrt(h)); }
@@ -175,8 +178,13 @@ const cfg = load('abbigliamento_cfg', {});
 cfg.azienda = cfg.azienda==null ? 'Maglificio Vela Blu' : cfg.azienda;
 // link di partenza del catalogo: il sito di Vela Blu (chi lo svuota a mano lo lascia vuoto)
 cfg.catalogo = cfg.catalogo==null ? 'https://www.maglificiovelablu.com/en/home-eng/' : cfg.catalogo;
-cfg.tpl = {...TPL0, ...(cfg.tpl||{})}; cfg.tplm = {...TPLM0, ...(cfg.tplm||{})}; cfg.ogg = {...OGG0, ...(cfg.ogg||{})};
-cfg.frasi = cfg.frasi||{}; for(const k of Object.keys(FRASI0)) cfg.frasi[k] = {...FRASI0[k], ...(cfg.frasi[k]||{})};
+const ogg = x => (x && typeof x==='object' && !Array.isArray(x)) ? x : {};
+for(const k of ['chi','azienda','catalogo']) if(typeof cfg[k]!=='string') delete cfg[k];
+cfg.azienda = cfg.azienda==null ? 'Maglificio Vela Blu' : cfg.azienda;
+cfg.catalogo = cfg.catalogo==null ? 'https://www.maglificiovelablu.com/en/home-eng/' : cfg.catalogo;
+cfg.tpl = {...TPL0, ...ogg(cfg.tpl)}; cfg.tplm = {...TPLM0, ...ogg(cfg.tplm)}; cfg.ogg = {...OGG0, ...ogg(cfg.ogg)};
+cfg.frasi = ogg(cfg.frasi); for(const k of Object.keys(FRASI0)) cfg.frasi[k] = {...FRASI0[k], ...ogg(cfg.frasi[k])};
+for(const d of [cfg.tpl,cfg.tplm,cfg.ogg]) for(const k of Object.keys(d)) if(typeof d[k]!=='string') d[k]='';
 let LANG = 'en';
 const saveCfg = () => save('abbigliamento_cfg', cfg);
 
@@ -271,7 +279,7 @@ const NO_CAT = /(women|womens|lingerie|underwear|bridal|wedding|children|childre
 // ---- stato
 let leads = {};
 let CERCATO=false, MOSTRA=30, TOLTI_CATENE=0, SENZA_CONTATTI=0;
-let locInfo = load('abbigliamento_loc', {});     // cosa dice il sito del negozio (letto una volta e ricordato)
+let locInfo = (()=>{ const v=load('abbigliamento_loc', {}); const o={}; if(v&&typeof v==='object'&&!Array.isArray(v)) for(const [k,x] of Object.entries(v)) if(x&&typeof x==='object') o[k]=P.pulisci(x); return o; })();     // cosa dice il sito del negozio (letto una volta e ricordato)
 let emptyMsg = 'Scegli una città e premi «Trova le boutique»: in pochi secondi hai l\'elenco.';
 
 // ---- ricerca
@@ -284,7 +292,7 @@ $('go').onclick = async ()=>{
   const PAESE=$('paese').value, perPaese=!scritto&&!!PAESE;
   const sc=perPaese ? [PAESI[PAESE][0],'',PAESE,0,0,0] : ((selCitta && $('comune').value===cittaLabel(selCitta)) ? selCitta : (suggest(scritto)[0]||null));
   if(!scritto&&!PAESE) return stop('Scegli un paese per cercare in tutto il paese, oppure scrivi una città.', true);
-  if(!sc) return stop(scritto ? 'Non trovo «'+scritto.slice(0,40)+'» tra le città dei paesi coperti: scegli dall\'elenco che compare.' : 'Scrivi il nome di una città (per esempio München), scegli dall\'elenco e premi «Trova le boutique».', true);
+  if(!sc) return stop(scritto ? 'Non trovo «'+scritto.slice(0,40)+'» '+(PAESE?'in '+((PAESI[PAESE]||[PAESE])[0]):'tra le città dei paesi coperti')+': scegli dall\'elenco che compare.' : 'Scrivi il nome di una città (per esempio München), scegli dall\'elenco e premi «Trova le boutique».', true);
   if(!sel.length) return stop('Scegli almeno un tipo di negozio.');
   const R=Math.min(60,Math.max(1,+$('radius').value||15))*1000;
   $('go').disabled=true; CERCATO=true; MOSTRA=30; leads={}; render();
@@ -300,7 +308,7 @@ $('go').onclick = async ()=>{
       if(!perPaese && dist(g.lat,g.lon,o[9],o[10])*1000>R) continue;
       if(CATENE.test(o[1]||'') || NO_CAT.test(o[3]||'')){ catene++; continue; }
       const id='o'+o[0];
-      { const k=`${Math.floor(o[10]/META.tile)}_${Math.floor(o[9]/META.tile)}`, pre=window.MA_S&&window.MA_S[k]&&window.MA_S[k][id]; if(pre&&!locInfo[id]) locInfo[id]={...pre,pre:true}; }
+      { const k=`${Math.floor(o[10]/META.tile)}_${Math.floor(o[9]/META.tile)}`, pre=window.MA_S&&window.MA_S[k]&&window.MA_S[k][id]; if(pre&&!locInfo[id]) locInfo[id]={...P.pulisci(pre),pre:true}; }
       leads[id]={id, nome:String(o[1]||'').slice(0,120), type, cat:o[3]||'', addr:String(o[8]||'').slice(0,200), citta:o[11]||'', paese:o[12]||'',
         soc:urlSicuro(o[7]), phone:telSicuro(o[4]), email:mailSicura(o[6]), web:urlSicuro(o[5]),
         lat:o[9], lon:o[10], km:perPaese?null:Math.round(dist(g.lat,g.lon,o[9],o[10])*10)/10,
@@ -341,7 +349,7 @@ $('go').onclick = async ()=>{
       tot-=senza; SENZA_CONTATTI=senza; TOLTI_CATENE=catene;
     }
     $('status').textContent = tot ? (perPaese?`Ho trovato ${tot} negozi in ${g.name} con il sito già letto.`:`Ho trovato ${tot} negozi entro ${R/1000} km da ${g.name}.`)+(()=>{ const t=[TOLTI_CATENE?TOLTI_CATENE+' tra catene, monomarca di grandi marchi, donna, bambino, sport e usato':'', SENZA_CONTATTI?SENZA_CONTATTI+' senza nessun contatto':''].filter(Boolean); return t.length?' Ne ho tolti '+t.join(' e ')+'.':''; })()
-                                  : 'Nessun negozio trovato: prova ad aumentare i km o a scegliere altri tipi.';
+                                  : (perPaese ? 'Per '+g.name+' non ho ancora letto nessun sito di negozi: scrivi una città per cercare tra tutti i negozi, anche senza punteggio dal sito.' : 'Nessun negozio trovato: prova ad aumentare i km o a scegliere altri tipi.');
     emptyMsg=perPaese?'Nessun negozio con il sito letto in '+g.name+' con i tipi scelti.':'Nessun negozio entro '+(R/1000)+' km da '+g.name+' con i tipi scelti. Aumenta i km (massimo 60) o scegli più tipi.';
     autoGiro++; $('autositi').textContent=''; progres(0,0);
     render();
@@ -368,8 +376,8 @@ function etichettaLink(u){ const h=hostDi(u); return /(^|\.)instagram\.com$|^ins
 // ---- messaggi: lingua del suo sito, altrimenti del suo paese
 function linguaDi(l){
   const li=locInfo[l.id];
-  if(li&&li.vivo&&LINGUE[li.lingua]) return li.lingua;
-  return (PAESI[l.paese]||[0,'en'])[1];
+  if(li&&li.vivo&&hasO(LINGUE,li.lingua)) return li.lingua;
+  return hasO(PAESI,l.paese) ? PAESI[l.paese][1] : 'en';
 }
 function chiSono(lang){
   const c=(cfg.chi||'').trim(), a=(cfg.azienda||'').trim()||'Maglificio Vela Blu';
@@ -440,7 +448,7 @@ async function chiediSitoLocale(web){
   throw new Error('NOSERVER');
 }
 function salvaLoc(){ const o={}; for(const [k,v] of Object.entries(locInfo)) if(!v.pre) o[k]=v; save('abbigliamento_loc',o); }
-function salvaSitoLocale(id,j){ locInfo[id]=j; salvaLoc(); }
+function salvaSitoLocale(id,j){ locInfo[id]=P.pulisci(j); salvaLoc(); }
 function sitoDaLeggere(l){
   if(!urlSicuro(l.web) || /instagram|facebook|tiktok|linktr|google\.|zalando|amazon|ebay|etsy/i.test(l.web)) return false;
   const li=locInfo[l.id]; if(!li) return true;
@@ -465,7 +473,7 @@ async function leggiSitiPrimi(){
       const l=coda.shift();
       try{ salvaSitoLocale(l.id, await chiediSitoLocale(l.web)); SERVER=true; }
       catch(e){ if(e.message==='NOSERVER'){ SERVER=false; coda.length=0; break; }
-        locInfo[l.id]={vivo:false, motivo:String(e.message||e).slice(0,60), data:new Date().toISOString().slice(0,10)}; salvaLoc(); }
+        locInfo[l.id]=P.pulisci({vivo:false, motivo:String(e.message||e).slice(0,60), data:new Date().toISOString().slice(0,10)}); salvaLoc(); }
       l._v=(l._v||0)+1; fatti++; progres(fatti,totale); st.textContent=`Leggo i siti dei primi in elenco: ${fatti} di ${totale} letti...`; render();
     } };
     await Promise.all([lavora(),lavora(),lavora()]);

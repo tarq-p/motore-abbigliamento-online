@@ -26,6 +26,12 @@
     { const n=+li.prezzo; o.prezzo = Number.isFinite(n)&&n>0 ? Math.min(n,5000) : null; }
     for(const k of ['nPrezzi','marchiBassi','uomo','donna','maglia','italia','sartoria','negozio','lusso','outlet','marchio','multimarca','lavoro']){
       const n=+li[k]; o[k] = Number.isFinite(n)&&n>0 ? n : 0; }
+    o.vivo = li.vivo===true; o.vuoto = li.vuoto===true; o.dns = li.dns===true;
+    o.lingua = typeof li.lingua==='string' && /^[a-z]{2}$/.test(li.lingua) ? li.lingua : '';
+    o.motivo = typeof li.motivo==='string' ? li.motivo.slice(0,120) : '';
+    o.data = typeof li.data==='string' ? li.data.slice(0,10) : '';
+    o.social = {};
+    if(li.social && typeof li.social==='object' && !Array.isArray(li.social)) for(const k of ['instagram','facebook','tiktok','linkedin']) if(typeof li.social[k]==='string') o.social[k]=li.social[k].slice(0,300);
     return o;
   }
 
@@ -99,5 +105,5 @@
     return {lead, classe, ind, pesi:PESI, nomi:terzi?NOMI_M:NOMI, perche, manca, crit, catena, scaffale, conf:Math.round(100*w)};
   }
 
-  window.MA_PUNTEGGIO = {TIPI, NOMI, PESI, calcola};
+  window.MA_PUNTEGGIO = {TIPI, NOMI, PESI, calcola, pulisci};
 })();

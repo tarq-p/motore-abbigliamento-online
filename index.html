@@ -57,6 +57,7 @@
   <div class="chips" id="types" style="margin-top:16px"></div>
   <div class="nota small" id="notaag" style="display:none"></div>
   <div id="status"></div>
+  <div id="barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="display:none"><div id="barraf"></div><span id="barrat"></span></div>
   <div id="autositi" class="small" style="margin-top:4px"></div><div class="prog" id="autoprog"><i></i></div>
   <div id="datawarn"></div>
 
@@ -255,12 +256,15 @@ function loadSiti(key){
     document.head.appendChild(sc);
   });
 }
+function barra(f){ const b=$('barra'); if(f==null){ b.style.display='none'; return; } const p=Math.max(0,Math.min(100,Math.round(f*100))); b.style.display='block'; $('barraf').style.width=p+'%'; $('barrat').textContent=p+'%'; b.setAttribute('aria-valuenow',p); }
 async function tessereIntorno(lat,lon,R){
   const T=META.tile, dLat=R/111000, dLon=R/(111000*Math.cos(lat*Math.PI/180)), have=new Set(META.tiles), keys=[];
   for(let ix=Math.floor((lon-dLon)/T); ix<=Math.floor((lon+dLon)/T); ix++)
     for(let iy=Math.floor((lat-dLat)/T); iy<=Math.floor((lat+dLat)/T); iy++){ const k=ix+'_'+iy; if(have.has(k)) keys.push(k); }
-  await Promise.all(keys.map(loadSiti));
-  return (await Promise.all(keys.map(loadTile))).flat();
+  let fatte=0; barra(0);
+  const conta=f=>async k=>{ const r=await f(k); fatte++; barra(fatte/(keys.length*2||1)); return r; };
+  await Promise.all(keys.map(conta(loadSiti)));
+  return (await Promise.all(keys.map(conta(loadTile)))).flat();
 }
 
 // ---- impostazioni
@@ -283,11 +287,12 @@ async function tuttoPaese(P){
   const keys=window.MA_SITI_TESSERE||[], out=[];
   for(let i=0;i<keys.length;i+=20){
     const blocco=keys.slice(i,i+20);
-    $('status').textContent='Cerco in tutto il paese: '+Math.min(i+20,keys.length)+' zone su '+keys.length+'...';
+    $('status').textContent='Cerco in tutto il paese: '+Math.min(i+20,keys.length)+' zone su '+keys.length+'...'; barra(i/keys.length);
     await Promise.all(blocco.map(loadSiti));
     const tess=await Promise.all(blocco.map(loadTile));
     blocco.forEach((k,j)=>{ const S=(window.MA_S&&window.MA_S[k])||{}; for(const o of tess[j]) if((!P||o[12]===P) && S['o'+o[0]]) out.push(o); });
   }
+  barra(1);
   return out;
 }
 // ---- con le sole agenzie la città non serve (e non si può scegliere): vale tutto il paese
@@ -351,7 +356,9 @@ $('go').onclick = async ()=>{
     if(!perPaese&&!selCitta) pickCitta(sc);
     const g={lat:sc[3], lon:sc[4], name:perPaese?sc[0]:itC(sc[0])};
     $('status').textContent=perPaese?(PAESE?'Cerco in tutto il paese...':'Cerco in tutti i paesi...'):'Cerco i negozi intorno a '+g.name+'...';
+    barra(0);
     const recs=perPaese ? await tuttoPaese(PAESE) : await tessereIntorno(g.lat,g.lon,R);
+    $('status').textContent='Metto in ordine i risultati...'; barra(1);
     // agenzie: tutte quelle del paese cercato (lavorano su zone grandi, il raggio non c'entra)
     const paeseRic = perPaese ? PAESE : sc[2];
     if(sel.includes('agenzia')) for(const a of (window.MA_AGENTI||[])) if(Array.isArray(a) && (!paeseRic || a[12]===paeseRic || (Array.isArray(a[23]) && a[23].includes(paeseRic)))) recs.push(a);
@@ -415,7 +422,7 @@ $('go').onclick = async ()=>{
     render();
     if(tot){ $('risultati').scrollIntoView({behavior:'smooth',block:'start'}); setTimeout(leggiSitiPrimi,300); }
   }catch(e){ $('status').textContent='Qualcosa non ha funzionato: '+e.message+'.'; render(); }
-  $('go').disabled=false;
+  barra(null); $('go').disabled=false;
 };
 
 // ---- contatti: all'estero prima l'email (anche quella trovata sul suo sito), poi WhatsApp, Instagram, telefono

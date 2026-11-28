@@ -43,10 +43,14 @@
 <section class="card" id="s2">
   <h2><span class="num">2</span><span>Dove cercare</span></h2>
   <p class="lead-in">Senza città escono comunque le liste di contatto: per il paese scelto, o per tutti i paesi se non ne scegli uno (con i negozi di cui ho già letto il sito, i migliori in cima). Con una città cerca entro i km indicati, anche i negozi non letti.</p>
-  <div class="row">
+  <div class="modo" id="modo" role="tablist" aria-label="Cosa cerchi">
+    <button type="button" role="tab" data-modo="negozi" aria-selected="true">Negozi<small>boutique, sartorie, multimarca</small></button>
+    <button type="button" role="tab" data-modo="agenti" aria-selected="false">Agenti e agenzie<small>chi può mostrare la collezione</small></button>
+  </div>
+  <div class="row" id="rigaCerca">
     <label>Paese<select id="paese"></select></label>
-    <div class="field-comune"><label>Città (facoltativa)<input id="comune" placeholder="es. Monaco di Baviera, Zurigo, Parigi" autocomplete="off"></label><div id="sugg"></div></div>
-    <label>Entro quanti km<input id="radius" type="number" value="15" min="1" max="60" style="width:110px"></label>
+    <div class="field-comune" id="campoCitta"><label>Città (facoltativa)<input id="comune" placeholder="es. Monaco di Baviera, Zurigo, Parigi" autocomplete="off"></label><div id="sugg"></div></div>
+    <label id="campoKm">Entro quanti km<input id="radius" type="number" value="15" min="1" max="60" style="width:110px"></label>
     <button id="go" class="big">Trova le boutique</button>
   </div>
   <div class="small" id="paesi" style="margin-top:8px"></div>
@@ -69,12 +73,12 @@
   <div id="filtri" hidden>
     <div class="filters">
       <label>Cerca nel nome<input id="q" placeholder="nome o via"></label>
-      <label>Tipo di negozio<select id="ftype"></select></label>
+      <label id="fnegLab">Tipo di negozio<select id="ftype"></select></label>
       <label>Come contattarli<select id="fcontact"><option value="">Tutti</option><option value="0">Solo con email</option><option value="2">Con email, WhatsApp o Instagram</option></select></label>
       <label>Ordina per<select id="fordine"><option value="prob">Punteggio (dal più alto)</option><option value="tipo">Tipo, poi punteggio</option><option value="km">Distanza</option></select></label>
       <label>Stato nella mia lista<select id="fstato"><option value="">Tutti</option><option value="nuovo">Senza stato (da lavorare)</option><option value="lista">Solo quelli nella mia lista</option><option value="da">Da contattare</option><option value="co">Contattato</option><option value="tr">In trattativa</option><option value="cl">Già cliente</option><option value="no">Non interessa</option></select></label>
-      <label>Tipo di agenzia <span class="novita">Novità</span><select id="ftipoag"><option value="">Tutti</option><option value="agenzia">Agenzia plurimarca</option><option value="showroom">Showroom</option><option value="distributore">Distributore</option><option value="centro">Centro d'ordine o rete di agenti</option></select></label>
-      <label>Cosa rappresenta<select id="fprofag"><option value="">Tutto</option><option value="it">Uomo italiano di fascia alta</option><option value="heritage">Heritage e capispalla</option><option value="contemp">Contemporary e casual</option><option value="nd">Non classificata (sito non verificato)</option></select></label>
+      <label id="ftipoagLab" hidden>Tipo di agenzia <span class="novita">Novità</span><select id="ftipoag"><option value="">Tutti</option><option value="agenzia">Agenzia plurimarca</option><option value="showroom">Showroom</option><option value="distributore">Distributore</option><option value="centro">Centro d'ordine o rete di agenti</option></select></label>
+      <label id="fprofagLab" hidden>Cosa rappresenta<select id="fprofag"><option value="">Tutto</option><option value="it">Uomo italiano di fascia alta</option><option value="heritage">Heritage e capispalla</option><option value="contemp">Contemporary e casual</option><option value="nd">Non classificata (sito non verificato)</option></select></label>
       <label style="flex-direction:row;align-items:center;gap:6px;font-weight:600"><input type="checkbox" id="fscaffale"> Solo chi vende già marchi di fascia alta (dal suo sito)</label>
     </div>
   </div>
@@ -655,7 +659,7 @@ function render(){
   const rows=filtered();
   $('empty').textContent=rows.length?'':(Object.keys(leads).length?'I filtri nascondono tutti i negozi trovati: allargali per rivederli.':emptyMsg);
   $('empty').style.display=rows.length?'none':'block';
-  $('count').textContent=rows.length?`${rows.length} negozi${rows.length>MOSTRA?' · ne vedi '+MOSTRA+', i primi in cima':''}`:'';
+  $('count').textContent=rows.length?`${rows.length} ${MODO==='agenti'?'agenzie':'negozi'}${rows.length>MOSTRA?' · ne vedi '+MOSTRA+', i primi in cima':''}`:'';
   { const mostra=CERCATO||Object.keys(leads).length>0; ['legenda','barra'].forEach(id=>$(id).style.display=mostra?'':'none'); if(!mostra) $('empty').style.display='none'; }
   $('altri').innerHTML=rows.length>MOSTRA?`<button class="ghost" id="piu">Mostra altri ${Math.min(30,rows.length-MOSTRA)}</button>`:'';
   $('rows').innerHTML=rows.slice(0,MOSTRA).map(card).join('');
@@ -676,6 +680,28 @@ $('listavuota').onclick=()=>{ if(Object.keys(lista).length && confirm('Svuoto tu
 $('rows').addEventListener('click',e=>{ const b=e.target.closest('[data-leggi]'); if(b) return leggiSitoLocale(b.dataset.leggi,b); });
 
 $('types').addEventListener('change',aggiornaCitta); aggiornaCitta();
+
+// ---- modo: negozi oppure agenti e agenzie (le agenzie si cercano per paese, senza città ne' km)
+let MODO='negozi', SCELTI_NEG=null;
+const LEAD_NEGOZI=$('s2').querySelector('.lead-in').textContent;
+function setModo(m){
+  if(m===MODO) return;
+  const chips=[...document.querySelectorAll('#types input')], ag=m==='agenti';
+  if(ag){ SCELTI_NEG=chips.filter(i=>i.checked&&i.value!=='agenzia').map(i=>i.value); chips.forEach(i=>i.checked=(i.value==='agenzia')); }
+  else chips.forEach(i=>i.checked=(i.value!=='agenzia' && (SCELTI_NEG?SCELTI_NEG.includes(i.value):i.value!=='marchio')));
+  MODO=m;
+  document.querySelectorAll('#modo button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.modo===m)));
+  $('types').hidden=ag; $('campoCitta').hidden=ag; $('campoKm').hidden=ag;
+  $('fnegLab').hidden=ag; $('ftipoagLab').hidden=!ag; $('fprofagLab').hidden=!ag; $('ftype').value=''; $('ftipoag').value=''; $('fprofag').value='';
+  $('go').textContent=ag?'Trova le agenzie':'Trova le boutique';
+  $('s2').querySelector('.lead-in').textContent=ag?'Agenzie plurimarca e showroom che possono mostrare la tua collezione ai negozi. Scegli un paese, o lascia vuoto per vederle tutte. Quelle con «Verificata» hanno il sito letto.':LEAD_NEGOZI;
+  $('status').textContent=''; leads={}; CERCATO=false;
+  emptyMsg=ag?'Scegli un paese e premi «Trova le agenzie».':'Scegli una città e premi «Trova le boutique»: in pochi secondi hai l\'elenco.';
+  aggiornaCitta(); render();
+}
+document.querySelectorAll('#modo button').forEach(b=>b.addEventListener('click',()=>setModo(b.dataset.modo)));
+// in modo negozi le agenzie non si cercano: c'e' il loro modo
+(function(){ const a=document.querySelector('#types input[value="agenzia"]'); if(a){ a.checked=false; a.closest('label').hidden=true; aggiornaCitta(); } })();
 aggiornaListaBar();
 renderLingua();
 render();

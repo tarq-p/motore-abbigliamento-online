@@ -42,7 +42,7 @@
 <!-- 2 · DOVE CERCARE -->
 <section class="card" id="s2">
   <h2><span class="num">2</span><span>Dove cercare</span></h2>
-  <p class="lead-in">Scegli un paese: senza città cerca in tutto il paese (solo i negozi di cui ho già letto il sito, con i migliori in cima). Con una città cerca entro i km indicati, anche i negozi non letti.</p>
+  <p class="lead-in">Senza città escono comunque le liste di contatto: per il paese scelto, o per tutti i paesi se non ne scegli uno (con i negozi di cui ho già letto il sito, i migliori in cima). Con una città cerca entro i km indicati, anche i negozi non letti.</p>
   <div class="row">
     <label>Paese<select id="paese"></select></label>
     <div class="field-comune"><label>Città (facoltativa)<input id="comune" placeholder="es. Monaco di Baviera, Zurigo, Parigi" autocomplete="off"></label><div id="sugg"></div></div>
@@ -51,12 +51,16 @@
   </div>
   <div class="small" id="paesi" style="margin-top:8px"></div>
   <div class="chips" id="types" style="margin-top:16px"></div>
+  <div class="nota small" id="notaag" style="display:none"></div>
   <div id="status"></div>
   <div id="autositi" class="small" style="margin-top:4px"></div><div class="prog" id="autoprog"><i></i></div>
   <div id="datawarn"></div>
 
   <div id="risultati" style="margin-top:22px">
   <div id="legenda" class="small" style="margin:0 0 8px">In cima chi ha il punteggio più alto: conta soprattutto se vende già maglieria o abbigliamento uomo italiano di fascia alta, e lo dice solo il suo sito. Il motore legge da solo i siti dei primi in elenco. È una stima, non una garanzia.</div>
+  <div id="listabar" class="listabar"><span><b>La mia lista</b> <span id="listacount">0</span> <span class="novita">Novità</span></span>
+    <button class="ghost" id="listamostra" type="button">Mostra solo la lista</button>
+    <button class="ghost" id="listavuota" type="button">Svuota</button></div>
   <div class="bar" id="barra">
     <div class="l"><div id="count"></div></div>
     <button class="ghost" id="bfiltra" aria-expanded="false" aria-controls="filtri" style="display:inline-flex;gap:6px;align-items:center"><svg class="ic" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></svg>Filtra</button>
@@ -68,6 +72,9 @@
       <label>Tipo di negozio<select id="ftype"></select></label>
       <label>Come contattarli<select id="fcontact"><option value="">Tutti</option><option value="0">Solo con email</option><option value="2">Con email, WhatsApp o Instagram</option></select></label>
       <label>Ordina per<select id="fordine"><option value="prob">Punteggio (dal più alto)</option><option value="tipo">Tipo, poi punteggio</option><option value="km">Distanza</option></select></label>
+      <label>Stato nella mia lista<select id="fstato"><option value="">Tutti</option><option value="nuovo">Senza stato (da lavorare)</option><option value="lista">Solo quelli nella mia lista</option><option value="da">Da contattare</option><option value="co">Contattato</option><option value="tr">In trattativa</option><option value="cl">Già cliente</option><option value="no">Non interessa</option></select></label>
+      <label>Tipo di agenzia <span class="novita">Novità</span><select id="ftipoag"><option value="">Tutti</option><option value="agenzia">Agenzia plurimarca</option><option value="showroom">Showroom</option><option value="distributore">Distributore</option><option value="centro">Centro d'ordine o rete di agenti</option></select></label>
+      <label>Cosa rappresenta<select id="fprofag"><option value="">Tutto</option><option value="it">Uomo italiano di fascia alta</option><option value="heritage">Heritage e capispalla</option><option value="contemp">Contemporary e casual</option><option value="nd">Non classificata (sito non verificato)</option></select></label>
       <label style="flex-direction:row;align-items:center;gap:6px;font-weight:600"><input type="checkbox" id="fscaffale"> Solo chi vende già marchi di fascia alta (dal suo sito)</label>
     </div>
   </div>
@@ -85,6 +92,8 @@
   <details><summary class="small" style="font-weight:600">Modifica i messaggi e vedi le anteprime</summary>
   <div class="lingue" id="lingue"></div>
   <label style="margin-top:6px">Il messaggio per i negozi<textarea id="tpl"></textarea></label>
+  <label style="margin-top:12px">Il messaggio per gli agenti (agenzie plurimarca)<textarea id="tpla"></textarea></label>
+  <label style="margin-top:12px">Oggetto dell'email per gli agenti<input id="ogga"></label>
   <label style="margin-top:12px">Il messaggio per i marchi (produzione conto terzi)<textarea id="tplm"></textarea></label>
   <label style="margin-top:12px">Oggetto dell'email<input id="ogg"></label>
   <div class="small" style="margin:6px 0 14px"><code>{chi}</code> chi scrive («sono Mario Rossi di Maglificio Vela Blu», nella lingua giusta) · <code>{frase}</code> la frase del suo tipo, qui sotto · <code>{spunto}</code> una cosa vera letta sul suo sito, se c'è · <code>{catalogo}</code> il link al catalogo, se l'hai scritto · <code>{nome}</code> il nome del negozio.</div>
@@ -102,11 +111,12 @@
 <script src="dati/index.js"></script>
 <script src="dati/citta.js"></script>
 <script src="dati/siti_index.js" onerror="void 0"></script>
+<script src="dati/agenti.js" onerror="void 0"></script>
 <script src="punteggio.js"></script>
 <script>
 const P = window.MA_PUNTEGGIO;
 const TYPES = P.TIPI;
-const T2K = {u:'uomo', b:'boutique', a:'abiti', s:'sartoria', g:'magazzino', m:'marchio'};
+const T2K = {x:'agenzia', u:'uomo', b:'boutique', a:'abiti', s:'sartoria', g:'magazzino', m:'marchio'};
 const $ = id => document.getElementById(id);
 // dati che arrivano da fuori (elenchi di terzi, siti): mai fidarsi, anche se mostrati come testo
 function urlSicuro(u){
@@ -163,6 +173,14 @@ const TPLM0 = {
   de:'Guten Tag, {chi}. Wir sind eine Strickerei in Apulien und produzieren auch für andere Marken: Poloshirts aus Fil d\'Écosse und Strickwaren, vom Muster bis zur Serie, komplett in Italien. {spunto} Falls Sie einen Hersteller für Ihre Strickkollektion suchen: Darf ich Ihnen einige unserer Arbeiten zeigen{catalogo}?',
   fr:'Bonjour, {chi}. Nous sommes un atelier de maille dans les Pouilles et nous produisons aussi pour d\'autres marques : polos en fil d\'Écosse et maille, du prototype à la production, entièrement en Italie. {spunto} Si vous cherchez un fabricant pour votre maille, puis-je vous montrer quelques-unes de nos réalisations{catalogo} ?'
 };
+const TPLA0 = {
+  it:'Buongiorno, {chi}. Siamo un maglificio di Ruvo di Puglia: produciamo polo in filo di Scozia e maglieria uomo, tutto in Italia. Cerchiamo un\'agenzia plurimarca che presenti la nostra collezione ai negozi della vostra zona.{spunto} Vi interesserebbe vedere la collezione? Possiamo mandarvi il catalogo e i campioni{catalogo}, o incontrarci in showroom.',
+  en:'Hello, {chi}. We are a knitwear mill in Puglia, Italy: we make cotton lisle (filo di Scozia) polo shirts and men\'s knitwear, entirely made in Italy. We are looking for a multi-brand agency to present our collection to retailers in your territory.{spunto} Would you be interested in seeing the collection? We can send you our catalogue and samples{catalogo}, or meet you at your showroom.',
+  de:'Guten Tag, {chi}. Wir sind eine Strickerei aus Apulien und fertigen Poloshirts aus Fil d\'Écosse und Herrenstrick, komplett in Italien. Für den deutschsprachigen Markt suchen wir eine Mehrmarkenagentur, die unsere Kollektion dem Fachhandel vorstellt.{spunto} Hätten Sie Interesse, die Kollektion kennenzulernen? Gerne senden wir Ihnen Katalog und Muster{catalogo} oder besuchen Sie in Ihrem Showroom.',
+  fr:'Bonjour, {chi}. Nous sommes un atelier de maille des Pouilles : nous fabriquons des polos en fil d\'Écosse et de la maille pour homme, entièrement en Italie. Nous cherchons une agence multimarque pour présenter notre collection aux détaillants de votre région.{spunto} Seriez-vous intéressés par la collection ? Nous pouvons vous envoyer notre catalogue et des échantillons{catalogo}, ou vous rencontrer dans votre showroom.'
+};
+const OGGA0 = {it:'Agenzia per maglieria e polo made in Italy', en:'Agency representation: made in Italy polo shirts and knitwear',
+  de:'Agenturvertretung gesucht: Poloshirts und Strick aus Italien', fr:'Recherche agence : polos et maille made in Italy'};
 const OGG0 = {it:'Polo e maglieria made in Italy per {nome}', en:'Made in Italy polo shirts and knitwear for {nome}',
   de:'Poloshirts und Strick aus Italien für {nome}', fr:'Polos et maille made in Italy pour {nome}'};
 const FRASI0 = {
@@ -201,8 +219,9 @@ for(const k of ['chi','azienda','catalogo']) if(typeof cfg[k]!=='string') delete
 cfg.azienda = cfg.azienda==null ? 'Maglificio Vela Blu' : cfg.azienda;
 cfg.catalogo = cfg.catalogo==null ? 'https://www.maglificiovelablu.com/en/home-eng/' : cfg.catalogo;
 cfg.tpl = {...TPL0, ...ogg(cfg.tpl)}; cfg.tplm = {...TPLM0, ...ogg(cfg.tplm)}; cfg.ogg = {...OGG0, ...ogg(cfg.ogg)};
+cfg.tpla = {...TPLA0, ...ogg(cfg.tpla)}; cfg.ogga = {...OGGA0, ...ogg(cfg.ogga)};
 cfg.frasi = ogg(cfg.frasi); for(const k of Object.keys(FRASI0)) cfg.frasi[k] = {...FRASI0[k], ...ogg(cfg.frasi[k])};
-for(const d of [cfg.tpl,cfg.tplm,cfg.ogg]) for(const k of Object.keys(d)) if(typeof d[k]!=='string') d[k]='';
+for(const d of [cfg.tpl,cfg.tplm,cfg.ogg,cfg.tpla,cfg.ogga]) for(const k of Object.keys(d)) if(typeof d[k]!=='string') d[k]='';
 let LANG = 'en';
 const saveCfg = () => save('abbigliamento_cfg', cfg);
 
@@ -244,14 +263,14 @@ async function tessereIntorno(lat,lon,R){
 ['chi','azienda','catalogo'].forEach(id=>{ $(id).value=cfg[id]||''; $(id).addEventListener('input',()=>{ cfg[id]=$(id).value; saveCfg(); render(); }); });
 function renderLingua(){
   $('lingue').innerHTML = Object.entries(LINGUE).map(([k,n])=>`<button type="button" class="abbchip${k===LANG?' on':''}" data-lang="${k}">${n}</button>`).join('');
-  $('tpl').value=cfg.tpl[LANG]||''; $('tplm').value=cfg.tplm[LANG]||''; $('ogg').value=cfg.ogg[LANG]||'';
-  $('frasi').innerHTML = Object.entries(TYPES).filter(([k])=>k!=='marchio').map(([k,t])=>`<label>${esc(t.label)}<textarea data-frase="${k}">${esc(cfg.frasi[LANG][k]||'')}</textarea></label>`).join('');
+  $('tpl').value=cfg.tpl[LANG]||''; $('tpla').value=cfg.tpla[LANG]||''; $('ogga').value=cfg.ogga[LANG]||''; $('tplm').value=cfg.tplm[LANG]||''; $('ogg').value=cfg.ogg[LANG]||'';
+  $('frasi').innerHTML = Object.entries(TYPES).filter(([k])=>k!=='marchio'&&k!=='agenzia').map(([k,t])=>`<label>${esc(t.label)}<textarea data-frase="${k}">${esc(cfg.frasi[LANG][k]||'')}</textarea></label>`).join('');
   renderSampleMsgs();
 }
 $('lingue').addEventListener('click',e=>{ const b=e.target.closest('[data-lang]'); if(b){ LANG=b.dataset.lang; renderLingua(); } });
-[['tpl','tpl'],['tplm','tplm'],['ogg','ogg']].forEach(([id,k])=>$(id).addEventListener('input',()=>{ cfg[k][LANG]=$(id).value; saveCfg(); render(); }));
+[['tpl','tpl'],['tplm','tplm'],['ogg','ogg'],['tpla','tpla'],['ogga','ogga']].forEach(([id,k])=>$(id).addEventListener('input',()=>{ cfg[k][LANG]=$(id).value; saveCfg(); render(); }));
 $('frasi').addEventListener('input',e=>{ const k=e.target.dataset.frase; if(!k) return; cfg.frasi[LANG][k]=e.target.value; saveCfg(); render(); });
-$('ripristina').onclick=()=>{ cfg.tpl={...TPL0}; cfg.tplm={...TPLM0}; cfg.ogg={...OGG0}; cfg.frasi={}; for(const k of Object.keys(FRASI0)) cfg.frasi[k]={...FRASI0[k]}; saveCfg(); renderLingua(); render(); };
+$('ripristina').onclick=()=>{ cfg.tpl={...TPL0}; cfg.tplm={...TPLM0}; cfg.ogg={...OGG0}; cfg.tpla={...TPLA0}; cfg.ogga={...OGGA0}; cfg.frasi={}; for(const k of Object.keys(FRASI0)) cfg.frasi[k]={...FRASI0[k]}; saveCfg(); renderLingua(); render(); };
 
 // ---- paese: scelto da solo cerca in tutto il paese (solo i negozi col sito gia' letto); con una città restringe i suggerimenti
 $('paese').innerHTML='<option value="">Tutti i paesi</option>'+(META?META.paesi:[]).map(p=>`<option value="${p}">${esc((PAESI[p]||[p])[0])}</option>`).join('');
@@ -263,12 +282,22 @@ async function tuttoPaese(P){
     $('status').textContent='Cerco in tutto il paese: '+Math.min(i+20,keys.length)+' zone su '+keys.length+'...';
     await Promise.all(blocco.map(loadSiti));
     const tess=await Promise.all(blocco.map(loadTile));
-    blocco.forEach((k,j)=>{ const S=(window.MA_S&&window.MA_S[k])||{}; for(const o of tess[j]) if(o[12]===P && S['o'+o[0]]) out.push(o); });
+    blocco.forEach((k,j)=>{ const S=(window.MA_S&&window.MA_S[k])||{}; for(const o of tess[j]) if((!P||o[12]===P) && S['o'+o[0]]) out.push(o); });
   }
   return out;
 }
+// ---- con le sole agenzie la città non serve (e non si può scegliere): vale tutto il paese
+function aggiornaCitta(){
+  const sel=[...document.querySelectorAll('#types input:checked')].map(i=>i.value), soloAg=sel.length===1&&sel[0]==='agenzia', c=$('comune'), r=$('radius');
+  c.disabled=r.disabled=soloAg;
+  if(soloAg){ c.value=''; selCitta=null; $('sugg').style.display='none'; c.placeholder='Non serve: le agenzie si valutano su tutto il paese'; }
+  else c.placeholder='es. Monaco di Baviera, Zurigo, Parigi';
+  $('notaag').style.display = sel.includes('agenzia') ? 'block' : 'none';
+  $('notaag').textContent = soloAg ? 'Le agenzie lavorano su un intero paese (o più paesi), quindi si cercano per paese: la città e i km non si usano. Senza paese escono tutte.'
+                                   : 'Per le agenzie la città e i km non contano: compaiono tutte quelle del paese. La città vale solo per i negozi.';
+}
 // ---- tipi e città da cercare
-$('types').innerHTML = Object.entries(TYPES).map(([k,t])=>`<label class="chip"><input type="checkbox" value="${k}"${k==='marchio'?'':' checked'}> ${t.label}</label>`).join('');
+$('types').innerHTML = Object.entries(TYPES).map(([k,t])=>`<label class="chip"><input type="checkbox" value="${k}"${k==='marchio'?'':' checked'}> ${t.label}${k==='agenzia'?' <span class="novita">Novità</span>':''}</label>`).join('');
 $('ftype').innerHTML = '<option value="">Tutti</option>'+Object.entries(TYPES).map(([k,t])=>`<option value="${k}">${t.label}</option>`).join('');
 let selCitta=null;
 function suggest(q){
@@ -306,10 +335,10 @@ $('go').onclick = async ()=>{
   $('comune').style.outline='';
   const sel=[...document.querySelectorAll('#types input:checked')].map(i=>i.value);
   if(!META||!CITTA.length) return stop('Non trovo i dati: serve la cartella dati accanto a index.html.');
-  const scritto=$('comune').value.trim();
-  const PAESE=$('paese').value, perPaese=!scritto&&!!PAESE;
-  const sc=perPaese ? [PAESI[PAESE][0],'',PAESE,0,0,0] : ((selCitta && $('comune').value===cittaLabel(selCitta)) ? selCitta : (suggest(scritto)[0]||null));
-  if(!scritto&&!PAESE) return stop('Scegli un paese per cercare in tutto il paese, oppure scrivi una città.', true);
+  const soloAg = sel.length===1 && sel[0]==='agenzia';   // le agenzie lavorano su tutto il paese: la città non conta
+  const scritto = soloAg ? '' : $('comune').value.trim();
+  const PAESE=$('paese').value, perPaese=!scritto;   // senza città si cerca su tutto il paese, o su tutti i paesi
+  const sc=perPaese ? [PAESE?PAESI[PAESE][0]:'tutti i paesi','',PAESE,0,0,0] : ((selCitta && $('comune').value===cittaLabel(selCitta)) ? selCitta : (suggest(scritto)[0]||null));
   if(!sc) return stop(scritto ? 'Non trovo «'+scritto.slice(0,40)+'» '+(PAESE?'in '+((PAESI[PAESE]||[PAESE])[0]):'tra le città dei paesi coperti')+': scegli dall\'elenco che compare.' : 'Scrivi il nome di una città (per esempio München), scegli dall\'elenco e premi «Trova le boutique».', true);
   if(!sel.length) return stop('Scegli almeno un tipo di negozio.');
   const R=Math.min(60,Math.max(1,+$('radius').value||15))*1000;
@@ -317,20 +346,28 @@ $('go').onclick = async ()=>{
   try{
     if(!perPaese&&!selCitta) pickCitta(sc);
     const g={lat:sc[3], lon:sc[4], name:perPaese?sc[0]:itC(sc[0])};
-    $('status').textContent=perPaese?'Cerco in tutto il paese...':'Cerco i negozi intorno a '+g.name+'...';
+    $('status').textContent=perPaese?(PAESE?'Cerco in tutto il paese...':'Cerco in tutti i paesi...'):'Cerco i negozi intorno a '+g.name+'...';
     const recs=perPaese ? await tuttoPaese(PAESE) : await tessereIntorno(g.lat,g.lon,R);
+    // agenzie: tutte quelle del paese cercato (lavorano su zone grandi, il raggio non c'entra)
+    const paeseRic = perPaese ? PAESE : sc[2];
+    if(sel.includes('agenzia')) for(const a of (window.MA_AGENTI||[])) if(Array.isArray(a) && (!paeseRic || a[12]===paeseRic || (Array.isArray(a[23]) && a[23].includes(paeseRic)))) recs.push(a);
     let tot=0, catene=0;
     for(const o of recs){
       // [id, nome, tipo, categoria, telefono, sito, email, social, indirizzo, lat, lon, città, paese, stato, affidabilità, cellulare]
       const type=T2K[o[2]]; if(!type||!sel.includes(type)) continue;
-      if(!perPaese && dist(g.lat,g.lon,o[9],o[10])*1000>R) continue;
-      if(CATENE.test(o[1]||'') || NO_CAT.test(o[3]||'')){ catene++; continue; }
+      const ag = o[2]==='x', ok = typeof o[9]==='number' && typeof o[10]==='number' && (o[9]||o[10]);
+      if(!ag && !perPaese && dist(g.lat,g.lon,o[9],o[10])*1000>R) continue;
+      if(!ag && (CATENE.test(o[1]||'') || NO_CAT.test(o[3]||''))){ catene++; continue; }
       const id='o'+o[0];
-      { const k=`${Math.floor(o[10]/META.tile)}_${Math.floor(o[9]/META.tile)}`, pre=window.MA_S&&window.MA_S[k]&&window.MA_S[k][id]; if(pre&&!locInfo[id]) locInfo[id]={...P.pulisci(pre),pre:true}; }
+      { const k=`${Math.floor(o[10]/META.tile)}_${Math.floor(o[9]/META.tile)}`, pre=ag ? (window.MA_AGENTI_LI||{})[id] : (window.MA_S&&window.MA_S[k]&&window.MA_S[k][id]); if(pre&&!locInfo[id]) locInfo[id]={...P.pulisci(pre),pre:true}; }
       leads[id]={id, nome:String(o[1]||'').slice(0,120), type, cat:o[3]||'', addr:String(o[8]||'').slice(0,200), citta:o[11]||'', paese:o[12]||'',
         soc:urlSicuro(o[7]), phone:telSicuro(o[4]), email:mailSicura(o[6]), web:urlSicuro(o[5]),
-        lat:o[9], lon:o[10], km:perPaese?null:Math.round(dist(g.lat,g.lon,o[9],o[10])*10)/10,
-        stato:o[13]||'n', aff:o[14]==null?null:+o[14], cel:o[15]==='m'};
+        lat:o[9], lon:o[10], km:(perPaese||!ok)?null:Math.round(dist(g.lat,g.lon,o[9],o[10])*10)/10,
+        stato:o[13]||'n', aff:o[14]==null?null:+o[14], cel:o[15]==='m',
+        marchiNoti:ag&&Array.isArray(o[16])?o[16].filter(x=>typeof x==='string').slice(0,12):[], fonte:ag?urlSicuro(o[17]):'',
+        marchiNotiMaglia:ag&&Array.isArray(o[18])?o[18].filter(x=>typeof x==='string').slice(0,12):[], marchiTutti:ag&&Array.isArray(o[19])?o[19].filter(x=>typeof x==='string').slice(0,15):[],
+        giudizio:ag&&['SI','FORSE','NL'].includes(o[20])?o[20]:'',
+        territorio:ag&&Array.isArray(o[23])?o[23].filter(x=>hasO(PAESI,x)):[], tipoAg:ag&&['agenzia','showroom','distributore','centro'].includes(o[21])?o[21]:'', profAg:ag&&['it','heritage','contemp','nd'].includes(o[22])?o[22]:''};
       tot++;
     }
     { // Doppioni: stesso telefono, stessa email, stesso sito o stesso nome nella stessa città. Un contatto che compare
@@ -347,7 +384,8 @@ $('go').onclick = async ()=>{
       }
       Object.values(chiavi).forEach(g=>{ if(g.length>=2 && g.length<=6) g.slice(1).forEach(id=>unisci(g[0],id)); });
       const gruppi={}; ids.forEach(i=>{ const r=trova(i); (gruppi[r]=gruppi[r]||[]).push(leads[i]); });
-      const punti=l=>(l.email?2:0)+(l.phone?2:0)+(l.web?2:0)+(l.soc?1:0)+(l.stato==='a'?1:0)+(l.aff||0)/1000+(TYPES[l.type].rango<=2?.5:0);
+      // un'agenzia unita a una scheda di negozio resta agenzia: la scheda tenuta e' la sua (con i marchi che rappresenta)
+      const punti=l=>(l.type==='agenzia'?20:0)+(l.email?2:0)+(l.phone?2:0)+(l.web?2:0)+(l.soc?1:0)+(l.stato==='a'?1:0)+(l.aff||0)/1000+(TYPES[l.type].rango<=2?.5:0);
       let doppi=0;
       Object.values(gruppi).forEach(g=>{
         if(g.length<2){ g[0].sedi=1; return; }
@@ -363,10 +401,10 @@ $('go').onclick = async ()=>{
         t.sedi=posti.length;
       });
       tot-=doppi;
-      let senza=0; Object.values(leads).forEach(l=>{ if(!l.phone&&!l.email&&!l.web&&!l.soc){ delete leads[l.id]; senza++; } });
+      let senza=0; Object.values(leads).forEach(l=>{ if(l.type!=='agenzia'&&!l.phone&&!l.email&&!l.web&&!l.soc){ delete leads[l.id]; senza++; } });
       tot-=senza; SENZA_CONTATTI=senza; TOLTI_CATENE=catene;
     }
-    $('status').textContent = tot ? (perPaese?`Ho trovato ${tot} negozi in ${g.name} con il sito già letto.`:`Ho trovato ${tot} negozi entro ${R/1000} km da ${g.name}.`)+(()=>{ const t=[TOLTI_CATENE?TOLTI_CATENE+' tra catene, monomarca di grandi marchi, donna, bambino, sport e usato':'', SENZA_CONTATTI?SENZA_CONTATTI+' senza nessun contatto':''].filter(Boolean); return t.length?' Ne ho tolti '+t.join(' e ')+'.':''; })()
+    $('status').textContent = tot ? (perPaese?(soloAg?`Ho trovato ${tot} agenzie ${PAESE?'che servono '+g.name:'in tutti i paesi'}.`:`Ho trovato ${tot} negozi ${PAESE?'in '+g.name:'in tutti i paesi'} con il sito già letto.`):`Ho trovato ${tot} negozi entro ${R/1000} km da ${g.name}.`)+(()=>{ const t=[TOLTI_CATENE?TOLTI_CATENE+' tra catene, monomarca di grandi marchi, donna, bambino, sport e usato':'', SENZA_CONTATTI?SENZA_CONTATTI+' senza nessun contatto':''].filter(Boolean); return t.length?' Ne ho tolti '+t.join(' e ')+'.':''; })()
                                   : (perPaese ? 'Per '+g.name+' non ho ancora letto nessun sito di negozi: scrivi una città per cercare tra tutti i negozi, anche senza punteggio dal sito.' : 'Nessun negozio trovato: prova ad aumentare i km o a scegliere altri tipi.');
     emptyMsg=perPaese?'Nessun negozio con il sito letto in '+g.name+' con i tipi scelti.':'Nessun negozio entro '+(R/1000)+' km da '+g.name+' con i tipi scelti. Aumenta i km (massimo 60) o scegli più tipi.';
     autoGiro++; $('autositi').textContent=''; progres(0,0);
@@ -404,6 +442,15 @@ function chiSono(lang){
 }
 function elenco(a,lang){ const e={it:' e ',en:' and ',de:' und ',fr:' et '}[lang]; return a.length<2?a.join(''):a.slice(0,-1).join(', ')+e+a[a.length-1]; }
 function spuntoDi(l,lang){
+  if(l.type==='agenzia'){
+    const li=locInfo[l.id]||{}, mu=((li.vivo&&li.marchiUomo&&li.marchiUomo.length)?li.marchiUomo:(l.marchiNoti||[])).slice(0,2), mm=(li.vivo&&li.marchiMaglia)||[];
+    if(!mu.length) return '';
+    if(mm.length) return {it:' Ho visto che rappresentate '+elenco(mu,lang)+'.',en:' I saw that you represent '+elenco(mu,lang)+'.',de:' Ich habe gesehen, dass Sie '+elenco(mu,lang)+' vertreten.',fr:' J\'ai vu que vous représentez '+elenco(mu,lang)+'.'}[lang];
+    return {it:' Ho visto che rappresentate '+elenco(mu,lang)+': polo e maglieria completerebbero il vostro portafoglio.',
+      en:' I saw that you represent '+elenco(mu,lang)+': polo shirts and knitwear would complete your portfolio.',
+      de:' Ich habe gesehen, dass Sie '+elenco(mu,lang)+' vertreten: Polos und Strick würden Ihr Portfolio ergänzen.',
+      fr:' J\'ai vu que vous représentez '+elenco(mu,lang)+' : polos et maille compléteraient votre portefeuille.'}[lang];
+  }
   const li=locInfo[l.id]; if(!li||!li.vivo) return '';
   const mm=(li.marchiMaglia||[]).slice(0,2), mu=(li.marchiUomo||[]).slice(0,2);
   if(l.type==='marchio'){
@@ -426,9 +473,9 @@ function msgFor(l, lang){
   lang = lang || linguaDi(l);
   const cat=urlSicuro(cfg.catalogo||'');
   const val={_lang:lang, chi:chiSono(lang), frase:(cfg.frasi[lang]||{})[l.type]||'', spunto:spuntoDi(l,lang), nome:l.nome, catalogo:cat?CAT_TXT[lang].replace('{u}',cat):''};
-  return riempi(l.type==='marchio'?cfg.tplm[lang]:cfg.tpl[lang], val);
+  return riempi(l.type==='agenzia'?cfg.tpla[lang]:l.type==='marchio'?cfg.tplm[lang]:cfg.tpl[lang], val);
 }
-function oggettoFor(l, lang){ lang = lang || linguaDi(l); return riempi(cfg.ogg[lang], {_lang:lang, nome:l.nome}); }
+function oggettoFor(l, lang){ lang = lang || linguaDi(l); return riempi((l.type==='agenzia'?cfg.ogga:cfg.ogg)[lang], {_lang:lang, nome:l.nome}); }
 const IC={
   wa:'<svg class="ic fill" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>',
   mail:'<svg class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>',
@@ -450,7 +497,7 @@ function actions(l){
 const LS_CLASSI = {hi:'Alta priorità', mid:'Buona opportunità', val:'Da valutare', low:'Bassa priorità'};
 function leadScore(l){
   if(l._s && l._sv===(l._v||0)) return l._s;
-  l._s=P.calcola({type:l.type, nome:l.nome, cat:l.cat, canale:canale(l), li:locInfo[l.id]||null, sedi:l.sedi});
+  l._s=P.calcola({type:l.type, nome:l.nome, cat:l.cat, canale:canale(l), li:locInfo[l.id]||null, sedi:l.sedi, marchiNoti:l.marchiNoti, marchiNotiMaglia:l.marchiNotiMaglia, marchiTutti:l.marchiTutti, giudizio:l.giudizio, territorio:l.territorio});
   l._sv=(l._v||0); return l._s;
 }
 
@@ -512,10 +559,26 @@ async function leggiSitoLocale(id,btn){
 // ---- negozi con dati poco affidabili: senza stato al registro e affidabilità della fonte sotto 50 su 100
 function pocoAffidabile(l){ return l.stato!=='a' && l.aff!=null && l.aff<50; }
 
+// ---- lista di lavoro: stato e note per ogni negozio o agenzia, salvati nel browser
+const STATI = {da:'Da contattare', co:'Contattato', tr:'In trattativa', cl:'Già cliente', no:'Non interessa'};
+let lista = (()=>{ const v=load('abbigliamento_lista',{}), o={}; if(v&&typeof v==='object'&&!Array.isArray(v)) for(const [k,x] of Object.entries(v)) if(x&&typeof x==='object'&&hasO(STATI,x.s)) o[k]={s:x.s, n:String(x.n||'').slice(0,600), t:String(x.t||'').slice(0,10), d:x.d&&typeof x.d==='object'?x.d:{}}; return o; })();
+let SOLO_LISTA=false;
+const salvaLista = () => save('abbigliamento_lista', lista);
+function datiLista(l){ const ls=leadScore(l), li=locInfo[l.id]||{};
+  return {nome:l.nome, tipo:(TYPES[l.type]||{}).label||l.type, paese:(PAESI[l.paese]||[l.paese])[0], citta:itC(l.citta||''), via:l.addr||'', sito:l.web||'', email:mailDi(l), tel:telSicuro(l.phone)||'',
+    punti:ls.lead, marchi:[...new Set([...(l.marchiTutti||[]),...(li.marchiUomo||[]),...(li.marchiMaglia||[])])].slice(0,8).join(', ')}; }
+function impostaStato(id, stato){
+  const l=leads[id]; if(!l && !lista[id]) return;
+  if(!stato){ delete lista[id]; }
+  else lista[id]={...(lista[id]||{n:''}), s:stato, t:new Date().toISOString().slice(0,10), d:l?datiLista(l):(lista[id]||{}).d||{}};
+  salvaLista(); aggiornaListaBar();
+}
+function aggiornaListaBar(){ $('listacount').textContent=Object.keys(lista).length; $('listamostra').textContent=SOLO_LISTA?'Torna ai risultati':'Mostra solo la lista'; }
+
 // ---- elenco
 function filtered(perLettura){
-  const q=$('q').value.toLowerCase(), t=$('ftype').value, c=$('fcontact').value, ord=$('fordine').value, tutti=$('fnasc').checked, sc=$('fscaffale').checked&&!perLettura;
-  return Object.values(leads).filter(l=>(tutti||!pocoAffidabile(l)) && (!q||(l.nome+' '+l.addr).toLowerCase().includes(q)) && (!t||l.type===t) && (c===''||canale(l)<=+c) && (!sc||leadScore(l).scaffale))
+  const q=$('q').value.toLowerCase(), t=$('ftype').value, c=$('fcontact').value, ord=$('fordine').value, tutti=$('fnasc').checked, sc=$('fscaffale').checked&&!perLettura, ta=$('ftipoag').value, pa=$('fprofag').value, fs=SOLO_LISTA?'lista':$('fstato').value;
+  return Object.values(leads).filter(l=>(tutti||!pocoAffidabile(l)) && (!q||(l.nome+' '+l.addr).toLowerCase().includes(q)) && (!t||l.type===t) && (c===''||canale(l)<=+c) && (!sc||leadScore(l).scaffale) && (!ta||l.tipoAg===ta) && (!pa||l.profAg===pa) && (!fs || (fs==='nuovo'?!lista[l.id] : fs==='lista'?!!lista[l.id] : (lista[l.id]||{}).s===fs)))
     .sort((a,b)=>{
       const sa=leadScore(a).lead, sb=leadScore(b).lead;
       if(ord==='km') return (a.km||0)-(b.km||0) || sb-sa;
@@ -531,19 +594,26 @@ function card(l){
     ...[web, soc, ...Object.values((letto&&li.social)||{}).map(urlSicuro)].filter(Boolean).sort((a,b)=>(etichettaLink(a)==='Sito'?0:1)-(etichettaLink(b)==='Sito'?0:1)).map(link)].filter(Boolean).join('');
   const badge=[`<span class="prio ${ls.classe}">${LS_CLASSI[ls.classe]}</span>`,
     pocoAffidabile(l)?'<span class="prio gia" title="Nessuno stato al registro e affidabilità dei dati sotto 50 su 100">Dati poco affidabili</span>':'',
-    ls.scaffale?'<span class="prio stag" title="Lo dice il suo sito">Vende marchi di fascia alta</span>':'',
+    ls.scaffale?(l.type==='agenzia'?'<span class="prio stag">Rappresenta marchi di fascia alta</span>':'<span class="prio stag" title="Lo dice il suo sito">Vende marchi di fascia alta</span>'):'',
+    l.giudizio==='SI'?'<span class="prio stag" title="Sito letto e giudicato da un agente di ricerca">Verificata: adatta</span>':l.giudizio==='FORSE'?'<span class="prio dub" title="Sito letto e giudicato da un agente di ricerca">Verificata: forse</span>':'',
+    l.type==='agenzia'&&l.tipoAg&&l.tipoAg!=='agenzia'?`<span class="prio prod">${{showroom:'Showroom',distributore:'Distributore',centro:'Centro d\'ordine'}[l.tipoAg]}</span>`:'',
+    l.type==='agenzia'&&l.profAg&&l.profAg!=='nd'?`<span class="prio dub">${{it:'Uomo italiano',heritage:'Heritage e capispalla',contemp:'Contemporary e casual'}[l.profAg]}</span>`:'',
     ls.catena?'<span class="prio prod">Più negozi</span>':''].join('');
-  const marchi = letto && ((li.marchiMaglia||[]).length||(li.marchiUomo||[]).length)
+  const marchi = l.type==='agenzia' && (l.marchiTutti||[]).length
+    ? `<div class="marchi"><b>Rappresenta (dalle ricerche):</b> ${esc(l.marchiTutti.join(', '))}.${l.fonte?` <a target="_blank" rel="noopener noreferrer" href="${esc(l.fonte)}">fonte</a>`:''}</div>`
+    : letto && ((li.marchiMaglia||[]).length||(li.marchiUomo||[]).length)
     ? `<div class="marchi">${(li.marchiMaglia||[]).length?'<b>Maglieria:</b> '+esc(li.marchiMaglia.join(', '))+'. ':''}${(li.marchiUomo||[]).length?'<b>Uomo:</b> '+esc(li.marchiUomo.join(', '))+'.':''}</div>` : '';
   const perche = [...ls.perche.filter(p=>!/^Vende già|^Tratta abbigliamento/.test(p)), ...ls.crit].slice(0,4);
   const sitoTxt = !web ? '' : !li ? 'Sito non ancora letto.' : li.vivo ? (li.vuoto?'Sito letto ma quasi vuoto (forse fatto solo di immagini).':'') : 'Sito non letto: '+String(li.motivo||'').slice(0,80)+'.';
-  return `<article class="lead" data-lid="${esc(l.id)}">
+  const li_=lista[l.id]||{}, stA=li_.s||'';
+  return `<article class="lead${stA?' st-'+stA:''}" data-lid="${esc(l.id)}">
     <div class="score ${ls.classe}" title="Punteggio da 0 a 100: da chi partire. È una stima, non una garanzia">${ls.lead}</div>
     <div>
       <div class="name">${web?`<a class="nm" target="_blank" rel="noopener noreferrer" href="${esc(web)}" title="Apri il sito del negozio in una nuova scheda">${esc(l.nome)}</a>`:esc(l.nome)}${badge}</div>
       <div class="meta">${esc(TYPES[l.type].label)}${l.cat?' <span class="small">('+esc(l.cat)+')</span>':''} · ${l.km!=null?l.km+' km · ':''}${esc(itC(l.citta))}${l.addr?' · '+esc(l.addr):''}</div>
       ${(l.anche||[]).length?`<div class="small">Compare anche come: ${esc(l.anche.slice(0,3).join(', '))}${l.anche.length>3?' e altri '+(l.anche.length-3):''}</div>`:''}
       ${marchi}
+      ${l.type==='agenzia'&&(l.territorio||[]).length?`<div class="small"><b>Serve anche:</b> ${esc([l.paese].concat(l.territorio).filter((x,i,a)=>a.indexOf(x)===i).map(p=>PAESI[p][0]).join(', '))}</div>`:''}
       ${perche.length?`<div class="small">${esc(perche.join(' '))}</div>`:''}
       ${sitoTxt?`<div class="small">${esc(sitoTxt)}</div>`:''}
       <div class="contacts">${contatti||'<span class="small">Nessun contatto in elenco: usa la mappa.</span>'}</div>
@@ -554,6 +624,11 @@ function card(l){
         <a class="lnk" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.nome+' '+l.citta)}">Mappa</a>
         ${web&&!letto?`<button class="lnk" data-leggi="${esc(l.id)}">Leggi il suo sito</button>`:''}
       </div>
+      <div class="sub lavoro">
+        <select class="stato" data-stato="${esc(l.id)}" aria-label="Stato nella mia lista"><option value="">Stato…</option>${Object.entries(STATI).map(([k,v])=>`<option value="${k}"${k===stA?' selected':''}>${v}</option>`).join('')}</select>
+        <button class="lnk" type="button" data-nota="${esc(l.id)}">${li_.n?'Nota ✎':'Aggiungi una nota'}</button>
+      </div>
+      <textarea class="notatxt" data-notatesto="${esc(l.id)}" placeholder="Nota (chi hai sentito, cosa ha detto...)" ${li_.n?'':'hidden'}>${esc(li_.n||'')}</textarea>
     </div>
   </article>`;
 }
@@ -586,10 +661,22 @@ function render(){
   $('rows').innerHTML=rows.slice(0,MOSTRA).map(card).join('');
 }
 $('bfiltra').addEventListener('click',()=>{ const f=$('filtri'); f.hidden=!f.hidden; $('bfiltra').setAttribute('aria-expanded',String(!f.hidden)); });
-['q','ftype','fcontact','fordine','fnasc','fscaffale'].forEach(id=>$(id).addEventListener('input',()=>{ MOSTRA=30; render(); }));
+['q','ftype','fcontact','fordine','fnasc','fscaffale','ftipoag','fprofag','fstato'].forEach(id=>$(id).addEventListener('input',()=>{ MOSTRA=30; render(); }));
 $('altri').addEventListener('click',e=>{ if(e.target.id==='piu'){ MOSTRA+=30; render(); } });
+$('rows').addEventListener('change',e=>{ const t=e.target;
+  if(t.matches('[data-stato]')){ impostaStato(t.dataset.stato, t.value); const a=t.closest('article'); if(a){ a.className='lead'+(t.value?' st-'+t.value:''); }
+    if($('fstato').value||SOLO_LISTA) render(); }
+  else if(t.matches('[data-notatesto]')){ const id=t.dataset.notatesto, l=leads[id];
+    if(!lista[id]){ lista[id]={s:'da', n:'', t:new Date().toISOString().slice(0,10), d:l?datiLista(l):{}}; const sel=t.closest('article').querySelector('[data-stato]'); if(sel) sel.value='da'; t.closest('article').classList.add('st-da'); }
+    lista[id].n=t.value.slice(0,600); salvaLista(); aggiornaListaBar(); }
+});
+$('rows').addEventListener('click',e=>{ const n=e.target.closest('[data-nota]'); if(n){ const t=n.closest('article').querySelector('[data-notatesto]'); t.hidden=!t.hidden; if(!t.hidden) t.focus(); } });
+$('listamostra').onclick=()=>{ SOLO_LISTA=!SOLO_LISTA; MOSTRA=30; aggiornaListaBar(); render(); };
+$('listavuota').onclick=()=>{ if(Object.keys(lista).length && confirm('Svuoto tutta la lista di lavoro?')){ lista={}; salvaLista(); SOLO_LISTA=false; aggiornaListaBar(); render(); } };
 $('rows').addEventListener('click',e=>{ const b=e.target.closest('[data-leggi]'); if(b) return leggiSitoLocale(b.dataset.leggi,b); });
 
+$('types').addEventListener('change',aggiornaCitta); aggiornaCitta();
+aggiornaListaBar();
 renderLingua();
 render();
 </script>

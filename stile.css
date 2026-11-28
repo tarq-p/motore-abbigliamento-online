@@ -176,3 +176,12 @@ a.lnk:hover{color:var(--wine)}
 .frasi label textarea{min-height:64px}
 .clienti-esito{margin-top:8px;font-size:13px;color:var(--mut)}
 .clienti-esito li{margin:2px 0}
+
+/* lista di lavoro e novita' */
+.novita{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:999px;margin-left:6px;vertical-align:middle}
+.chip .novita{margin-left:4px}
+.listabar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 14px;margin:0 0 12px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+.listabar>span{margin-right:auto;font-size:14px}.listabar button{padding:6px 12px}
+.lead.st-da{border-left:5px solid #b98a3e}.lead.st-co{border-left:5px solid #5b6b7c}.lead.st-tr{border-left:5px solid #1f8a5a}.lead.st-cl{border-left:5px solid #0b5fa5}.lead.st-no{border-left:5px solid #b4412b;opacity:.7}
+.lavoro{margin-top:8px}.lavoro select{padding:6px 8px;font-size:13px}
+.notatxt{width:100%;min-height:58px;margin-top:6px;font-size:13px}

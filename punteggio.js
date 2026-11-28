@@ -5,6 +5,7 @@
 (function(){
   // tipi in ordine di priorita': prima chi vende gia' uomo di fascia alta
   const TIPI = {
+    agenzia:   {label:'Agenzie plurimarca (agenti)', rango:0, base:60, agente:true},
     uomo:      {label:'Boutique uomo', rango:1, base:85},
     boutique:  {label:'Boutique e multimarca', rango:2, base:65},
     abiti:     {label:'Negozi di abbigliamento', rango:3, base:40},
@@ -24,7 +25,7 @@
     const o={...li};
     for(const k of ['marchiMaglia','marchiUomo','email','whatsapp']) o[k] = Array.isArray(li[k]) ? li[k].filter(x=>typeof x==='string').slice(0,12) : [];
     { const n=+li.prezzo; o.prezzo = Number.isFinite(n)&&n>0 ? Math.min(n,5000) : null; }
-    for(const k of ['nPrezzi','marchiBassi','uomo','donna','maglia','italia','sartoria','negozio','lusso','outlet','marchio','multimarca','lavoro']){
+    for(const k of ['nPrezzi','marchiBassi','uomo','donna','maglia','italia','sartoria','negozio','lusso','outlet','marchio','multimarca','lavoro','agentur']){
       const n=+li[k]; o[k] = Number.isFinite(n)&&n>0 ? n : 0; }
     o.vivo = li.vivo===true; o.vuoto = li.vuoto===true; o.dns = li.dns===true;
     o.lingua = typeof li.lingua==='string' && /^[a-z]{2}$/.test(li.lingua) ? li.lingua : '';
@@ -35,11 +36,55 @@
     return o;
   }
 
+  // ---- AGENZIE: si guarda il portafoglio (marchi che rappresentano), non lo scaffale di un negozio
+  const NOMI_AG = {A:'Portafoglio adatto a Vela Blu', B:'È davvero un\'agenzia di uomo', E:'Come contattarla'};
+  function calcolaAgenzia(l){
+    const li = (l.li && l.li.vivo && !l.li.vuoto) ? l.li : null;
+    const ind = {}, perche = [], manca = [], crit = [];
+    let A = null, B = 60;
+    const lista = x => Array.isArray(x) ? x.filter(y=>typeof y==='string').slice(0,12) : [];
+    const noti = lista(l.marchiNoti), notiM = lista(l.marchiNotiMaglia);
+    const magliaNomi = [...new Set([...(li?li.marchiMaglia:[]), ...notiM])];
+    const mm = magliaNomi.length, mu = li ? li.marchiUomo.length : 0;
+    if(li || noti.length || notiM.length){
+      // il caso migliore: rappresenta uomo italiano di fascia alta ma non ha maglieria (spazio libero per le polo e la maglia)
+      const uomo = mu + (noti.length && !mu ? noti.length : 0);
+      if(uomo && !mm){ A = scala(uomo, [[3,100],[1,90]]); perche.push('Rappresenta uomo italiano di fascia alta ma non ha maglieria: le vostre polo e la maglia riempirebbero un buco.'); }
+      else if(uomo && mm){ A = 78; crit.push('Ha già maglieria in portafoglio ('+magliaNomi.slice(0,3).join(', ')+'): può avere un conflitto con un marchio concorrente. Chiedi.'); }
+      else if(mm){ A = 70; crit.push('Ha già maglieria in portafoglio ('+magliaNomi.slice(0,3).join(', ')+'): possibile conflitto, ma conosce bene il prodotto.'); }
+      else if(li && li.agentur>0 && li.uomo>0) A = 55;
+      else A = li ? 35 : null;
+      if(mu) perche.push('Marchi uomo che rappresenta: '+li.marchiUomo.slice(0,5).join(', ')+'.');
+      else if(noti.length) perche.push('Marchi che rappresenta (dalle ricerche): '+noti.slice(0,5).join(', ')+'.');
+    }
+    if(li){
+      if(li.agentur>0){ B += 20; perche.push('Il sito parla di agenzia, showroom o rappresentanza.'); }
+      else { B -= 25; crit.push('Il sito non dice di essere un\'agenzia: può essere un negozio o un marchio.'); }
+      if(li.uomo>0) B += 15;
+      if(li.donna>0 && !li.uomo){ B -= 30; crit.push('Sul sito si parla solo di donna.'); }
+    } else manca.push('Che marchi rappresenta: lo dice il suo sito, non ancora letto.');
+    ind.A = A; ind.B = Math.max(0, Math.min(100, B));
+    ind.E = l.canale===0?100 : l.canale===1?70 : l.canale===2?60 : l.canale===3?70 : 0;   // un'agenzia risponde anche al telefono
+    let s=0, w=0;
+    for(const k of Object.keys(PESI)) if(ind[k]!=null){ s+=ind[k]*PESI[k]; w+=PESI[k]; }
+    let lead = w ? Math.round(s/w) : 0;
+    if(A==null){ lead = Math.min(lead, 57); crit.push('Punteggio provvisorio: il sito non è stato letto.'); }
+    let scaffaleSi = false;
+    const scaffale = mm+mu>0 || noti.length>0;
+    if(!li && !scaffale && Array.isArray(l.marchiTutti) && l.marchiTutti.length){ crit.push('I marchi che rappresenta non sono di fascia alta (almeno tra quelli che conosco).'); }
+    if(!scaffale && lead>57) lead = 57;
+    // giudizio di un agente che ha letto il sito: «sì» sale in alto, «forse» resta dov'è
+    if(l.giudizio==='SI'){ lead = Math.max(lead, 85); perche.push('Un agente di ricerca ha letto il suo sito: agenzia con uomo di fascia adatta.'); scaffaleSi = true; }
+    const classe = lead>=72?'hi' : lead>=58?'mid' : lead>=42?'val' : 'low';
+    return {lead, classe, ind, pesi:PESI, nomi:NOMI_AG, perche, manca, crit, catena:false, scaffale, conf:Math.round(100*w)};
+  }
+
   // l: {type, nome, cat, canale (0 email, 1 WhatsApp, 2 Instagram, 3 telefono), li (cosa dice il sito), sedi}
   function calcola(l){
     l = {...l, li:pulisci(l.li)};
+    if(l.type==='agenzia') return calcolaAgenzia(l);
     const li = (l.li && l.li.vivo && !l.li.vuoto) ? l.li : null;
-    const t = TIPI[l.type] || {base:50};
+    const t = Object.prototype.hasOwnProperty.call(TIPI, l.type) ? TIPI[l.type] : {base:50};
     const ind = {}, perche = [], manca = [], crit = [];
     const terzi = !!t.terzi;
 
